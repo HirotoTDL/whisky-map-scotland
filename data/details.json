@@ -850,6 +850,156 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "blair_athol": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Blair_Athol_distillery.jpg/800px-Blair_Athol_distillery.jpg",
+    "characteristics": "南ハイランド、パースシャー、ピトロッホリー村南端、トゥンメル川沿い。1798年創業(元名Aldour)、Diageo所有。スチル2対、年産250万L。仕込み水はオールト・ドゥア川。生産量の大半は'Bell's'ブレンデッドウイスキー用。Flora & Fauna 26蒸留所の1つで12年表記に継承。1932-1949年沈黙、1973年スチル増設。",
+    "signature": {
+      "name": "Blair Athol 12 Year Old",
+      "cask": "アメリカン・バーボン樽+シェリー樽",
+      "color": "ディープアンバー",
+      "taste": "ハニー、スパイス、シェリー、フルーツ、モルティ、リッチで甘くなめらかな伝統的ハイランド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Blair Athol 12", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Blair Athol 23 (Special Release)", "type": "限定"},
+        {"name": "Blair Athol 27", "type": "限定"},
+        {"name": "Hand Fill (蒸留所限定)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Blair Athol 12 Flora & Fauna", "type": "花と動物シリーズ(現行12年の原型)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Blair_Athol_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "pulteney": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Old_Pulteney_distillery.jpg/800px-Old_Pulteney_distillery.jpg",
+    "characteristics": "スコットランド本土最北東端、ケイスネス、ウィック。1826年創業、Inver House Distillers所有(1995〜)。スチル1対、年産100万L。仕込み水はLoch Hempriggs(Thomas Telford設計の水路)。熟成中の海風接触が特徴的な酒質を生み、'海のモルト'と称される。2016年ワールドウイスキーアワードで'世界最高のシングルモルト'(1989年ヴィンテージ)受賞。",
+    "signature": {
+      "name": "Old Pulteney 12 Year Old",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ゴールド",
+      "taste": "海塩、ブリニー(塩気)、ハニー、ナッツ、バニラ、フレッシュな海風、ドライでクリーン"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Old Pulteney 12", "type": "常売"},
+        {"name": "Old Pulteney 15", "type": "常売"},
+        {"name": "Old Pulteney 18", "type": "常売"},
+        {"name": "Old Pulteney 25", "type": "常売"},
+        {"name": "Huddart (ピーテッド)", "type": "常売"},
+        {"name": "Coastal Series (Pineau des Charentes / Port)", "type": "常売シリーズ"}
+      ],
+      "limited": [
+        {"name": "Old Pulteney Bow Wave 45 (2023最古)", "type": "限定(希少)"},
+        {"name": "1989 Vintage (WWA 2016世界最高)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Old_Pulteney_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "fettercairn": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Fettercairn_distillery.jpg/800px-Fettercairn_distillery.jpg",
+    "characteristics": "東ハイランド、Howe of Mearnsの地、グランピアン山脈麓。1824年Alexander Ramsay創業(元は穀物製粉所)、Whyte & Mackay(Alliance Global)所有。年産220万L。特殊な'irrigator ring'がスチル頭部に水を噴霧し、純度高い蒸留を実現する独自技術。シンボルは一角獣とヴィクトリア女王1861年訪問記念のフェッターケアン・アーチ。",
+    "signature": {
+      "name": "Fettercairn 12 Year Old",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ゴールド",
+      "taste": "トロピカルフルーツ、パイナップル、ハニー、ジンジャー、トフィー、軽やかで芳醇"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Fettercairn 12", "type": "常売"},
+        {"name": "Fettercairn 16", "type": "常売"},
+        {"name": "Fettercairn 22", "type": "常売"},
+        {"name": "Fettercairn 28", "type": "常売"},
+        {"name": "Fior (NAS)", "type": "常売"},
+        {"name": "Fasque Collection", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Fettercairn 40", "type": "限定"},
+        {"name": "Fettercairn 50", "type": "限定(超希少)"},
+        {"name": "Cask Strength 54°", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Fettercairn_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "teaninich": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Teaninich_distillery.jpg/800px-Teaninich_distillery.jpg",
+    "characteristics": "北ハイランド、アルネス。1817年Hugh Munro創業、Diageo所有。年産930万L(Diageo最大級)、12基のスチル(ウォッシュ6+スピリット6)。仕込み水はデイリーウェル泉。2000年にスコッチ業界唯一のマッシュフィルタープレス(通常のマッシュタンの代替)を導入。公式シングルモルト瓶詰めはほぼ無くFlora & Fauna経由のみ。Johnnie Walker Red Labelの重要構成要素。",
+    "signature": {
+      "name": "Teaninich 10 Year Old Flora & Fauna",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "フローラル、青草、ハーブ、スパイシー、ドライで清廉、ブレンダーに愛される酒質"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Teaninich 10 Flora & Fauna", "type": "常売(F&F経由)"}
+      ],
+      "limited": [
+        {"name": "Teaninich 17 (2017 Special Release)", "type": "限定"},
+        {"name": "Teaninich 27", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Teaninich 10 Year Old Flora & Fauna", "type": "花と動物シリーズ(現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Teaninich_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glen_ord": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Glen_Ord_distillery.jpg/800px-Glen_Ord_distillery.jpg",
+    "characteristics": "北ハイランド、ロス=シャー、Muir of Ord。1838年創業、Diageo所有。年産1,200万L(ハイランド最大級)、14基のスチル(ウォッシュ7+スピリット7)。仕込み水はLoch nam Bonnach/Loch nan Eun。シングルモルトは'The Singleton of Glen Ord'として東南アジア専用(12/15/18年)。2001年英国で最初のBiobed水処理技術導入。",
+    "signature": {
+      "name": "The Singleton of Glen Ord 12",
+      "cask": "アメリカンオーク(バーボン)50% + オロロソ・シェリー樽50%",
+      "color": "アンバー",
+      "taste": "シェリーの甘さ、ドライフルーツ、ハニー、スパイス、リッチでスムース、東南アジア市場好みのリッチスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "The Singleton of Glen Ord 12", "type": "常売(アジア専用)"},
+        {"name": "The Singleton of Glen Ord 15", "type": "常売(アジア専用)"},
+        {"name": "The Singleton of Glen Ord 18", "type": "常売(アジア専用)"}
+      ],
+      "limited": [
+        {"name": "Singleton Reserve / Signature", "type": "限定"},
+        {"name": "Special Releases (毎年)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glen_Ord_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glen_garioch": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Glen_Garioch_distillery.jpg/800px-Glen_Garioch_distillery.jpg",
+    "characteristics": "東ハイランド、アバディーンシャー、オールドメルドラム。1797年Manson兄弟創業、Suntory Global Spirits所有。年産100万L、スチル2対。仕込み水はクーテンズ農場の'サイレント・スプリング'(1972年発見)。'Valley of the Garioch'(ゲーリー渓谷)はスコットランド屈指の大麦産地。1968年水不足で操業停止、1995-1997年再度沈黙を経てSuntoryが復活させる。",
+    "signature": {
+      "name": "Glen Garioch 12 Year Old",
+      "cask": "アメリカン・バーボン樽+スペイン産オロロソ・シェリー樽",
+      "color": "ディープアンバー",
+      "taste": "蜂蜜、ドライフルーツ、オレンジピール、スパイス、柑橘、リッチでフルーティ、長いフィニッシュ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Founder's Reserve (NAS)", "type": "常売"},
+        {"name": "Glen Garioch 12", "type": "常売"},
+        {"name": "Virgin Oak (NAS)", "type": "常売"},
+        {"name": "15 Years Old Renaissance", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Vintage 1978/1986/1990/1991/1994/1995/1997/1999", "type": "限定ヴィンテージ"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glen_Garioch_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "glenkinchie": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Glenkinchie_distillery.jpg/800px-Glenkinchie_distillery.jpg",
     "characteristics": "ローランド地方、東ロージアン州ペンケイトランド。1837年George/John Rate兄弟創業、Diageo所有。スチル1対(ウォッシュ30,963L、スピリット20,998L)は現役最大級。年産270万L。1988年クラシック・モルト・オブ・スコットランド6蒸留所の1つ。1969年フロアモルティング廃止、跡地は博物館に。2020年新ビジターセンター開業。'エジンバラ・モルト'とも呼ばれる。",
