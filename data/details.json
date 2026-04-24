@@ -850,6 +850,186 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "port_ellen": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Port_Ellen_distillery.jpg/800px-Port_Ellen_distillery.jpg",
+    "characteristics": "アイラ島南端、ポート・エレン。1825年モルトミル開設、1833年蒸留所として本格稼働。Diageo所有。1930-1966/67, 1983-2024年の2度の閉鎖を経て、2024年3月19日、40年ぶりに復活(£1.85億/$2.35億投資)。年産270万L、スチル2対。仕込み水はLeorin湖。1980年代の工場記録を元にオリジナルスタイルを忠実に再現。レガシー・ポートエレンは世界屈指の希少品。",
+    "signature": {
+      "name": "Port Ellen Legacy (1983-以前)",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "ディープアンバー",
+      "taste": "スモーク、海潮、ヨード、ワックス、トロピカルフルーツ、タール、'失われたアイラ'の伝説的酒質"
+    },
+    "bottles": {
+      "core": [],
+      "limited": [
+        {"name": "Port Ellen 200th Anniversary Edition (2025, 150本, £7,500)", "type": "限定(超希少)"},
+        {"name": "Port Ellen Gemini (1978年3樽欧州オーク)", "type": "限定"},
+        {"name": "Untold Stories Series", "type": "限定シリーズ"},
+        {"name": "Annual Releases (Special Releases, 毎年)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Port_Ellen_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "ballindalloch": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ballindalloch_distillery.jpg/800px-Ballindalloch_distillery.jpg",
+    "characteristics": "スペイサイド、バンフシャー、バリンダロッホ城領内。2014年Macpherson-Grant家創業、スコットランド初の'シングルエステート'蒸留所(大麦栽培〜熟成まで一貫)。歴史的な農場建物を保存活用。年産10万L、スチル1対。仕込み水はGarline泉。2022年Whisky Magazine 'Craft Producer'賞受賞。",
+    "signature": {
+      "name": "Ballindalloch Single Estate Single Malt",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "フルーティ、ハニー、モルト、シェリーのニュアンス、伝統的スペイサイドを小規模で忠実再現"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Ballindalloch Single Estate", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Inaugural Bottling (2022)", "type": "限定"},
+        {"name": "Cask Samples / Distillery Exclusive", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Ballindalloch_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "mannochmore": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Mannochmore_distillery.jpg/800px-Mannochmore_distillery.jpg",
+    "characteristics": "スペイサイド、エルギン近郊。1971年John Haig & Co.創業、Diageo所有。年産320万L、スチル6基(各14,400〜17,000L)。仕込み水はBardon川。Elginのキャッスルヘッドモルティング製モルト使用。1996年の'Loch Dhu'(真っ黒なシングルモルト、1999年廃盤)で有名。隣のGlenlossieと12ヶ月交代で操業していた伝統。Haig Gold Labelブレンドの中核。",
+    "signature": {
+      "name": "Mannochmore 12 Flora & Fauna",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ゴールド",
+      "taste": "フローラル、フレッシュフルーツ、シリアル、バニラ、軽いスパイス、親しみやすい軽快スペイサイド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Mannochmore 12 Flora & Fauna", "type": "常売(F&F経由)"}
+      ],
+      "limited": [
+        {"name": "Loch Dhu (1996-1999, 黒いシングルモルト)", "type": "限定(廃盤・伝説)"},
+        {"name": "Mannochmore 25 (2016 Special Release)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Mannochmore 12 Year Old Flora & Fauna", "type": "花と動物シリーズ(現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Mannochmore_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glenlossie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Glenlossie_distillery.jpg/800px-Glenlossie_distillery.jpg",
+    "characteristics": "スペイサイド、エルギン、モーレイシャー。1876年John Duff創業、Diageo所有。年産110万L、スチル6基(1962年4→6基に拡張)。仕込み水はBardon川(Mannochmoreと同源)。1919年DCL(現Diageo)買収、1929年火災→再建。1990年に10年ボトルで公式デビュー。Haig Gold Label、Bell'sブレンドの構成要素。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Glenlossie 10 Flora & Fauna",
+      "cask": "リフィル・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "フローラル、青リンゴ、バニラ、モルト、非常に軽くクリーン、エレガントな軽量級スペイサイド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glenlossie 10 Flora & Fauna", "type": "常売(F&F経由)"}
+      ],
+      "limited": [
+        {"name": "Glenlossie 23 (2010 Special Release)", "type": "限定"},
+        {"name": "Rare Malts 21 (1998)", "type": "限定(廃盤)"}
+      ],
+      "flora_fauna": {"name": "Glenlossie 10 Year Old Flora & Fauna", "type": "花と動物シリーズ(現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glenlossie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "auchroisk": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Auchroisk_distillery.jpg/800px-Auchroisk_distillery.jpg",
+    "characteristics": "スペイサイド、マルベン。1972年Justerini & Brooks創業、Diageo所有。年産310万L、スチル8基(ウォッシュ4+スピリット4)、スペイサイド有数の規模。仕込み水はDorie's Well(この水の発見が蒸留所設立の契機)。1978年初シングルモルト瓶詰、当初'The Singleton'命名(1986)、後'Singleton of Auchroisk'に。J&Bブレンドの主要構成要素。ゲール語'赤い川の浅瀬'由来。",
+    "signature": {
+      "name": "Auchroisk 10 Flora & Fauna",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ゴールド",
+      "taste": "フレッシュフルーツ、ハニー、バニラ、シリアル、軽快でバランスの良いモダンスペイサイド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Auchroisk 10 Flora & Fauna", "type": "常売(F&F経由)"}
+      ],
+      "limited": [
+        {"name": "Auchroisk 25 (2016 Special Release)", "type": "限定"},
+        {"name": "Singleton of Auchroisk (2008, 廃盤)", "type": "限定(廃盤)"}
+      ],
+      "flora_fauna": {"name": "Auchroisk 10 Year Old Flora & Fauna", "type": "花と動物シリーズ(現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Auchroisk_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "kininvie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Kininvie_distillery.jpg/800px-Kininvie_distillery.jpg",
+    "characteristics": "スペイサイド、ダフタウン。1990年William Grant & Sons創業、Balvenie蒸留所敷地内に建設。仕込み水はConval丘陵。スチル9基(ウォッシュ3+スピリット6)。Balvenieから液体をパイプで供給される特殊構成(自前のマッシュハウスなし、但しマッシュタン/ウォッシュバックは独立)。'Monkey Shoulder'ブレンデッドモルトの中核。",
+    "signature": {
+      "name": "Monkey Shoulder (関連ブレンデッドモルト)",
+      "cask": "バーボン樽",
+      "color": "ゴールド",
+      "taste": "バニラ、ハニー、スパイス、フルーツ、柔らかくスムース、カクテルベースに人気"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Monkey Shoulder (ブレンデッドモルト、Kininvie主体)", "type": "関連ブレンド"},
+        {"name": "Hazelwood Single Malt Release", "type": "限定"}
+      ],
+      "limited": [
+        {"name": "Kininvie Janet Sheed Roberts Reserve (超希少)", "type": "限定(超希少)"},
+        {"name": "Kininvie 17 / 23 / 25 (Batch毎)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Kininvie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "strathmill": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Strathmill_distillery.jpg/800px-Strathmill_distillery.jpg",
+    "characteristics": "スペイサイド、キース。1891年穀物ミル(1823年設立)を蒸留所転用。1895年にGilbey社が'Glenisla-Glenlivet'から'Strathmill'に改名。Diageo所有。年産180万L、スチル4基。仕込み水は地元泉。1962年にInternational Distillers & VintnersがJ&B用に取得、1998年Diageo傘下。J&Bブレンドの中核。ゲール語'浅い谷のミル'由来。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Strathmill 12 Flora & Fauna",
+      "cask": "リフィル・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "軽いフルーツ、ナッツ、シリアル、ハニー、バニラ、クリーンでブレンド向けの軽快なスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Strathmill 12 Flora & Fauna", "type": "常売(F&F経由)"}
+      ],
+      "limited": [
+        {"name": "Strathmill 25 (2014 Special Release)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Strathmill 12 Year Old Flora & Fauna", "type": "花と動物シリーズ(現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Strathmill_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glen_spey": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Glen_Spey_distillery.jpg/800px-Glen_Spey_distillery.jpg",
+    "characteristics": "スペイサイド、ロシーズ。1878年創業(元名'Mill of Rothes')、Diageo所有。年産140万L、スチル4基(ウォッシュ2×12,000L+スピリット2×7,500L)。精留器(purifier)を使い、リフラックスを強化して軽い酒質を作る。仕込み水はDonnie川。ほぼ全量がJ&Bブレンド用。公式瓶詰は極めて稀。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Glen Spey 12 Flora & Fauna",
+      "cask": "リフィル・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "フローラル、青リンゴ、シトラス、ナッツ、軽くクリーン、精留器由来の繊細さ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glen Spey 12 Flora & Fauna", "type": "常売(F&F経由)"}
+      ],
+      "limited": [
+        {"name": "Glen Spey 21 (2010 Special Release)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Glen Spey 12 Year Old Flora & Fauna", "type": "花と動物シリーズ(現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glen_Spey_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "miltonduff": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Miltonduff_distillery.jpg/800px-Miltonduff_distillery.jpg",
     "characteristics": "スペイサイド、エルギン近郊。1824年創業、Chivas Brothers (Pernod Ricard)所有。年産580万L(スペイサイド最大級)、スチル6基(各18,000L)。1936年以降Ballantine'sブレンドの中核。1960年に業界初のウォッシュスチル熱交換技術導入。2022年£8,800万の持続可能化投資、2025年までにMVR技術導入予定。'Mosstowie'というライト型シングルモルトも生産。",
