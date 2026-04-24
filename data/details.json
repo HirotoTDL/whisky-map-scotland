@@ -850,6 +850,47 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "falkirk": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Falkirk_distillery.jpg/800px-Falkirk_distillery.jpg",
+    "characteristics": "ローランド、スターリングシャー、ファルカーク。2020年George Stewart家創業(£900万)。ノンピート・ローランドシングルモルト。スチル1対、年産20万L。閉鎖Caperdonich蒸留所(スペイサイド)の銅スチル/マッシュタンを移設。ダネージ式倉庫。Rosebank(1993閉鎖)以来ファルカーク地域で初のウイスキー蒸留所復活。アントニヌスの長城近隣で特別な建築許可を取得。廃棄物を微細藻類飼料に転換する循環経済型の設計。2023年12月初ボトル・オークション、2024年1月一般販売(24時間で完売)。",
+    "signature": {
+      "name": "Falkirk Inaugural Release (2024)",
+      "cask": "アメリカン・バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "クリーン、フルーティ、ハニー、ソフトなモルト、モダンなローランド・リバイバル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Falkirk Single Malt (NAS)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Inaugural Release (2024年1月, 完売)", "type": "限定"},
+        {"name": "Founders Cask Programme", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Falkirk_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "ardgowan": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Ardgowan_distillery.jpg/800px-Ardgowan_distillery.jpg",
+    "characteristics": "ローランド、インヴァーキップ、Ardgowan Estate内。1896年Greenock(Baker St.)設立のオリジナルArdgowanは1903年の'燃えるウイスキーの川'火災事件と1941年ブリッツで破壊、1952年閉鎖。現Ardgowanは2017年3月承認された£1,200万新設施設、2025年6月蒸留開始、8月ビジターツアー開始。シェリー樽に£1億投資する大規模プロジェクト。",
+    "signature": {
+      "name": "Ardgowan New Make (熟成中)",
+      "cask": "シェリー樽(PX/オロロソ)主体+バーボン樽",
+      "color": "—(熟成中、2028年〜リリース予想)",
+      "taste": "—(シェリー樽重視のリッチスタイルを志向)"
+    },
+    "bottles": {
+      "core": [],
+      "limited": [
+        {"name": "Ardgowan Inaugural (2028年以降予定)", "type": "限定予定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Ardgowan_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "dunphail": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Dunphail_distillery.jpg/800px-Dunphail_distillery.jpg",
     "characteristics": "スペイサイド北部、フォレス近郊ダンフェイル。2023年10月6日Dariusz Plazewski・Ewelina Chruszczyk夫妻(ロンドンのBimber Distillery共同創設者)により創業。改装した農場建物を使用。スチル3基(直接火加熱)、年産10万L。1898年以来スペイサイドで初めてフロアモルティングを再現、100%自家モルト製造(Springbankに次ぐスコットランド2例目)。144時間の超長時間発酵、ダグラスファー材のウォッシュバック12基。ピーテッド/ノンピート両方生産。",
