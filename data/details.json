@@ -850,6 +850,307 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "lindores_abbey": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Lindores_Abbey.jpg/800px-Lindores_Abbey.jpg",
+    "characteristics": "ローランド、ファイフ、ニューバーグ。2017年McKenzie Smith家創業、スコットランドでウイスキー製造が文書化された最古の場所(1494年、Friar John Corの記録)。スチル3基(ウォッシュ1+スピリット2、Forsyths製)、年産26万L。仕込み水はボアホール。Concerto種大麦(地元ファイフ産)使用。初ウイスキー'MCDXCIV'(2021年)。熟成前はAqua Vitaeを販売。",
+    "signature": {
+      "name": "Lindores MCDXCIV",
+      "cask": "シェリー樽+バーボン樽+ワイン樽",
+      "color": "ゴールド",
+      "taste": "フレッシュな果物、バニラ、ハニー、軽いシェリー、スパイス、ソフトなローランド、歴史的舞台"
+    },
+    "bottles": {
+      "core": [
+        {"name": "MCDXCIV (NAS)", "type": "常売"},
+        {"name": "Commemorative First Release (2021)", "type": "常売"},
+        {"name": "Aqua Vitae (伝統ハーブスピリッツ)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Friar John Cor Reserve", "type": "限定"},
+        {"name": "Distillery Exclusive Cask", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Lindores_Abbey_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "clydeside": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Clydeside_distillery.jpg/800px-Clydeside_distillery.jpg",
+    "characteristics": "ローランド、グラスゴー、クライド川沿い。2017年Morrison Glasgow Distillers社創業。100年以上ぶりにグラスゴー市内で2番目に稼働した蒸留所。1877年建築のクイーンズドック・ポンプハウスを修復利用。所有者Tim Morrison氏はポンプハウスを建設したJohn Morrison氏の曾孫。スチル1対(Forsyth製、各約2トン)、年産50万L。仕込み水はカトリン湖。",
+    "signature": {
+      "name": "Clydeside Stobcross (2021)",
+      "cask": "アメリカンオーク+ヨーロピアンオーク",
+      "color": "ペールゴールド",
+      "taste": "フレッシュなシトラス、ハニー、バニラ、軽いスパイス、モダンなローランドスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Stobcross (NAS)", "type": "常売"},
+        {"name": "Stobcross Port Cask Finish", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Single Cask Release", "type": "限定"},
+        {"name": "Founders Collection", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Clydeside_Distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "isle_of_raasay": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Isle_of_Raasay_distillery.jpg/800px-Isle_of_Raasay_distillery.jpg",
+    "characteristics": "インナーヘブリディーズ諸島ラッセイ島、スカイ島の東隣。2014年創業、R&B Distillers所有(Bill Dobbie氏・Alasdair Day氏)。ラッセイ島初の合法蒸留所。スチル1対、年産20万L。仕込み水はTobar na ba baine泉(火山岩+砂岩由来の高ミネラル)。5つ星VisitScotlandビジターセンター(2018〜)併設。2023年Cask Connoisseurで人気蒸留所3位。",
+    "signature": {
+      "name": "Isle of Raasay Single Malt",
+      "cask": "テネシー樽+ボルドーワイン樽",
+      "color": "ゴールド",
+      "taste": "軽いピート、海風、赤い果実、ミネラル、スパイス、モダンアイランドキャラクター"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Isle of Raasay Single Malt", "type": "常売"},
+        {"name": "Isle of Raasay R-01.1", "type": "常売"},
+        {"name": "Isle of Raasay Batch Strength", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Na Sia Single Cask Series (6種)", "type": "限定"},
+        {"name": "Distillery of the Year Edition", "type": "限定"},
+        {"name": "Isle of Raasay Gin", "type": "併売ジン"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Isle_of_Raasay_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "torabhaig": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Torabhaig_distillery.jpg/800px-Torabhaig_distillery.jpg",
+    "characteristics": "スカイ島スレート地方、Teangue。2017年Sir Iain Noble氏が始め、現Mossburn Distillers所有。タリスカー(1830)以来スカイ島2つ目の合法蒸留所。スチル1対、年産50万L。農場納屋を改造した建物(Simpson and Brown建築事務所設計)。ピートフォワードスタイル。2022年に初ウイスキーが国立スコットランド博物館に収蔵。マスコットは子ヤギ'Goaty'。",
+    "signature": {
+      "name": "Torabhaig Legacy Series",
+      "cask": "アメリカンオーク・バーボン樽+欧州オーク樽",
+      "color": "ゴールド",
+      "taste": "ピートスモーク(ヘビー)、海潮、青リンゴ、バニラ、ハーブ、若くもパワフルなスカイ島ウイスキー"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Legacy Series 2017 (46%)", "type": "常売"},
+        {"name": "Allt Gleann (46%)", "type": "常売"},
+        {"name": "Cnoc na Moine", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "The Pollonahasting Edition", "type": "限定"},
+        {"name": "Single Cask Release", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Torabhaig_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "speyburn": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Speyburn_distillery.jpg/800px-Speyburn_distillery.jpg",
+    "characteristics": "スペイサイド、ロシーズ。1897年John Hopkins & Co.創業(£17,000)、Inver House Distillers所有。Charles C. Doig氏設計の伝説的パゴダルーフが特徴、1897年12月15日(大雪の日)操業開始。仕込み水はグランティ川(スペイ川支流)。3基のスチル(ウォッシュ1+スピリット2)、年産410万L。米国で売上9位のシングルモルト。",
+    "signature": {
+      "name": "Speyburn 10 Year Old",
+      "cask": "アメリカンオーク・バーボン樽",
+      "color": "ゴールド",
+      "taste": "フレッシュフルーツ、ハニー、シトラス、バニラ、モルト、バランスの取れた入門シングルモルト"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Bradan Orach (NAS)", "type": "常売"},
+        {"name": "Speyburn 10", "type": "常売"},
+        {"name": "Arranta Casks (NAS, カスクストレングス)", "type": "常売"},
+        {"name": "Speyburn 15", "type": "常売"},
+        {"name": "Speyburn 18", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Speyburn 25", "type": "限定"},
+        {"name": "Hopkins Reserve", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Speyburn 10 Flora & Fauna", "type": "花と動物シリーズ(初期)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Speyburn_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "strathisla": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Strathisla_distillery.jpg/800px-Strathisla_distillery.jpg",
+    "characteristics": "スペイサイド、キース。1786年創業、スコットランドハイランドで現役最古の蒸留所。Chivas Brothers(Pernod Ricard)所有。仕込み水はブルームヒル泉、年産240万L。スチル2対。Chivas Regalブレンドの'ハートモルト'として位置付けられる。象徴的なパゴダルーフの伝統的な外観が最も美しい蒸留所の一つと称される。",
+    "signature": {
+      "name": "Strathisla 12 Year Old",
+      "cask": "アメリカン・ホワイトオーク(バーボン樽)主体",
+      "color": "ディープゴールド",
+      "taste": "メロウなハニー、ナッツ、ドライフルーツ、軽いスパイス、フルボディでバランスに優れる"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Strathisla 12", "type": "常売"},
+        {"name": "Strathisla 14", "type": "常売"},
+        {"name": "Strathisla 19", "type": "常売"},
+        {"name": "Strathisla 25", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Cask Strength Edition (蒸留所限定)", "type": "限定"},
+        {"name": "Vintage Releases (Gordon & MacPhail経由)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Strathisla_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glendronach": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Glendronach_distillery.jpg/800px-Glendronach_distillery.jpg",
+    "characteristics": "東ハイランド、フォーグ、ハントリー近郊。1826年James Allardes創業、Brown-Forman所有(2016〜)。シェリー樽熟成(PX/オロロソ)に特化した伝統を貫く稀有な蒸留所。年産130万L、スチル2対。仕込み水はドロナック川。2017年よりマスターブレンダーDr. Rachel Barrie氏が指揮。",
+    "signature": {
+      "name": "GlenDronach 12 Original",
+      "cask": "ペドロヒメネス+オロロソ・シェリー樽",
+      "color": "ディープアンバー〜マホガニー",
+      "taste": "リッチシェリー、ドライフルーツ、チョコレート、オレンジ、スパイス、レーズン、濃厚で贅沢"
+    },
+    "bottles": {
+      "core": [
+        {"name": "GlenDronach 8 The Hielan (46%)", "type": "常売"},
+        {"name": "GlenDronach 12 Original (43%)", "type": "常売"},
+        {"name": "GlenDronach 15 Revival (46%)", "type": "常売"},
+        {"name": "GlenDronach 18 Allardice (46%)", "type": "常売"},
+        {"name": "GlenDronach 21 Parliament (48%)", "type": "常売"},
+        {"name": "Cask Strength (バッチ毎)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "GlenDronach 25 Grandeur", "type": "限定"},
+        {"name": "Single Cask Release (1970s-1990sヴィンテージ)", "type": "限定"},
+        {"name": "Kingsman Edition (映画コラボ)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glendronach_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "ardmore": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Ardmore_distillery.jpg/800px-Ardmore_distillery.jpg",
+    "characteristics": "東ハイランド、ケネスモント。1898年Adam Teacher創業、Suntory Global Spirits所有。8基のスチル(ウォッシュ4+スピリット4、各15,000L)、年産553万L。仕込み水はノックアンディ丘陵の泉。シンボルはゴールデンイーグル。ハイランドでは珍しいピーテッド・モルトに特化。元Teacher'sブレンドの主要構成要素。",
+    "signature": {
+      "name": "Ardmore Legacy / Tradition",
+      "cask": "アメリカン・ホワイトオーク(バーボン樽)+クォーターカスク",
+      "color": "ゴールド",
+      "taste": "ハイランドピートのスモーク、ハニー、スパイス、モルト、クリーミー、スモーキーだが甘い"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Ardmore Legacy (NAS, 40%)", "type": "常売"},
+        {"name": "Ardmore Tradition (NAS, 46%)", "type": "常売"},
+        {"name": "Ardmore Triple Wood (NAS, 46%)", "type": "常売"},
+        {"name": "Ardmore Port Wood Finish 12 (46%)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Ardmore 25", "type": "限定"},
+        {"name": "Ardmore 30 (2015)", "type": "限定(希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Ardmore_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "ardnamurchan": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Ardnamurchan_distillery.jpg/800px-Ardnamurchan_distillery.jpg",
+    "characteristics": "西ハイランド、アードナマッハン半島、ロッホアーバー、スコットランド最辺境の蒸留所の1つ。2014年独立系ボトラーAdelphi社により創業、初ウイスキー2017年リリース。スチル1対、年産50万L。水力発電+バイオマスボイラー(Ardnamurchanの森の間伐材)で100%再生可能エネルギー運営。ピーテッドとノンピート両方製造、2020年時点で10,000樽以上熟成中。",
+    "signature": {
+      "name": "Ardnamurchan AD (NAS)",
+      "cask": "バーボン樽(65%) + シェリー樽(35%)",
+      "color": "ゴールド",
+      "taste": "軽いピートスモーク、海潮、ハニー、フルーツ、バニラ、クラフトらしい若々しいが複雑な酒質"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Ardnamurchan AD (NAS)", "type": "常売"},
+        {"name": "Ardnamurchan AD Batch Strength", "type": "常売"},
+        {"name": "Ardnamurchan 10 (予定)", "type": "常売予定"}
+      ],
+      "limited": [
+        {"name": "Single Cask Series", "type": "限定"},
+        {"name": "Paul Launois (Vintage 2014)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Ardnamurchan_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "ncnean": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Ncnean_distillery.jpg/800px-Ncnean_distillery.jpg",
+    "characteristics": "西ハイランド、モルヴァーン半島、ドリムニン。2017年Annabel Thomas氏創業、英国初のネットゼロ炭素排出認証蒸留所。B Corp認証(2022)。スチル1対、年産10万L(小規模)。100%再生可能電力、100%リサイクルガラスボトル。ノンピートのシングルモルトに特化。亡きJim Swan氏(初代マスターディスティラー)、現Gordon Wood氏。",
+    "signature": {
+      "name": "Nc'nean Organic Single Malt",
+      "cask": "アメリカン・バーボン樽+レッドワイン樽",
+      "color": "ペールゴールド",
+      "taste": "フルーティ(トロピカル、桃、シトラス)、ハニー、軽いスパイス、モダンで革新的なハイランド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Nc'nean Organic Single Malt (NAS)", "type": "常売"},
+        {"name": "Nc'nean Botanical Spirit (熟成前ボタニカル)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Quiet Rebels シリーズ(Lorna/Gordon/etc)", "type": "限定シリーズ"},
+        {"name": "Huntress Vintage 2022/2023/2024/2025", "type": "限定"},
+        {"name": "Aon (ドイツ専用単樽)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Nc%27nean_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "wolfburn": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Wolfburn_distillery.jpg/800px-Wolfburn_distillery.jpg",
+    "characteristics": "北ハイランド、ケイスネス、サーソー。スコットランド本土最北の蒸留所。1821年創業→1860年代閉鎖、2013年現Aurora Brewing社が旧跡から約350m離れた場所で再開。スチル1対、年産12.5万L(小規模)。仕込み水はウルフバーン川。2016年2月初リリース。",
+    "signature": {
+      "name": "Wolfburn Northland",
+      "cask": "アメリカンオーク・バーボン樽",
+      "color": "ゴールド",
+      "taste": "軽いピート、海潮、ハニー、モルト、フルーティ、クリーミーでソフトなハイランド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Wolfburn Northland (NAS)", "type": "常売"},
+        {"name": "Wolfburn Morven (NAS, ピーテッド)", "type": "常売"},
+        {"name": "Wolfburn Aurora (NAS, シェリー樽)", "type": "常売"},
+        {"name": "Wolfburn Langskip (NAS, カスクストレングス)", "type": "常売"},
+        {"name": "Wolfburn 10 (2023)", "type": "常売"},
+        {"name": "Wolfburn 12 (2025)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Wolfburn 8 (2025, 2種)", "type": "限定"},
+        {"name": "Single Cask Series", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Wolfburn_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "kingsbarns": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Kingsbarns_distillery.jpg/800px-Kingsbarns_distillery.jpg",
+    "characteristics": "ローランド、ファイフ、キングスバーンズ(セント・アンドルーズ近郊)。2014年Douglas Clement氏(元ゴルフキャディ)創業、Wemyss Malts所有。スチル1対、年産20万L。仕込み水は現地ボアホール。Darnley's Ginも併売(2017〜)。2022年12月の米国市場進出と12棟の保税倉庫拡張を発表。",
+    "signature": {
+      "name": "Kingsbarns Balcomie",
+      "cask": "オロロソ・シェリー樽",
+      "color": "ディープゴールド",
+      "taste": "シェリーの甘さ、ドライフルーツ、オレンジ、バニラ、スパイス、柔らかなローランドキャラクター"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Kingsbarns Dream to Dram (NAS)", "type": "常売"},
+        {"name": "Kingsbarns Balcomie (シェリー)", "type": "常売"},
+        {"name": "Kingsbarns Bell Rock (STR樽)", "type": "常売"},
+        {"name": "Kingsbarns Doocot (Pineau des Charentes)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Distillery Cask Series", "type": "限定"},
+        {"name": "Darnley's Gin Original/Spiced/Navy Strength", "type": "併売ジン"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Kingsbarns_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "blair_athol": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Blair_Athol_distillery.jpg/800px-Blair_Athol_distillery.jpg",
     "characteristics": "南ハイランド、パースシャー、ピトロッホリー村南端、トゥンメル川沿い。1798年創業(元名Aldour)、Diageo所有。スチル2対、年産250万L。仕込み水はオールト・ドゥア川。生産量の大半は'Bell's'ブレンデッドウイスキー用。Flora & Fauna 26蒸留所の1つで12年表記に継承。1932-1949年沈黙、1973年スチル増設。",
