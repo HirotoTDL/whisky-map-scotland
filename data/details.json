@@ -1,26 +1,439 @@
 {
-  "_schema": {
-    "description": "詳細データ: 蒸留所の画像・特徴・ボトルリスト",
-    "structure": {
-      "<distillery_id>": {
-        "image": "蒸留所外観画像URL",
-        "characteristics": "蒸留所の特徴（テキスト）",
-        "signature": {
-          "name": "顔となるボトル名",
-          "cask": "使用樽",
-          "color": "色",
-          "taste": "味の特徴"
-        },
-        "bottles": {
-          "core": [{"name": "...", "image": "...", "type": "..."}],
-          "limited": [{"name": "...", "image": "...", "type": "..."}],
-          "flora_fauna": {"name": "...", "image": "...", "type": "..."}
-        },
-        "sources": ["URL1", "URL2"],
-        "verified": false,
-        "verified_by": null,
-        "last_updated": null
-      }
-    }
+  "macallan": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Macallan_distillery_new.jpg/800px-Macallan_distillery_new.jpg",
+    "characteristics": "スコットランド・スペイサイド地方のエルチーズにある蒸留所。2018年に完成した最新の蒸留棟は12基のウォッシュスチル(13,000L)、24基のスピリットスチル(3,900L)を持つ、スコットランドでも屈指の規模。仕込み水はスペイ川。シェリー樽熟成を軸とした濃厚なスタイルで知られる。",
+    "signature": {
+      "name": "Macallan 12 Year Old Sherry Oak",
+      "cask": "スペイン・ヘレス産のオロロソ・シェリー樽",
+      "color": "豊かなアンバー〜マホガニー",
+      "taste": "ドライフルーツ、スパイス、オレンジの皮、オーク。フルボディでリッチ、長く続くフィニッシュ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Sherry Oak 12", "type": "常売", "image": "https://www.themacallan.com/-/media/themacallan-v3/images/whisky/pdp/2023/sherry-oak-12/tm-sherry-oak-12yo-product-front-700.png"},
+        {"name": "Sherry Oak 18", "type": "常売"},
+        {"name": "Double Cask Gold", "type": "常売"},
+        {"name": "Double Cask 12", "type": "常売"},
+        {"name": "Triple Cask 12", "type": "常売"},
+        {"name": "Rare Cask", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "The Red Collection (40-78yo)", "type": "限定"},
+        {"name": "Six Pillars Collection", "type": "限定"},
+        {"name": "Masters of Photography", "type": "限定"},
+        {"name": "Archival Series (Folio 1-7)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/The_Macallan_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "ardbeg": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Ardbeg_distillery_-_geograph.org.uk_-_1372183.jpg/800px-Ardbeg_distillery_-_geograph.org.uk_-_1372183.jpg",
+    "characteristics": "アイラ島南岸にある蒸留所。1815年創業、1997年以降はLVMHグループ(Moët Hennessy)傘下。2基のウォッシュスチルと2基のスピリットスチル、ウイガダル湖を仕込み水とする。ヘビーピーテッド(55ppm)の重厚なスモーキーさで世界中のピートマニアから絶大な支持。",
+    "signature": {
+      "name": "Ardbeg Ten (10年)",
+      "cask": "バーボン樽主体、一部シェリー樽",
+      "color": "ペールゴールド",
+      "taste": "強烈なスモーク、海塩、バニラ、柑橘、レモンピール、チョコレート、スパイスの複雑な層"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Ardbeg TEN (10年)", "type": "常売"},
+        {"name": "Wee Beastie (5年)", "type": "常売"},
+        {"name": "An Oa", "type": "常売"},
+        {"name": "Uigeadail", "type": "常売"},
+        {"name": "Corryvreckan", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Ardbeg Galileo", "type": "限定", "note": "2013 World's Best Single Malt受賞"},
+        {"name": "The Abyss (2024)", "type": "限定", "note": "250本限定"},
+        {"name": "Ardbeg Day (毎年)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Ardbeg_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "lagavulin": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Lagavulin_Distillery_-_geograph.org.uk_-_1508469.jpg/800px-Lagavulin_Distillery_-_geograph.org.uk_-_1508469.jpg",
+    "characteristics": "アイラ島南岸、1816年創業。Diageo所有。梨型のポットスチルでゆっくりとした蒸留(スコットランド最長クラス)を行うことで知られ、フロアモルティングはもう行っていないが、重厚なピートスモークと長期熟成による複雑さが特徴。ピート度約35-45ppm。",
+    "signature": {
+      "name": "Lagavulin 16 Year Old",
+      "cask": "バーボン樽主体、一部シェリー樽",
+      "color": "深いアンバー",
+      "taste": "濃厚なピートスモーク、ヨード、海潮、ドライフルーツ、タバコ、リッチで長いフィニッシュ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Lagavulin 8 Year Old", "type": "常売"},
+        {"name": "Lagavulin 12 Year Old (Cask Strength)", "type": "常売(毎年)"},
+        {"name": "Lagavulin 16 Year Old", "type": "常売"},
+        {"name": "Distiller's Edition (PXフィニッシュ)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Lagavulin 25", "type": "限定"},
+        {"name": "Lagavulin 37", "type": "限定(希少)"},
+        {"name": "Offerman Edition", "type": "限定", "note": "俳優Nick Offermanコラボ"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Lagavulin_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "laphroaig": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Laphroaig_distillery_%28geograph_2067240%29.jpg/800px-Laphroaig_distillery_%28geograph_2067240%29.jpg",
+    "characteristics": "アイラ島南岸、ポートエレン近郊。1815年創業、Suntory Global Spirits傘下(2014〜)。3基のウォッシュスチルと4基のスピリットスチル(1基は特異な形状)。アイラ島で手切りのピートを使用し、一部フロアモルティングも維持。英国皇室(1994年〜プリンス・オブ・ウェールズ)から唯一ロイヤルワラントを受けたスコッチ。",
+    "signature": {
+      "name": "Laphroaig 10 Year Old",
+      "cask": "ファーストフィル・バーボン樽",
+      "color": "ゴールド",
+      "taste": "海潮、ヨード、タール、薬品(消毒液)、ピートスモーク、バニラ、甘い余韻。最もリッチなスコッチと称される"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Laphroaig 10 Year Old", "type": "常売"},
+        {"name": "Quarter Cask", "type": "常売"},
+        {"name": "Select", "type": "常売"},
+        {"name": "Lore", "type": "常売"},
+        {"name": "Càirdeas (毎年)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Laphroaig 15 Year Old", "type": "常売(再発売)"},
+        {"name": "Laphroaig 25 Year Old", "type": "限定"},
+        {"name": "Laphroaig 27 Year Old", "type": "限定(希少)"},
+        {"name": "Laphroaig 32 Year Old", "type": "限定(希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Laphroaig_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glenfiddich": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Glenfiddich_distillery.jpg/800px-Glenfiddich_distillery.jpg",
+    "characteristics": "スペイサイド地方ダフタウン。1886年創業(William Grant & Sons)。43基の手作り銅製ポットスチル、仕込み水はロビー・ドゥー泉。世界で最も売れているシングルモルトの一つ(35%シェア)。鹿のロゴはゲール語'Gleann Fhiodhaich'(鹿の谷)に由来。",
+    "signature": {
+      "name": "Glenfiddich 12 Year Old",
+      "cask": "アメリカン・バーボン樽 + スペイン産シェリー樽 + カリビアン・ラム樽",
+      "color": "ゴールド",
+      "taste": "フレッシュな洋ナシ、リンゴ、オーク、ほのかなオーク由来のスパイス、軽快で親しみやすい"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glenfiddich 12", "type": "常売"},
+        {"name": "Glenfiddich 15 Solera", "type": "常売"},
+        {"name": "Glenfiddich 18", "type": "常売"},
+        {"name": "Glenfiddich 21 Gran Reserva", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Glenfiddich 26 Excellence", "type": "限定"},
+        {"name": "Glenfiddich 30", "type": "限定"},
+        {"name": "Glenfiddich 40", "type": "限定(希少)"},
+        {"name": "Grande Couronne 26 (コニャック樽)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glenfiddich_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glenmorangie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Glenmorangie_Distillery_-_geograph.org.uk_-_508834.jpg/800px-Glenmorangie_Distillery_-_geograph.org.uk_-_508834.jpg",
+    "characteristics": "北ハイランド、テイン。1843年創業、LVMH傘下(2004〜)。スコットランドで最も高いポットスチル(8m)を持ち、その結果銅との接触が多く軽やかで複雑な酒質を生む。オザーク森林産の自社管理バーボン樽を使用。",
+    "signature": {
+      "name": "Glenmorangie The Original 10 Year Old",
+      "cask": "ファーストフィル・バーボン樽(自社管理のオザーク森林産オーク)",
+      "color": "ゴールド",
+      "taste": "シトラス、バニラ、花、桃、バタースコッチ、ナッツ。非常に軽やかでフローラル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "The Original 10", "type": "常売"},
+        {"name": "Lasanta (シェリー樽フィニッシュ)", "type": "常売"},
+        {"name": "Quinta Ruban (ポート樽フィニッシュ)", "type": "常売"},
+        {"name": "Nectar D'Or (ソーテルヌ樽フィニッシュ)", "type": "常売"},
+        {"name": "The Nectar 16", "type": "常売"},
+        {"name": "18 Year Old", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Tale of Cake / Winter / Forest / Tokyo", "type": "限定シリーズ"},
+        {"name": "Barrel Select Release", "type": "限定"},
+        {"name": "Signet", "type": "限定(高熟成、ロースト・モルト使用)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glenmorangie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "talisker": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Talisker_distillery.jpg/800px-Talisker_distillery.jpg",
+    "characteristics": "スカイ島カーボスト、唯一の蒸留所(当時)。1830年創業、Diageo所有。5基のスチル(ウォッシュ2+スピリット3)とワームタブ凝縮器を採用。ミディアムピート(18-22ppm)、仕込み水はホーク・ヒル泉。'アイランズ'スタイルの代表格。",
+    "signature": {
+      "name": "Talisker 10 Year Old",
+      "cask": "アメリカンオーク(バーボン樽)主体",
+      "color": "アンバー",
+      "taste": "海潮、黒胡椒、スモーキー、甘いシトラス、リッチなモルト、長く続くペッパリーなフィニッシュ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Talisker 10", "type": "常売"},
+        {"name": "Talisker 18", "type": "常売"},
+        {"name": "Talisker Skye", "type": "常売"},
+        {"name": "Talisker Storm", "type": "常売"},
+        {"name": "Talisker 57° North", "type": "常売"},
+        {"name": "Talisker Port Ruighe", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Talisker 25", "type": "限定"},
+        {"name": "Talisker 30", "type": "限定"},
+        {"name": "Distiller's Edition", "type": "限定(毎年)"},
+        {"name": "Wilder Seas", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Talisker_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "highland_park": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Highland_Park_Distillery.jpg/800px-Highland_Park_Distillery.jpg",
+    "characteristics": "オークニー諸島カークウォール、スコットランド最北のシングルモルト蒸留所。1798年創業、Edrington Group所有。オークニー産のヘザー豊富なピートを使用することで花のようなピートスモークを生む。シェリー樽(スペイン・オロロソ系)熟成を中心に、年間250万L生産。",
+    "signature": {
+      "name": "Highland Park 12 Year Old Viking Honour",
+      "cask": "スペイン産シェリー樽(アメリカンオーク+ヨーロピアンオーク)",
+      "color": "ディープゴールド",
+      "taste": "ヘザー・ハニー、オレンジ、ドライフルーツ、ほのかなスモーク、スパイスの余韻"
+    },
+    "bottles": {
+      "core": [
+        {"name": "12 Year Old Viking Honour", "type": "常売"},
+        {"name": "15 Year Old Viking Heart", "type": "常売"},
+        {"name": "18 Year Old Viking Pride", "type": "常売"},
+        {"name": "21 Year Old", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "25 Year Old", "type": "限定"},
+        {"name": "Cask Strength Release", "type": "限定"},
+        {"name": "Single Cask Series", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Highland_Park_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "bowmore": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Bowmore_distillery.jpg/800px-Bowmore_distillery.jpg",
+    "characteristics": "アイラ島南東岸(インダール湾)、1779年創業。アイラ島最古の稼働蒸留所。Suntory Global Spirits所有。伝統的なフロアモルティングを維持、木製ウォッシュバックを使用。仕込み水はラガン川。アイラのピート(中程度)と海風熟成による'海の影響'が特徴。熟成庫の一部は海面下。蒸留廃熱は地元プールの温水に再利用。",
+    "signature": {
+      "name": "Bowmore 12 Year Old",
+      "cask": "アメリカンオーク(86%)+シェリー樽(14%)",
+      "color": "ゴールド",
+      "taste": "穏やかなピートスモーク、海潮、シトラス、蜂蜜、チョコレート、バランスの取れたスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Bowmore 12", "type": "常売"},
+        {"name": "Bowmore 15 Darkest", "type": "常売"},
+        {"name": "Bowmore 18", "type": "常売"},
+        {"name": "Bowmore 25", "type": "常売"},
+        {"name": "No.1 / No.3", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Bowmore Arc-52 (Aston Martinコラボ)", "type": "限定"},
+        {"name": "French Oak Barrique", "type": "限定"},
+        {"name": "Manzanilla Cask", "type": "限定"},
+        {"name": "Black Bowmore", "type": "限定(希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Bowmore_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glenlivet": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Glenlivet_Distillery.jpg/800px-Glenlivet_Distillery.jpg",
+    "characteristics": "スペイサイド、バリンダロッホ近郊。1824年にGeorge Smithにより創業、ハイランド初の合法蒸留所。Chivas Brothers(Pernod Ricard)所有。14基のランタン型ポットスチル(ウォッシュ7+スピリット7)、仕込み水はジョージーズ・ウェル。世界2位のシングルモルト売上。",
+    "signature": {
+      "name": "The Glenlivet 12 Year Old",
+      "cask": "アメリカン・バーボン樽+フレンチオーク樽",
+      "color": "ペールゴールド",
+      "taste": "蜂蜜、洋ナシ、バニラ、トロピカルフルーツ、スムースで軽やか、エレガントなフィニッシュ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Founder's Reserve", "type": "常売"},
+        {"name": "Caribbean Reserve", "type": "常売"},
+        {"name": "12 Year Old", "type": "常売"},
+        {"name": "15 French Oak Reserve", "type": "常売"},
+        {"name": "18 Year Old", "type": "常売"},
+        {"name": "21 Archive", "type": "常売"},
+        {"name": "25 Year Old", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Cellar Collection (1959-1983 cask strength)", "type": "限定"},
+        {"name": "Enigma / Captain's Reserve (免税)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/The_Glenlivet_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "dalmore": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dalmore_Distillery.jpg/800px-Dalmore_Distillery.jpg",
+    "characteristics": "北ハイランド、アルネス。1839年創業、Whyte & Mackay(Alliance Global)所有。仕込み水はアヴェロン川/ロッホ・モーリー。スピリットスチルには水平型シェル&チューブ凝縮器を採用。12年を基本に長期熟成、ゴンサレス・ビアス社の特別シェリー樽(マスターディスティラーRichard Paterson氏選定)で仕上げる高級ラインが有名。シンボルは12本角の雄鹿。",
+    "signature": {
+      "name": "Dalmore 12 Year Old",
+      "cask": "アメリカン・バーボン樽+マツサラ・オロロソ・シェリー樽",
+      "color": "ディープゴールド〜マホガニー",
+      "taste": "オレンジマーマレード、チョコレート、コーヒー、ダークフルーツ、シナモン、スムースでリッチ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Dalmore 12", "type": "常売"},
+        {"name": "Dalmore 15", "type": "常売"},
+        {"name": "Dalmore 18", "type": "常売"},
+        {"name": "Dalmore 25", "type": "常売"},
+        {"name": "King Alexander III", "type": "常売"},
+        {"name": "Cigar Malt Reserve", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Dalmore Trinitas (2010, 3本のみ)", "type": "限定(希少)"},
+        {"name": "Paterson Collection (2013, £987,500)", "type": "限定(希少)"},
+        {"name": "Dalmore Constellation Collection", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Dalmore_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "balvenie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Balvenie_distillery.jpg/800px-Balvenie_distillery.jpg",
+    "characteristics": "スペイサイド、ダフタウン。1892年創業(William Grant & Sons)、Glenfiddichの姉妹蒸留所。5基のウォッシュスチル、6基のスピリットスチル。スコットランドで残り僅か7蒸留所のフロアモルティング(自家大麦)実施蒸留所の一つ。仕込み水はロビー・ドゥー泉。元マスターモルトメイカーDavid Stewart MBE氏が考案したウッドフィニッシュ(ダブルウッド)が伝統。",
+    "signature": {
+      "name": "Balvenie DoubleWood 12 Year Old",
+      "cask": "バーボン樽熟成→オロロソ・シェリー樽フィニッシュ",
+      "color": "ゴールド",
+      "taste": "蜂蜜、バニラ、シナモン、オレンジ、シェリーの甘さ、ナッツ、クリーミーなテクスチャ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "DoubleWood 12", "type": "常売"},
+        {"name": "Caribbean Cask 14", "type": "常売"},
+        {"name": "French Oak 16", "type": "常売"},
+        {"name": "PortWood 21", "type": "常売"},
+        {"name": "Stories シリーズ (The Sweet Toast of American Oak 12 等)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Islay Cask 17 (2001)", "type": "限定"},
+        {"name": "Peated Cask 17 (2010)", "type": "限定"},
+        {"name": "DCS Compendium (1960s〜ヴィンテージ単樽)", "type": "限定(超希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Balvenie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "aberlour": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Aberlour_distillery.jpg/800px-Aberlour_distillery.jpg",
+    "characteristics": "スペイサイド、スペイ川沿いのアバロア村。1879年James Fleming氏創業、現在Chivas Brothers(Pernod Ricard)所有。仕込み水はバーケンブッシュ泉・ターゲット泉。スチル4基(ウォッシュ2+スピリット2)。バーボン樽主体に加え、シェリー・ポート樽フィニッシュを得意とする。カスクストレングス'A'bunadh'が象徴的。",
+    "signature": {
+      "name": "Aberlour 12 Double Cask Matured",
+      "cask": "アメリカン・バーボン樽+オロロソ・シェリー樽",
+      "color": "ディープアンバー",
+      "taste": "ドライフルーツ(レーズン、イチジク)、シナモン、オレンジ、オーク由来のスパイス、リッチな甘さ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "10 Year Old", "type": "常売"},
+        {"name": "12 Double Cask Matured", "type": "常売"},
+        {"name": "14 Double Cask", "type": "常売"},
+        {"name": "16 Double Cask Matured", "type": "常売"},
+        {"name": "18 Year Old", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "A'bunadh (Batch毎、カスクストレングス・シェリー樽)", "type": "限定(バッチ毎)"},
+        {"name": "A'bunadh Alba (バーボン樽カスクストレングス)", "type": "限定"},
+        {"name": "Aberlour 30 Year Old", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Aberlour_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "springbank": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Springbank_Distillery.jpg/800px-Springbank_Distillery.jpg",
+    "characteristics": "キャンベルタウン唯一の家族経営蒸留所。1828年創業、J&A Mitchell所有。'スコットランドで唯一、麦芽の製造から瓶詰めまで全工程を自社で行う'ことで有名。3つのブランド(スプリングバンク、ロングロウ、ヘーゼルバーン)を作り分ける伝統。年産75万L。",
+    "signature": {
+      "name": "Springbank 10 Year Old",
+      "cask": "バーボン樽(60%) + シェリー樽(40%)",
+      "color": "ゴールド",
+      "taste": "ピート(軽〜中)、ブリニー(塩気)、バニラ、ドライフルーツ、オイリーなテクスチャ、キャンベルタウンの海風感"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Springbank 10", "type": "常売"},
+        {"name": "Springbank 12 Cask Strength", "type": "常売(バッチ毎)"},
+        {"name": "Springbank 15", "type": "常売"},
+        {"name": "Springbank 18", "type": "常売"},
+        {"name": "Longrow Peated (NAS)", "type": "常売"},
+        {"name": "Hazelburn 10 (ノンピート、3回蒸留)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Springbank 21 / 25", "type": "限定"},
+        {"name": "Local Barley シリーズ", "type": "限定"},
+        {"name": "Longrow Red / 18", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Springbank_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "dalwhinnie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Dalwhinnie_Distillery.jpg/800px-Dalwhinnie_Distillery.jpg",
+    "characteristics": "ハイランド中央部、標高326mに位置するスコットランド最高所の蒸留所。1898年創業、Diageo所有。仕込み水はアルト・アン・トゥルーク泉。年産130万L。1988年'クラシック・モルト・オブ・スコットランド'6蒸留所の一つに選定。ヒース豊富な高地の雪解け水と冷涼な気候が軽快でハニー質な酒質を生む。",
+    "signature": {
+      "name": "Dalwhinnie 15 Year Old",
+      "cask": "アメリカンオーク・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "蜂蜜、ヘザー、バニラ、洋ナシ、ほのかなスモーク、非常に軽やかで飲みやすい'入門モルト'"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Dalwhinnie 15", "type": "常売"},
+        {"name": "Winter's Gold", "type": "常売"},
+        {"name": "Distiller's Edition (オロロソフィニッシュ)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Dalwhinnie 25", "type": "限定"},
+        {"name": "Dalwhinnie 29", "type": "限定"},
+        {"name": "Dalwhinnie 36", "type": "限定(希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Dalwhinnie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "oban": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Oban_distillery.jpg/800px-Oban_distillery.jpg",
+    "characteristics": "西ハイランド、オーバン町の中心にある小さな蒸留所(スコットランド最小級)。1794年Stevenson兄弟創業、Diageo所有。ポットスチル僅か2基、年産67万L。仕込み水はアードコンネル山中の2つの湖。1988年クラシック・モルト・オブ・スコットランドに選定。西ハイランド特有の'アイランドとハイランドの中間'の個性。",
+    "signature": {
+      "name": "Oban 14 Year Old",
+      "cask": "アメリカンオーク・バーボン樽",
+      "color": "ゴールド〜アンバー",
+      "taste": "オレンジピール、海潮、蜂蜜、スパイス、軽いスモーク、長いフィニッシュ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Oban 14", "type": "常売"},
+        {"name": "Oban 18", "type": "常売"},
+        {"name": "Oban Little Bay (NAS)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Oban 21", "type": "限定"},
+        {"name": "Oban 32 (6,000本限定)", "type": "限定"},
+        {"name": "Distiller's Edition (Montilla Finoフィニッシュ)", "type": "限定"},
+        {"name": "Soul of Calypso 11 (カリビアンラム樽, 2023)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Oban_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
   }
 }
