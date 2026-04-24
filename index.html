@@ -10,7 +10,40 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Helvetica Neue', 'Hiragino Sans', 'Meiryo', sans-serif; color: #2d1810; background: #f5ede0; }
-  #app { display: grid; grid-template-columns: 1fr 420px; height: 100vh; }
+  #app { display: grid; grid-template-columns: 280px 1fr 420px; height: 100vh; }
+  #region-list {
+    overflow-y: auto; background: #f5ede0; border-right: 2px solid #8b5a2b;
+    padding: 12px 0;
+  }
+  .region-section { margin-bottom: 4px; }
+  .region-header {
+    padding: 10px 14px; cursor: pointer; user-select: none;
+    font-family: Georgia, serif; font-size: 13px; font-weight: 700;
+    color: #5a2d0c; background: #e8d8bf; border-bottom: 1px solid #c8a876;
+    display: flex; align-items: center; justify-content: space-between;
+    transition: background 0.15s;
+  }
+  .region-header:hover { background: #ddc59d; }
+  .region-header .count { font-size: 11px; color: #8b5a2b; font-weight: normal; }
+  .region-header .toggle { margin-right: 8px; font-size: 10px; transition: transform 0.2s; }
+  .region-section.collapsed .toggle { transform: rotate(-90deg); }
+  .region-section.collapsed .region-items { display: none; }
+  .region-items { padding: 4px 0; background: #fdfaf3; }
+  .region-item {
+    padding: 6px 14px 6px 28px; cursor: pointer; font-size: 12px;
+    border-left: 3px solid transparent; transition: all 0.1s;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .region-item:hover { background: #f9f3e7; border-left-color: #8b5a2b; }
+  .region-item.active { background: #e8d8bf; border-left-color: #5a2d0c; font-weight: 600; }
+  .region-item .dist-name { color: #2d1810; }
+  .region-item .dist-ja { color: #8b5a2b; font-size: 10px; margin-top: 1px; }
+  .region-item .has-detail { font-size: 9px; color: #1a7a5a; }
+  .subregion-header {
+    padding: 5px 14px 3px 20px; font-size: 11px; color: #8b5a2b;
+    font-weight: 700; background: #f0e4d2; text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
   #map-container { position: relative; }
   #map { width: 100%; height: 100%; }
   header {
@@ -95,8 +128,13 @@
   }
   .region-chip.active { background: #8b5a2b; color: #fff; }
 
+  @media (max-width: 1100px) {
+    #app { grid-template-columns: 1fr 380px; }
+    #region-list { display: none; }
+  }
   @media (max-width: 900px) {
     #app { grid-template-columns: 1fr; grid-template-rows: 60vh 40vh; }
+    #region-list { display: none; }
     #detail-panel { border-left: none; border-top: 2px solid #8b5a2b; }
     header { flex-direction: column; align-items: flex-start; gap: 8px; }
     #search-results { width: calc(100% - 40px); }
@@ -105,6 +143,7 @@
 </head>
 <body>
 <div id="app">
+  <aside id="region-list"></aside>
   <div id="map-container">
     <header>
       <h1>Whisky Distilleries in Scotland <span class="year">2023</span></h1>
@@ -165,6 +204,68 @@ async function loadData() {
   initFilter();
   initSearch();
   renderMarkers();
+  renderRegionList();
+}
+
+function renderRegionList() {
+  const container = document.getElementById('region-list');
+  if (!container) return;
+  const regionOrder = ['Highland', 'Speyside', 'Islay', 'Islands', 'Lowland', 'Campbeltown'];
+  const grouped = {};
+  for (const d of allDistilleries) {
+    if (!grouped[d.region]) grouped[d.region] = [];
+    grouped[d.region].push(d);
+  }
+  let html = '';
+  for (const region of regionOrder) {
+    const list = grouped[region] || [];
+    list.sort((a, b) => a.name_en.localeCompare(b.name_en));
+    const subregions = {};
+    for (const d of list) {
+      const k = d.subregion || '';
+      if (!subregions[k]) subregions[k] = [];
+      subregions[k].push(d);
+    }
+    const subKeys = Object.keys(subregions).sort();
+    html += `<div class="region-section" data-region="${region}">
+      <div class="region-header" onclick="toggleRegion('${region}')">
+        <span><span class="toggle">▼</span>${region}</span>
+        <span class="count">${list.length}</span>
+      </div>
+      <div class="region-items">`;
+    for (const sk of subKeys) {
+      if (sk && subKeys.length > 1) html += `<div class="subregion-header">${sk}</div>`;
+      for (const d of subregions[sk]) {
+        const hasDetail = !!detailData[d.id];
+        html += `<div class="region-item" data-id="${d.id}" onclick="selectFromList('${d.id}')" title="${d.town || ''}">
+          <div>
+            <div class="dist-name">${d.name_en}${hasDetail ? ' <span class="has-detail">✓</span>' : ''}</div>
+            <div class="dist-ja">${d.name_ja}</div>
+          </div>
+        </div>`;
+      }
+    }
+    html += '</div></div>';
+  }
+  container.innerHTML = html;
+}
+
+function toggleRegion(region) {
+  const sec = document.querySelector(`.region-section[data-region="${region}"]`);
+  if (sec) sec.classList.toggle('collapsed');
+}
+
+function selectFromList(id) {
+  const d = allDistilleries.find(x => x.id === id);
+  if (!d || !d.lat) return;
+  map.setView([d.lat, d.lon], 12);
+  if (markers[id]) {
+    setTimeout(() => markers[id].openPopup(), 300);
+  }
+  showDetail(id);
+  document.querySelectorAll('.region-item').forEach(el => el.classList.remove('active'));
+  const activeEl = document.querySelector(`.region-item[data-id="${id}"]`);
+  if (activeEl) activeEl.classList.add('active');
 }
 
 function initMap() {
@@ -319,7 +420,7 @@ function showDetail(id) {
       ${d.note ? `<dt>備考</dt><dd>${d.note}</dd>` : ''}
     </dl>
 
-    ${detail.image ? `<div class="section"><h3>外観</h3><img class="distillery-image" src="${detail.image}" alt="${d.name_en}" onerror="this.style.display='none'"></div>` : ''}
+    ${detail.image ? `<div class="section"><h3>外観</h3><img class="distillery-image" src="${detail.image}" alt="${d.name_en}" onerror="this.parentElement.style.display='none'" referrerpolicy="no-referrer"></div>` : ''}
 
     ${detail.characteristics ? `
       <div class="section">
