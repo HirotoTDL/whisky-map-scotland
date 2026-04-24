@@ -850,6 +850,74 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "isle_of_harris": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Isle_of_Harris_distillery.jpg/800px-Isle_of_Harris_distillery.jpg",
+    "characteristics": "外ヘブリディーズ諸島ハリス島タルベート。2015年創業、ハリス島初の合法蒸留所。投資総額£1,000万。スチル2基(ウォッシュ7,000L+スピリット5,000L)、年産23万L。初期は'Harris Gin'(砂糖海藻使用、2021年WGAゴールド受賞)で知名度確立。2023年秋、待望のシングルモルト'The Hearach'(ハリス島民の意)をリリース。2017年時点で来訪者14万人以上、17の賞受賞。",
+    "signature": {
+      "name": "The Hearach",
+      "cask": "バーボン樽+シェリー樽+ワイン樽",
+      "color": "ゴールド",
+      "taste": "軽いピート、海風、ヘザーハニー、トロピカルフルーツ、ハリス島のテロワールを表現"
+    },
+    "bottles": {
+      "core": [
+        {"name": "The Hearach (2023〜)", "type": "常売"},
+        {"name": "Harris Gin (海藻botanical, 2021 WGA Gold)", "type": "常売ジン"}
+      ],
+      "limited": [
+        {"name": "Founders Edition", "type": "限定"},
+        {"name": "Cask Samples", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Isle_of_Harris_Distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "bonnington": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bonnington_distillery.jpg/800px-Bonnington_distillery.jpg",
+    "characteristics": "ローランド、エジンバラ、リース。2019年創業、Halewood Artisanal Spirits所有、2020年3月蒸留開始。スチル1対、年産50万L。ノンピート/ピーテッド両方を製造。複数の変わり種樽(ルビーポート、PX、ミュスカ)で熟成。2024年1月初リリース(単樽ルビーポート、500本)。",
+    "signature": {
+      "name": "Bonnington Inaugural Release (ルビーポート単樽)",
+      "cask": "ルビーポート樽主体、PX・ミュスカ樽も使用",
+      "color": "ディープゴールド〜ルビー",
+      "taste": "デザートワイン、ドライペア、シトラス、タンニン、スイート、クラフトな甘み重視"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Bonnington Single Malt (2025年8月〜, 47%)", "type": "常売"},
+        {"name": "Bonnington Peated (51%)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Inaugural Single Cask (Ruby Port, 2024)", "type": "限定(500本)"},
+        {"name": "PX Cask / Muscat Cask Series", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Bonnington_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "ardnahoe": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ardnahoe_distillery.jpg/800px-Ardnahoe_distillery.jpg",
+    "characteristics": "アイラ島北東岸、ポート・アスケイグの北、Caol IlaとBunnahabhainの間。2019年4月開業(15年ぶりのアイラ新設)、Hunter Laing & Company所有。スチル1対、年産90万L。仕込み水はArdnahoe湖。アイラでは珍しいワームタブ凝縮器を採用。2024年夏に初リリース(5年、バーボン+オロロソ樽)。VisitScotland五つ星ビジターセンター。",
+    "signature": {
+      "name": "Ardnahoe Inaugural Release (2024)",
+      "cask": "Ex-バーボン樽+Ex-オロロソ・シェリー樽",
+      "color": "ゴールド",
+      "taste": "ピートスモーク、ブリニー、シェリーの甘さ、ワームタブ由来のリッチでオイリーな質感、若々しさ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Ardnahoe Inaugural (5年, 2024夏)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Opening Edition", "type": "限定"},
+        {"name": "Single Cask Series", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Ardnahoe_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "arbikie": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Arbikie_distillery.jpg/800px-Arbikie_distillery.jpg",
     "characteristics": "東ハイランド、アンガス、インバーキーラー(ルナン湾東海岸)、2,000エーカーのArbikie Highland Estate農場内。2013年Stirling兄弟(John/Iain/David、4世代目農場主)創業、90%の原材料を自家農場から。年産20万L。2014年スコットランド初のポテトウォッカ、2020年スコットランド約100年ぶりのライウイスキー(Highland Rye)、気候ポジティブなNàdar Ginなどイノベーション重視。2022年ビジターセンター開業。",
