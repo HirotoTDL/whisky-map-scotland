@@ -110,6 +110,7 @@
       <h1>Whisky Distilleries in Scotland <span class="year">2023</span></h1>
       <input type="text" id="search-box" placeholder="蒸留所名を検索 (Search by name / カタカナ / Alphabet)" autocomplete="off" />
       <div id="region-filter"></div>
+      <span id="status-count" style="font-size:11px;color:#8b5a2b;margin-left:8px;">—</span>
     </header>
     <div id="search-results"></div>
     <div id="map"></div>
@@ -200,16 +201,32 @@ function initFilter() {
   });
 }
 
+function createIconFull(d) {
+  const color = REGION_COLORS[d.region] || '#666';
+  const hasDetail = detailData[d.id];
+  const border = hasDetail ? '#fff' : '#ccc';
+  const opacity = hasDetail ? '1' : '0.7';
+  return L.divIcon({
+    className: 'custom-marker',
+    html: `<div style="background:${color};width:18px;height:18px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid ${border};box-shadow:0 1px 3px rgba(0,0,0,0.4);opacity:${opacity};"></div>`,
+    iconSize: [18, 18],
+    iconAnchor: [9, 18]
+  });
+}
+
 function renderMarkers() {
   markerLayer.clearLayers();
   markers = {};
+  let withDetail = 0;
   allDistilleries.forEach(d => {
     if (!activeRegions.has(d.region)) return;
     if (!d.lat || !d.lon) return;
-    const marker = L.marker([d.lat, d.lon], { icon: createIcon(d.region) });
+    const marker = L.marker([d.lat, d.lon], { icon: createIconFull(d) });
+    const hasDetail = !!detailData[d.id];
+    if (hasDetail) withDetail++;
     marker.bindPopup(`
       <div>
-        <div class="popup-title">${d.name_en}</div>
+        <div class="popup-title">${d.name_en}${hasDetail ? ' ✓' : ''}</div>
         <div class="popup-ja">${d.name_ja}</div>
         <div class="popup-region">${d.region}${d.subregion ? ' / ' + d.subregion : ''}</div>
       </div>
@@ -218,6 +235,15 @@ function renderMarkers() {
     markerLayer.addLayer(marker);
     markers[d.id] = marker;
   });
+  updateStatusBar(withDetail);
+}
+
+function updateStatusBar(detailCount) {
+  const el = document.getElementById('status-count');
+  if (el) {
+    const total = allDistilleries.filter(d => activeRegions.has(d.region) && d.lat && d.lon).length;
+    el.textContent = `${total}蒸留所 / 詳細データ: ${detailCount}件 (${Math.round(detailCount/total*100)}%)`;
+  }
 }
 
 function initSearch() {

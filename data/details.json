@@ -850,6 +850,256 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "brora": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Brora_distillery.jpg/800px-Brora_distillery.jpg",
+    "characteristics": "北ハイランド、サザーランド、ブローラ。1819年創業(元名Clynelish)、Diageo所有。1968年に新Clynelishが隣接してオープンした際'Brora'に改称。1969-1973年は主にアイラ島のピート不足対応でヘビーピーテッドを生産(現在の伝説的ブローラ)、1973年以降はライトピート。1983年閉鎖→2021年復活(38年ぶり)。仕込み水はClynemilton川。1972年ヴィンテージ40年(2014年£7,000)はDiageo最高額単品。",
+    "signature": {
+      "name": "Brora 40 Year Old (Legacy)",
+      "cask": "リフィル・バーボン樽",
+      "color": "ディープアンバー",
+      "taste": "ワックス、海潮、軽いピートスモーク、ハニー、レザー、オイリーでレジェンダリー。旧蒸留品は超希少"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Brora Triptych (2021復活記念)", "type": "記念"},
+        {"name": "Brora 50", "type": "限定"}
+      ],
+      "limited": [
+        {"name": "Brora 40 Year Old (2014)", "type": "限定(超希少)"},
+        {"name": "Rare Malts Collection 20/21/22 (1990s)", "type": "限定(希少)"},
+        {"name": "Brora Special Release (2002-2019毎年)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Brora_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "aberfeldy": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Aberfeldy_distillery.jpg/800px-Aberfeldy_distillery.jpg",
+    "characteristics": "南ハイランド、パースシャー、アバフェルディ。1898年John Dewar & Sons創業、Bacardi所有。年産350万L、スチル2対(ウォッシュ16,500L、スピリット15,000L)。仕込み水はPitilie Burn(この川水を使う唯一の蒸留所)。Dewar'sブレンド最大のモルト構成要素。2000年Dewar's World of Whiskyビジターセンター開業。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Aberfeldy 12 Year Old",
+      "cask": "アメリカン・ホワイトオーク(バーボン樽)",
+      "color": "ゴールド",
+      "taste": "ハニー、シナモン、バニラ、オレンジピール、ほのかなスパイス、'Pure Gold'の異名、滑らかで甘い"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Aberfeldy 12 (Pure Gold)", "type": "常売"},
+        {"name": "Aberfeldy 16", "type": "常売"},
+        {"name": "Aberfeldy 18", "type": "常売"},
+        {"name": "Aberfeldy 21", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Aberfeldy 25", "type": "限定"},
+        {"name": "Exceptional Cask (ヴィンテージ)", "type": "限定"},
+        {"name": "Napa Valley Red Wine Cask Finish", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Aberfeldy 15 Flora & Fauna (旧)", "type": "花と動物シリーズ(廃盤)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Aberfeldy_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "edradour": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Edradour_distillery.jpg/800px-Edradour_distillery.jpg",
+    "characteristics": "南ハイランド、パースシャー、ピトロッホリー近郊。1825年創業、Signatory Vintage所有(2002〜)。スコットランド最小級の蒸留所の1つ、スタッフ僅か3名、週18樽のみ生産。年産9.5万L。仕込み水はベン・ブラッキー泉。ノンチル濾過・着色料無添加・キャラメル無使用の伝統維持。ゲール語'Eadar Dhà Dhobhar'(2つの川の間)由来。",
+    "signature": {
+      "name": "Edradour 10 Year Old",
+      "cask": "オロロソ・シェリー樽",
+      "color": "ディープアンバー",
+      "taste": "シェリー、モルト、蜂蜜、ナッツ、ソフトでクリーミー、オイリーなテクスチャ、小規模蒸留所ならではの個性"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Edradour 10", "type": "常売"},
+        {"name": "Edradour 12 Caledonia", "type": "常売"},
+        {"name": "Ballechin (ヘビーピーテッド、週2日のみ生産)", "type": "常売"},
+        {"name": "Ballechin 10", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Straight From The Cask (カスクストレングス)", "type": "限定シリーズ"},
+        {"name": "Super Tuscan Cask / Marsala Cask / Barolo Cask 他", "type": "限定シリーズ"},
+        {"name": "Edradour 30 / 40", "type": "限定(希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Edradour_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "lagg": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Lagg_distillery.jpg/800px-Lagg_distillery.jpg",
+    "characteristics": "アラン島南岸、ラグ。2019年創業、Isle of Arran Distillers所有(Lochranzaの姉妹)。ヘビーピーテッド(約50ppm)に特化。スチル1対、年産50万L。グリーンルーフ+パノラマビジターセンター+カフェ併設(クライド湾を望む)。2024年に325ヘクタールのピートランド再生プロジェクトに参加。",
+    "signature": {
+      "name": "Lagg Kilmory Edition",
+      "cask": "Ex-バーボン樽 (ノンチル濾過)",
+      "color": "ペールゴールド",
+      "taste": "強いピートスモーク、海塩、スパイス、柑橘、フレッシュな草、若々しいアラン島ピート"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Lagg Kilmory Edition (46%)", "type": "常売"},
+        {"name": "Lagg Corriecravie Edition (55%, オロロソ)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Lagg Single Cask Series", "type": "限定"},
+        {"name": "Batch 1 Inaugural (2022)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Lagg_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "saxa_vord": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Saxa_Vord_distillery.jpg/800px-Saxa_Vord_distillery.jpg",
+    "characteristics": "シェットランド諸島ウンスト島ハロールズウィック。英国最北の合法蒸留所、シェットランド初。2014年Nickerson夫妻とStrang夫妻共同創業。年産3万L(超小規模)。ジン(Shetland Reel)中心で、ウイスキーは独立瓶詰で先行販売(2015年Glenglassaugh樽使用の4種)。ウンスト島で部分熟成したブレンデッドモルトがシェットランド初のスコッチ製品。",
+    "signature": {
+      "name": "Shetland Reel Single Malt (ウンスト熟成)",
+      "cask": "Ex-バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "海風、ブリニー(塩気)、軽いピート、ハーブ、フローラル、シェットランドの気候を反映した独特の酒質"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Shetland Reel Single Malt", "type": "常売"},
+        {"name": "Shetland Reel Gin (8種ボタニカル)", "type": "常売ジン"}
+      ],
+      "limited": [
+        {"name": "Glenglassaugh 4種 (2015, Saxa Vord瓶詰)", "type": "限定"},
+        {"name": "Up Helly Aa Cask-Aged Gin", "type": "限定"},
+        {"name": "Space Countdown Gin", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Saxa_Vord_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "knockdhu": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Knockdhu_distillery.jpg/800px-Knockdhu_distillery.jpg",
+    "characteristics": "スペイサイド、バンフシャー、ノック村。1893年創業、Inver House Distillers所有。ブランド名はKnockandoとの混同を避けるため1994年から'anCnoc'(ゲール語で'丘')に変更。スチル1対、年産170万L。仕込み水はノック丘陵の泉。現代的なデザインのボトルと軽快な酒質が特徴。",
+    "signature": {
+      "name": "anCnoc 12 Year Old",
+      "cask": "アメリカン・ホワイトオーク(バーボン樽)",
+      "color": "ゴールド",
+      "taste": "シトラス、青リンゴ、ハニー、バニラ、軽いスパイス、非常にクリーンで軽やか"
+    },
+    "bottles": {
+      "core": [
+        {"name": "anCnoc 12", "type": "常売"},
+        {"name": "anCnoc 18", "type": "常売"},
+        {"name": "anCnoc 24", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "anCnoc Peatheart (ヘビーピート)", "type": "限定"},
+        {"name": "anCnoc Vintage 1994/1995/2005", "type": "限定"},
+        {"name": "anCnoc 30", "type": "限定(希少)"}
+      ],
+      "flora_fauna": {"name": "Knockdhu (anCnoc) Flora & Fauna (旧)", "type": "花と動物シリーズ(anCnoc改称前)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Knockdhu_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "macduff": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Macduff_distillery.jpg/800px-Macduff_distillery.jpg",
+    "characteristics": "東ハイランド、アバディーンシャー、マクダフ港町。1960年創業、John Dewar & Sons (Bacardi)所有。年産240万L、スチル5基(ウォッシュ2+スピリット3、変則構成)。シングルモルトは'Glen Deveron'、近年は'The Deveron'ブランドで展開。William Lawson'sブレンドの重要構成要素。",
+    "signature": {
+      "name": "The Deveron 12 Year Old",
+      "cask": "アメリカン・バーボン樽+オロロソ・シェリー樽",
+      "color": "ゴールド",
+      "taste": "ハニー、ドライフルーツ、リンゴ、バニラ、モルト、スムースでソフトなハイランドスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "The Deveron 10", "type": "常売"},
+        {"name": "The Deveron 12", "type": "常売"},
+        {"name": "The Deveron 18", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Glen Deveron Royal Burgh Collection", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Macduff_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "benriach": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Benriach_distillery.jpg/800px-Benriach_distillery.jpg",
+    "characteristics": "スペイサイド、北部、エルギン近郊。1898年John Duff創業、Brown-Forman所有(2016〜)。年産130万L、スチル4基。仕込み水はバーンサイド泉。2020年代以降、マスターブレンダーDr. Rachel Barrie氏のもと、ノンピート/ライトピート/ヘビーピートの3タイプとロースト大麦を組み合わせた多彩なコアレンジに再編。2015年WWA'Global Whisky Distiller of the Year'。",
+    "signature": {
+      "name": "BenRiach The Original Ten",
+      "cask": "Ex-バーボン+Ex-シェリー+ヴァージンオーク(3樽ブレンド)",
+      "color": "ゴールド",
+      "taste": "トロピカルフルーツ、蜂蜜、バニラ、シナモン、軽いスパイス、フルーティで複雑"
+    },
+    "bottles": {
+      "core": [
+        {"name": "The Original Ten (10年, 43%)", "type": "常売"},
+        {"name": "The Smoky Ten (10年, 46%, ピーテッド)", "type": "常売"},
+        {"name": "The Twelve (12年, 46%)", "type": "常売"},
+        {"name": "The Smoky Twelve (12年, 46%, ピーテッド)", "type": "常売"},
+        {"name": "The Sixteen (16年)", "type": "常売"},
+        {"name": "The Twenty-One (21年)", "type": "常売"},
+        {"name": "The Thirty (30年)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "BenRiach Solstice (17年)", "type": "限定"},
+        {"name": "Quarter Cask Peated", "type": "限定"},
+        {"name": "Single Cask Series", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/BenRiach_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "benrinnes": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Benrinnes_distillery.jpg/800px-Benrinnes_distillery.jpg",
+    "characteristics": "スペイサイド、アバロア、ベンリネス山麓。1826年Peter McKenzie創業(元は'Lyne of Ruthrie')、Diageo所有。年産250万L、スチル6基(ウォッシュ2+スピリット4)。1974-2007年は部分的三回蒸留という独特の工程を採用。ワームタブ凝縮器を今も使用。肉質(ミーティ)で厚みのある酒質が特徴。Flora & Fauna 15年が事実上の公式ボトル。",
+    "signature": {
+      "name": "Benrinnes 15 Flora & Fauna",
+      "cask": "リフィル・シェリー樽+バーボン樽",
+      "color": "ディープアンバー",
+      "taste": "ミーティ、硫黄香、ダークチョコレート、ドライフルーツ、シェリー、肉質のリッチなスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Benrinnes 15 Flora & Fauna", "type": "常売(F&F経由)"}
+      ],
+      "limited": [
+        {"name": "Benrinnes 21 (2014 Special Release)", "type": "限定"},
+        {"name": "Benrinnes 23 (2019 Special Release)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Benrinnes 15 Year Old Flora & Fauna", "type": "花と動物シリーズ(現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Benrinnes_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "royal_brackla": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Royal_Brackla_distillery.jpg/800px-Royal_Brackla_distillery.jpg",
+    "characteristics": "北ハイランド、ネアン近郊、コーダー城領内。1812年Captain William Fraser創業、1833年ウィリアム4世よりロイヤルワラント授与(スコッチ初)。John Dewar & Sons (Bacardi)所有。年産350万L、スチル2対。70時間の長時間発酵+高いリフラックスを狙う背の高いスチルにより軽快な酒質を生む。2019年にシェリーカスク系コアレンジをリローンチ。",
+    "signature": {
+      "name": "Royal Brackla 12 Year Old",
+      "cask": "オロロソ・シェリー樽フィニッシュ",
+      "color": "ディープゴールド",
+      "taste": "シェリー、ドライフルーツ、マジパン、オレンジ、軽いスパイス、エレガントでロイヤル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Royal Brackla 12 (オロロソシェリー)", "type": "常売"},
+        {"name": "Royal Brackla 18 (Palo Cortadoシェリー)", "type": "常売"},
+        {"name": "Royal Brackla 21 (混合シェリー)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Royal Brackla 60 (1991, 1924年樽)", "type": "限定(超希少)"},
+        {"name": "Rare Malts Collection 20 (1998)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Royal Brackla 10 Flora & Fauna (1993)", "type": "花と動物シリーズ(廃盤)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Royal_Brackla_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "lindores_abbey": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Lindores_Abbey.jpg/800px-Lindores_Abbey.jpg",
     "characteristics": "ローランド、ファイフ、ニューバーグ。2017年McKenzie Smith家創業、スコットランドでウイスキー製造が文書化された最古の場所(1494年、Friar John Corの記録)。スチル3基(ウォッシュ1+スピリット2、Forsyths製)、年産26万L。仕込み水はボアホール。Concerto種大麦(地元ファイフ産)使用。初ウイスキー'MCDXCIV'(2021年)。熟成前はAqua Vitaeを販売。",
