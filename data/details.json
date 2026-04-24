@@ -850,6 +850,198 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "glendullan": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Glendullan_distillery.jpg/800px-Glendullan_distillery.jpg",
+    "characteristics": "スペイサイド、ダフタウン。1897年William Williams氏(アバディーン)創業、Diageo所有。年産370万L、スチル6基(ウォッシュ3+スピリット3)。仕込み水はGoats Well泉(Conval Hill由来)。1972年に隣接して2号蒸留所建設(1985年1号閉鎖、2号継続)。Diageoブレンドの主要構成、2023年以降は'The Singleton of Glendullan'として12/15/18年をリリース。",
+    "signature": {
+      "name": "The Singleton of Glendullan 12",
+      "cask": "アメリカン・バーボン樽+オロロソ・シェリー樽",
+      "color": "ディープゴールド",
+      "taste": "ハニー、オレンジ、バニラ、シナモン、軽いオーク、スムースでバランス良い"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Singleton of Glendullan 12", "type": "常売(北米主体)"},
+        {"name": "Singleton of Glendullan 15", "type": "常売"},
+        {"name": "Singleton of Glendullan 18", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Glendullan 12 Flora & Fauna (廃盤)", "type": "限定(廃盤)"},
+        {"name": "Glendullan 36 (2018 Special Release)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Glendullan 12 Flora & Fauna", "type": "花と動物シリーズ(廃盤)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glendullan_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glen_elgin": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Glen_Elgin_distillery.jpg/800px-Glen_Elgin_distillery.jpg",
+    "characteristics": "スペイサイド、Fogwatt村。1898年William Simpson氏・James Carle氏創業、Diageo所有。年産183万L、スチル6基(各7,000〜8,000L)。仕込み水はミルブエス湖泉。White Horseブレンドの'ハート'、1977年からシングルモルトとして瓶詰開始。Flora & Fauna経由の歴史長い。",
+    "signature": {
+      "name": "Glen Elgin 12 Year Old",
+      "cask": "アメリカンオーク(バーボン樽)主体+リフィル・シェリー樽",
+      "color": "ゴールド〜アンバー",
+      "taste": "リッチモルト、ハニー、オレンジ、軽いスパイス、フルーツケーキ、フルボディでバランス良い"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glen Elgin 12", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Glen Elgin 16 (廃盤)", "type": "限定(廃盤)"},
+        {"name": "Glen Elgin 20 (廃盤)", "type": "限定(廃盤)"},
+        {"name": "Cadenhead 18", "type": "独立瓶詰"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glen_Elgin_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glenburgie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Glenburgie_distillery.jpg/800px-Glenburgie_distillery.jpg",
+    "characteristics": "スペイサイド、モーレイ、アルヴェス。Chivas Brothers (Pernod Ricard)所有。年産420万L、スチル6基(ウォッシュ3×11,750L+スピリット3×15,000L)。1927-1935, 2000-2004に閉鎖期。2003-2004年に完全再建。生産量のほぼ全てがBallantine's、Old Smugglerなどのブレンド用。1920-1930年代にMargaret Nichol氏が業界初の女性マネージャーを務めた。",
+    "signature": {
+      "name": "Glenburgie 15 Year Old",
+      "cask": "アメリカン・バーボン樽主体",
+      "color": "ゴールド",
+      "taste": "フレッシュフルーツ、青リンゴ、ハニー、バニラ、軽いスパイス、クリーンでブレンド向き"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glenburgie 15 (Gordon & MacPhail経由)", "type": "常売(独立)"}
+      ],
+      "limited": [
+        {"name": "Glenburgie Single Cask (Chivas Secret Speyside series)", "type": "限定"},
+        {"name": "Ballantine's Master Edition 15", "type": "関連ブレンド"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glenburgie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glentauchers": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Glentauchers_distillery.jpg/800px-Glentauchers_distillery.jpg",
+    "characteristics": "スペイサイド、キース近郊マルベン。1897年創業、Chivas Brothers (Pernod Ricard)所有。1985-1992年沈黙。年産450万L、スチル6基。仕込み水はRosarie川。公式シングルモルト瓶詰は稀で、2000年の15年ボトルのみ。主にBallantine'sブレンド用。Gordon & MacPhailからセミオフィシャル瓶詰あり。",
+    "signature": {
+      "name": "Glentauchers 15 Year Old (独立瓶詰)",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ゴールド",
+      "taste": "フレッシュフルーツ、バニラ、ハニー、モルト、軽くてクリーン、ブレンド向けのニュートラルスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glentauchers 15 (2000 official)", "type": "常売(希少)"}
+      ],
+      "limited": [
+        {"name": "Gordon & MacPhail Generations (各年)", "type": "独立瓶詰"},
+        {"name": "Chivas Secret Speyside Series", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glentauchers_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "dailuaine": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dailuaine_distillery.jpg/800px-Dailuaine_distillery.jpg",
+    "characteristics": "スペイサイド、チャールストン・オブ・アバロア。1852年創業、Diageo所有。年産337万L、スチル6基(ウォッシュ18,700L+スピリット20,500L)。仕込み水はBailliemullich川。1899年、Charles C. Doig氏設計のパゴダルーフがここで誕生し、スコッチ蒸留所の標準デザインになった記念碑的蒸留所。Flora & Fauna経由のみ公式ボトル。",
+    "signature": {
+      "name": "Dailuaine 16 Flora & Fauna",
+      "cask": "シェリー樽主体",
+      "color": "ディープアンバー",
+      "taste": "リッチシェリー、ドライフルーツ、ダークチョコレート、スパイス、厚みのあるボディ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Dailuaine 16 Flora & Fauna", "type": "常売(F&F経由)"}
+      ],
+      "limited": [
+        {"name": "Dailuaine 34 (2020 Special Release)", "type": "限定"},
+        {"name": "Rare Malts Collection 22 (1997)", "type": "限定(廃盤)"}
+      ],
+      "flora_fauna": {"name": "Dailuaine 16 Year Old Flora & Fauna", "type": "花と動物シリーズ(現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Dailuaine_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "inchgower": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Inchgower_distillery.jpg/800px-Inchgower_distillery.jpg",
+    "characteristics": "スペイサイド(ローワー・スペイサイド)、バッキー近郊。1871年創業、Diageo所有。年産199万L、スチル2対。仕込み水はMenduff丘陵泉。Tochineal蒸留所の後継として建設。1903年閉鎖→1938年Arthur Bell & Sons Ltdにより復活。Bell'sブレンドの主要構成要素。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Inchgower 14 Flora & Fauna",
+      "cask": "アメリカン・バーボン樽+リフィル樽",
+      "color": "ゴールド",
+      "taste": "海風、ブリニー(塩気)、ナッツ、スパイス、ハニー、海岸近くの蒸留所らしい個性"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Inchgower 14 Flora & Fauna", "type": "常売(F&F経由)"}
+      ],
+      "limited": [
+        {"name": "Inchgower 27 (2018 Special Release)", "type": "限定"},
+        {"name": "Rare Malts 22 (1997)", "type": "限定(廃盤)"}
+      ],
+      "flora_fauna": {"name": "Inchgower 14 Flora & Fauna", "type": "花と動物シリーズ(現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Inchgower_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "tamdhu": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Tamdhu_distillery.jpg/800px-Tamdhu_distillery.jpg",
+    "characteristics": "スペイサイド、ノッカンドゥ近郊。1897年創業(1896年法人化)、Ian Macleod Distillers所有(2011〜)。2010-2013年の沈黙後復活。スチル6基、年産450万L。スコットランドで最後にサラディンボックス式機械モルティングを行っている蒸留所の一つ。ゲール語'小さな黒い丘'由来。100%シェリー樽熟成に特化。",
+    "signature": {
+      "name": "Tamdhu 10 Year Old",
+      "cask": "ファーストフィル・オロロソ・シェリー樽(アメリカン+ヨーロピアンオーク)",
+      "color": "リッチアンバー",
+      "taste": "シェリー、ドライフルーツ、オーク、スパイス、ナッツ、ハニー、リッチでシェリー愛好家向け"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Tamdhu 10", "type": "常売"},
+        {"name": "Tamdhu 12", "type": "常売"},
+        {"name": "Tamdhu 15", "type": "常売"},
+        {"name": "Tamdhu 18", "type": "常売"},
+        {"name": "Tamdhu Batch Strength (CS, バッチ毎)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Tamdhu 50 (2017, 1963蒸留, 100本限定)", "type": "限定(希少)"},
+        {"name": "Tamdhu Reopening Commemorative (1000本)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Tamdhu_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "tomintoul": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tomintoul_distillery.jpg/800px-Tomintoul_distillery.jpg",
+    "characteristics": "スペイサイド、カークマイケル。1964年創業、Angus Dundee Distillers所有。年産330万L、スチル4基(蒸気加熱)。仕込み水はバランツルアン泉。'The Gentle Dram'の異名を持つ軽やかなスタイル。2009年に世界最大のウイスキーボトル(105.3L、14年もの)でギネス記録。'Old Ballantruan'ブランドでピーテッド版も展開。",
+    "signature": {
+      "name": "Tomintoul 10 Year Old",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "非常に軽く、柔らかな青リンゴ、ハニー、シリアル、花、'ジェントル'なスペイサイドスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Tomintoul 10", "type": "常売"},
+        {"name": "Tomintoul 12 (Oloroso/Port finish)", "type": "常売"},
+        {"name": "Tomintoul 14", "type": "常売"},
+        {"name": "Tomintoul 16", "type": "常売"},
+        {"name": "Tomintoul 21", "type": "常売"},
+        {"name": "Tomintoul 33", "type": "常売(希少)"},
+        {"name": "Old Ballantruan (ピーテッド, NAS)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Peaty Tang (ピーテッド/ノンピートのヴァッティング)", "type": "限定"},
+        {"name": "Tomintoul 40", "type": "限定(超希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Tomintoul_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "holyrood": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Holyrood_distillery.jpg/800px-Holyrood_distillery.jpg",
     "characteristics": "ローランド、エジンバラ。2019年創業、Rob & Kelly Carpenter夫妻とDavid Robertson氏らによる。エジンバラでは約100年ぶりの新設シングルモルト蒸留所。旧セント・レナーズ駅貨物倉庫を改装。スチル1対、年産5.3万L(超小規模)。ヘリテージ/国際酵母、スペシャルティモルト、特殊発酵を活用した実験的アプローチが特徴。2025年WWAで'Distiller of the Year'受賞。",
