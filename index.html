@@ -101,7 +101,13 @@
     background: #fff; border: 1px solid #e4d4b7; border-radius: 6px;
     padding: 8px; text-align: center; font-size: 11px;
   }
-  .bottle-card img { width: 100%; height: 120px; object-fit: contain; margin-bottom: 6px; }
+  .bottle-card img { width: 100%; height: 120px; object-fit: contain; margin-bottom: 6px; background: #f9f3e7; }
+  .bottle-placeholder {
+    width: 100%; height: 120px; background: linear-gradient(180deg, #f9f3e7 0%, #e8d8bf 100%);
+    border-radius: 4px; margin-bottom: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px; color: #c8a876;
+  }
   .bottle-card .bottle-name { font-weight: 600; color: #2d1810; }
   .bottle-card .bottle-type { color: #8b5a2b; font-size: 10px; margin-top: 3px; }
   .no-bottles { color: #8b5a2b; font-style: italic; }
@@ -412,7 +418,7 @@ function showDetail(id) {
 
   const bottleCard = (b) => `
     <div class="bottle-card">
-      ${b.image ? `<img src="${b.image}" alt="${b.name}" onerror="this.style.display='none'">` : '<div style="height:120px;background:#f0e4d2;display:flex;align-items:center;justify-content:center;color:#8b5a2b;font-size:10px;">No Image</div>'}
+      ${b.image ? `<img src="${b.image}" alt="${b.name}" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=&quot;bottle-placeholder&quot;>🥃</div>'">` : '<div class="bottle-placeholder">🥃</div>'}
       <div class="bottle-name">${b.name}</div>
       ${b.type ? `<div class="bottle-type">${b.type}</div>` : ''}
     </div>
