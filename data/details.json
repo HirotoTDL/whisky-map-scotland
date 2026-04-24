@@ -1,0 +1,26 @@
+{
+  "_schema": {
+    "description": "詳細データ: 蒸留所の画像・特徴・ボトルリスト",
+    "structure": {
+      "<distillery_id>": {
+        "image": "蒸留所外観画像URL",
+        "characteristics": "蒸留所の特徴（テキスト）",
+        "signature": {
+          "name": "顔となるボトル名",
+          "cask": "使用樽",
+          "color": "色",
+          "taste": "味の特徴"
+        },
+        "bottles": {
+          "core": [{"name": "...", "image": "...", "type": "..."}],
+          "limited": [{"name": "...", "image": "...", "type": "..."}],
+          "flora_fauna": {"name": "...", "image": "...", "type": "..."}
+        },
+        "sources": ["URL1", "URL2"],
+        "verified": false,
+        "verified_by": null,
+        "last_updated": null
+      }
+    }
+  }
+}

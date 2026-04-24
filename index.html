@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whisky Distilleries in Scotland - Interactive Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Helvetica Neue', 'Hiragino Sans', 'Meiryo', sans-serif; color: #2d1810; background: #f5ede0; }
+  #app { display: grid; grid-template-columns: 1fr 420px; height: 100vh; }
+  #map-container { position: relative; }
+  #map { width: 100%; height: 100%; }
+  header {
+    position: absolute; top: 0; left: 0; right: 0; z-index: 1000;
+    background: linear-gradient(180deg, rgba(245,237,224,0.97) 0%, rgba(245,237,224,0.85) 100%);
+    padding: 12px 20px; border-bottom: 2px solid #8b5a2b;
+    display: flex; align-items: center; gap: 16px;
+  }
+  h1 { font-size: 20px; color: #5a2d0c; font-family: 'Georgia', serif; letter-spacing: 0.5px; }
+  h1 .year { font-size: 12px; color: #8b5a2b; }
+  #search-box {
+    flex: 1; max-width: 400px; padding: 8px 14px;
+    border: 1px solid #8b5a2b; border-radius: 20px;
+    background: #fff; font-size: 14px; outline: none;
+  }
+  #search-box:focus { border-color: #5a2d0c; box-shadow: 0 0 0 2px rgba(139,90,43,0.2); }
+  #search-results {
+    position: absolute; top: 60px; left: 20px; width: 400px; max-height: 60vh; overflow-y: auto;
+    background: #fff; border: 1px solid #8b5a2b; border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: none; z-index: 1001;
+  }
+  #search-results.active { display: block; }
+  .search-result-item {
+    padding: 10px 14px; border-bottom: 1px solid #f0e4d2; cursor: pointer;
+    transition: background 0.1s;
+  }
+  .search-result-item:hover { background: #f9f3e7; }
+  .search-result-item .name-en { font-weight: 600; color: #2d1810; }
+  .search-result-item .name-ja { font-size: 13px; color: #666; margin-top: 2px; }
+  .search-result-item .region { font-size: 11px; color: #8b5a2b; margin-top: 2px; }
+
+  #detail-panel {
+    overflow-y: auto; background: #fdfaf3; border-left: 2px solid #8b5a2b;
+    padding: 20px;
+  }
+  #detail-panel .empty {
+    text-align: center; color: #8b5a2b; margin-top: 40%; font-family: Georgia, serif;
+  }
+  .distillery-header { border-bottom: 2px solid #8b5a2b; padding-bottom: 12px; margin-bottom: 16px; }
+  .distillery-header h2 { font-size: 24px; color: #5a2d0c; font-family: Georgia, serif; }
+  .distillery-header .name-ja { font-size: 15px; color: #8b5a2b; margin-top: 4px; }
+  .region-badge { display: inline-block; padding: 3px 10px; background: #8b5a2b; color: #fff; border-radius: 12px; font-size: 12px; margin-top: 6px; }
+
+  .info-grid { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin-bottom: 16px; font-size: 13px; }
+  .info-grid dt { color: #8b5a2b; font-weight: 600; }
+  .info-grid dd { color: #2d1810; }
+
+  .section { margin-top: 20px; }
+  .section h3 { font-size: 15px; color: #5a2d0c; border-left: 4px solid #8b5a2b; padding-left: 8px; margin-bottom: 10px; font-family: Georgia, serif; }
+  .section p, .section div.characteristics { font-size: 13px; line-height: 1.6; color: #2d1810; }
+  .distillery-image { width: 100%; border-radius: 6px; margin-bottom: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+
+  .bottle-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
+  .bottle-card {
+    background: #fff; border: 1px solid #e4d4b7; border-radius: 6px;
+    padding: 8px; text-align: center; font-size: 11px;
+  }
+  .bottle-card img { width: 100%; height: 120px; object-fit: contain; margin-bottom: 6px; }
+  .bottle-card .bottle-name { font-weight: 600; color: #2d1810; }
+  .bottle-card .bottle-type { color: #8b5a2b; font-size: 10px; margin-top: 3px; }
+  .no-bottles { color: #8b5a2b; font-style: italic; }
+
+  .data-status { background: #fff8e1; border: 1px solid #e4c478; border-radius: 4px; padding: 8px 12px; font-size: 11px; color: #8b5a2b; margin-top: 10px; }
+
+  .leaflet-popup-content { font-family: inherit; margin: 8px 12px; }
+  .popup-title { font-weight: 700; color: #5a2d0c; font-size: 14px; }
+  .popup-ja { font-size: 12px; color: #666; }
+  .popup-region { font-size: 11px; color: #8b5a2b; margin-top: 2px; }
+
+  .marker-Highland { filter: hue-rotate(20deg); }
+  .marker-Speyside { filter: hue-rotate(45deg); }
+  .marker-Islay { filter: hue-rotate(140deg); }
+  .marker-Islands { filter: hue-rotate(200deg); }
+  .marker-Lowland { filter: hue-rotate(-20deg); }
+  .marker-Campbeltown { filter: hue-rotate(280deg); }
+
+  #region-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+  .region-chip {
+    padding: 4px 10px; border: 1px solid #8b5a2b; border-radius: 12px;
+    background: #fff; color: #8b5a2b; font-size: 11px; cursor: pointer;
+    user-select: none;
+  }
+  .region-chip.active { background: #8b5a2b; color: #fff; }
+
+  @media (max-width: 900px) {
+    #app { grid-template-columns: 1fr; grid-template-rows: 60vh 40vh; }
+    #detail-panel { border-left: none; border-top: 2px solid #8b5a2b; }
+    header { flex-direction: column; align-items: flex-start; gap: 8px; }
+    #search-results { width: calc(100% - 40px); }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="map-container">
+    <header>
+      <h1>Whisky Distilleries in Scotland <span class="year">2023</span></h1>
+      <input type="text" id="search-box" placeholder="蒸留所名を検索 (Search by name / カタカナ / Alphabet)" autocomplete="off" />
+      <div id="region-filter"></div>
+    </header>
+    <div id="search-results"></div>
+    <div id="map"></div>
+  </div>
+  <aside id="detail-panel">
+    <div class="empty">
+      <p style="font-size: 18px;">🥃</p>
+      <p>蒸留所を選択してください</p>
+      <p style="font-size: 12px; margin-top: 8px;">Click a marker or search by name</p>
+    </div>
+  </aside>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+const REGION_COLORS = {
+  'Highland': '#8b5a2b',
+  'Speyside': '#d4a94a',
+  'Islay': '#1a7a5a',
+  'Islands': '#2c5aa0',
+  'Lowland': '#b85450',
+  'Campbeltown': '#7a3b8c'
+};
+
+let allDistilleries = [];
+let detailData = {};
+let markers = {};
+let activeRegions = new Set(Object.keys(REGION_COLORS));
+let map;
+let markerLayer;
+
+function createIcon(region) {
+  const color = REGION_COLORS[region] || '#666';
+  return L.divIcon({
+    className: 'custom-marker',
+    html: `<div style="background:${color};width:18px;height:18px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,0.4);"></div>`,
+    iconSize: [18, 18],
+    iconAnchor: [9, 18]
+  });
+}
+
+async function loadData() {
+  const res = await fetch('data/distilleries.json');
+  const data = await res.json();
+  allDistilleries = data.distilleries;
+  try {
+    const detailRes = await fetch('data/details.json');
+    if (detailRes.ok) detailData = await detailRes.json();
+  } catch(e) { detailData = {}; }
+  initMap();
+  initFilter();
+  initSearch();
+  renderMarkers();
+}
+
+function initMap() {
+  map = L.map('map', { preferCanvas: true }).setView([57.0, -4.5], 7);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors',
+    maxZoom: 18
+  }).addTo(map);
+  markerLayer = L.markerClusterGroup({
+    maxClusterRadius: 35,
+    disableClusteringAtZoom: 10
+  });
+  map.addLayer(markerLayer);
+}
+
+function initFilter() {
+  const container = document.getElementById('region-filter');
+  Object.keys(REGION_COLORS).forEach(region => {
+    const chip = document.createElement('div');
+    chip.className = 'region-chip active';
+    chip.textContent = region;
+    chip.style.borderColor = REGION_COLORS[region];
+    chip.onclick = () => {
+      if (activeRegions.has(region)) {
+        activeRegions.delete(region);
+        chip.classList.remove('active');
+      } else {
+        activeRegions.add(region);
+        chip.classList.add('active');
+      }
+      renderMarkers();
+    };
+    container.appendChild(chip);
+  });
+}
+
+function renderMarkers() {
+  markerLayer.clearLayers();
+  markers = {};
+  allDistilleries.forEach(d => {
+    if (!activeRegions.has(d.region)) return;
+    if (!d.lat || !d.lon) return;
+    const marker = L.marker([d.lat, d.lon], { icon: createIcon(d.region) });
+    marker.bindPopup(`
+      <div>
+        <div class="popup-title">${d.name_en}</div>
+        <div class="popup-ja">${d.name_ja}</div>
+        <div class="popup-region">${d.region}${d.subregion ? ' / ' + d.subregion : ''}</div>
+      </div>
+    `);
+    marker.on('click', () => showDetail(d.id));
+    markerLayer.addLayer(marker);
+    markers[d.id] = marker;
+  });
+}
+
+function initSearch() {
+  const box = document.getElementById('search-box');
+  const results = document.getElementById('search-results');
+  box.addEventListener('input', e => {
+    const q = e.target.value.trim().toLowerCase();
+    if (!q) { results.classList.remove('active'); return; }
+    const matches = allDistilleries.filter(d => {
+      return d.name_en.toLowerCase().includes(q) ||
+             d.name_ja.includes(q) ||
+             (d.town && d.town.toLowerCase().includes(q));
+    }).slice(0, 20);
+    results.innerHTML = matches.map(d => `
+      <div class="search-result-item" data-id="${d.id}">
+        <div class="name-en">${d.name_en}</div>
+        <div class="name-ja">${d.name_ja} ${d.town ? '· ' + d.town : ''}</div>
+        <div class="region">${d.region}</div>
+      </div>
+    `).join('') || '<div class="search-result-item">該当なし</div>';
+    results.classList.add('active');
+    results.querySelectorAll('.search-result-item[data-id]').forEach(el => {
+      el.onclick = () => {
+        const id = el.dataset.id;
+        const d = allDistilleries.find(x => x.id === id);
+        if (d && d.lat) {
+          map.setView([d.lat, d.lon], 11);
+          if (markers[id]) markers[id].openPopup();
+          showDetail(id);
+          results.classList.remove('active');
+          box.value = d.name_en;
+        }
+      };
+    });
+  });
+  document.addEventListener('click', e => {
+    if (!box.contains(e.target) && !results.contains(e.target)) {
+      results.classList.remove('active');
+    }
+  });
+}
+
+function showDetail(id) {
+  const d = allDistilleries.find(x => x.id === id);
+  if (!d) return;
+  const detail = detailData[id] || {};
+  const panel = document.getElementById('detail-panel');
+
+  const officialBottles = detail.bottles?.core || [];
+  const limitedBottles = detail.bottles?.limited || [];
+  const floraFauna = detail.bottles?.flora_fauna || null;
+  const hasAnyBottle = officialBottles.length > 0 || limitedBottles.length > 0 || floraFauna;
+
+  const bottleCard = (b) => `
+    <div class="bottle-card">
+      ${b.image ? `<img src="${b.image}" alt="${b.name}" onerror="this.style.display='none'">` : '<div style="height:120px;background:#f0e4d2;display:flex;align-items:center;justify-content:center;color:#8b5a2b;font-size:10px;">No Image</div>'}
+      <div class="bottle-name">${b.name}</div>
+      ${b.type ? `<div class="bottle-type">${b.type}</div>` : ''}
+    </div>
+  `;
+
+  panel.innerHTML = `
+    <div class="distillery-header">
+      <h2>${d.name_en}</h2>
+      <div class="name-ja">${d.name_ja}</div>
+      <span class="region-badge" style="background:${REGION_COLORS[d.region]}">${d.region}${d.subregion ? ' / ' + d.subregion : ''}</span>
+    </div>
+    <dl class="info-grid">
+      ${d.town ? `<dt>所在地</dt><dd>${d.town}</dd>` : ''}
+      ${d.established ? `<dt>創業</dt><dd>${d.established}年</dd>` : ''}
+      ${d.owner ? `<dt>所有</dt><dd>${d.owner}</dd>` : ''}
+      ${d.status ? `<dt>状態</dt><dd>${d.status === 'active' ? '稼働中' : d.status === 'planned' ? '計画中' : '休止中'}</dd>` : ''}
+      ${d.note ? `<dt>備考</dt><dd>${d.note}</dd>` : ''}
+    </dl>
+
+    ${detail.image ? `<div class="section"><h3>外観</h3><img class="distillery-image" src="${detail.image}" alt="${d.name_en}" onerror="this.style.display='none'"></div>` : ''}
+
+    ${detail.characteristics ? `
+      <div class="section">
+        <h3>蒸留所の特徴</h3>
+        <div class="characteristics">${detail.characteristics}</div>
+      </div>
+    ` : ''}
+
+    ${detail.signature ? `
+      <div class="section">
+        <h3>顔となるボトル</h3>
+        <div class="characteristics">
+          ${detail.signature.name ? `<p><strong>${detail.signature.name}</strong></p>` : ''}
+          ${detail.signature.cask ? `<p>樽: ${detail.signature.cask}</p>` : ''}
+          ${detail.signature.color ? `<p>色: ${detail.signature.color}</p>` : ''}
+          ${detail.signature.taste ? `<p>味: ${detail.signature.taste}</p>` : ''}
+        </div>
+      </div>
+    ` : ''}
+
+    <div class="section">
+      <h3>公式ボトル</h3>
+      ${hasAnyBottle ? '' : '<p class="no-bottles">公式ボトルなし (情報未収集の可能性あり)</p>'}
+      ${officialBottles.length > 0 ? `
+        <h4 style="font-size:12px;color:#8b5a2b;margin-top:8px;">常売</h4>
+        <div class="bottle-grid">${officialBottles.map(bottleCard).join('')}</div>
+      ` : ''}
+      ${limitedBottles.length > 0 ? `
+        <h4 style="font-size:12px;color:#8b5a2b;margin-top:12px;">限定</h4>
+        <div class="bottle-grid">${limitedBottles.map(bottleCard).join('')}</div>
+      ` : ''}
+      ${floraFauna ? `
+        <h4 style="font-size:12px;color:#8b5a2b;margin-top:12px;">花と動物シリーズ</h4>
+        <div class="bottle-grid">${bottleCard(floraFauna)}</div>
+      ` : ''}
+    </div>
+
+    ${!detail.characteristics ? '<div class="data-status">⚠️ 詳細データ収集中。最新情報はWeb検索で確認してください。</div>' : ''}
+  `;
+}
+
+loadData().catch(err => {
+  console.error(err);
+  document.getElementById('detail-panel').innerHTML = '<div class="empty">データ読込エラー: ' + err.message + '</div>';
+});
+</script>
+</body>
+</html>
