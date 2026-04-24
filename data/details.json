@@ -850,6 +850,126 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "glengyle": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Glengyle_distillery.jpg/800px-Glengyle_distillery.jpg",
+    "characteristics": "キャンベルタウン。1872年William Mitchell創業→1925年閉鎖→2000年再開(Springbankと同族経営のMitchell's Glengyle Ltd.)。年産75万L、スチル1対。仕込み水はCrosshill湖。商標'Glengyle'はLoch Lomond社保有のため、'Kilkerran'(古キャンベルタウンの名)ブランドで展開。2004年蒸留再開で'ミレニアム初の新設蒸留所'。",
+    "signature": {
+      "name": "Kilkerran 12 Year Old",
+      "cask": "バーボン樽(70%)+シェリー樽(30%)",
+      "color": "ゴールド",
+      "taste": "軽いピートスモーク、ブリニー、ハニー、シトラス、オイリー、キャンベルタウンスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Kilkerran 12", "type": "常売"},
+        {"name": "Kilkerran 8 Cask Strength (バッチ毎)", "type": "常売"},
+        {"name": "Kilkerran 16", "type": "常売"},
+        {"name": "Heavily Peated シリーズ", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Kilkerran Work in Progress Series (2009-2016)", "type": "限定(廃盤)"},
+        {"name": "Glengyle Distillery Exclusive", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glengyle_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "daftmill": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Daftmill_distillery.jpg/800px-Daftmill_distillery.jpg",
+    "characteristics": "ローランド、ファイフ、クパー。2005年Cuthbert家が農場内納屋を改築して創業。スコットランド屈指の小規模(年産わずか2万L)。大麦はすべて自家農場産、ノンピート。農閑期のみ蒸留する'ファームディスティラリー'の典型。スチル1対(ウォッシュ2,500L+スピリット1,500L)。2018年初リリースの12年がコレクター垂涎の的。",
+    "signature": {
+      "name": "Daftmill Inaugural Release 2005 (12年)",
+      "cask": "ファーストフィル・バーボン樽",
+      "color": "ゴールド",
+      "taste": "シリアル、ハニー、バニラ、シトラス、青リンゴ、軽いオイリー感、農場直結の真のシングルエステート"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Daftmill Summer Release", "type": "常売(シーズナル)"},
+        {"name": "Daftmill Winter Release", "type": "常売(シーズナル)"}
+      ],
+      "limited": [
+        {"name": "Daftmill 2005 Inaugural Release", "type": "限定"},
+        {"name": "Daftmill Oloroso Cask Matured", "type": "限定"},
+        {"name": "Cask Strength Single Cask", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Daftmill_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "ailsa_bay": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ailsa_Bay_distillery.jpg/800px-Ailsa_Bay_distillery.jpg",
+    "characteristics": "ローランド、南エアシャー、ガーヴァン(William Grant & SonsのGirvan grain蒸留所近接)。2007年建設、2009年Prince Charles(当時)による公式開業。William Grant & Sonsがブレンド用モルト需要対応で設立。年産1,200万L(スコットランド最大級)、スチル16基(ウォッシュ8+スピリット8)。仕込み水はPenwapple貯水池。2019年に初の独立ブランド'Aerstone'(新規飲み手向け)と'Ailsa Bay'ピーテッドを発売。",
+    "signature": {
+      "name": "Ailsa Bay (NAS, ピーテッド)",
+      "cask": "ファーストフィル・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "バランス型ピートスモーク(22ppm)、スウィート・スモーキーネス、バニラ、シナモン、モダンで精密"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Ailsa Bay (NAS, ピーテッド)", "type": "常売"},
+        {"name": "Ailsa Bay 1.2 Sweet Smoke (再製造版)", "type": "常売"},
+        {"name": "Aerstone Land Cask 10 (Sherry)", "type": "常売"},
+        {"name": "Aerstone Sea Cask 10 (Bourbon)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Ailsa Bay Blockchain Edition (2019)", "type": "限定"},
+        {"name": "Sample Release 2/3/4", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Ailsa_Bay_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "annandale": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Annandale_distillery.jpg/800px-Annandale_distillery.jpg",
+    "characteristics": "ローランド、ダンフリース&ギャロウェイ、アナン。1836年創業→1920年代閉鎖→David Thomson & Teresa Church夫妻により復活。スチル3基(ウォッシュ1+スピリット2)、年産26万L。2つのブランド: 'Man O' Words'(ノンピート、ロバート・バーンズ由来)と'Man O' Sword'(ピーテッド、ロバート・ブルース由来)。スコットランドで最も多彩なシングルカスク購入オプションを提供。",
+    "signature": {
+      "name": "Annandale Man O' Words / Man O' Sword",
+      "cask": "バーボン樽+スペインオーク(シェリー)樽+再チャーリング樽",
+      "color": "ゴールド〜アンバー",
+      "taste": "Man O' Words: フルーティ、軽いスパイス / Man O' Sword: ヘビーピートスモーク、ピート+シェリーの複雑さ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Man O' Words (ノンピート)", "type": "常売"},
+        {"name": "Man O' Sword (ピーテッド)", "type": "常売"},
+        {"name": "Founders' Selection", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Single Cask Series (顧客自身が樽購入可能)", "type": "限定"},
+        {"name": "Vintage Collection", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Annandale_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "inchdairnie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Inchdairnie_distillery.jpg/800px-Inchdairnie_distillery.jpg",
+    "characteristics": "ローランド、ファイフ、グレンロセス(スペイサイドのGlenrothesと別)。2015年Ian Palmer氏創業。スチル2対、年産400万L(2024年11月に倍増)。仕込み水はFlowers of May/Goathill泉。2024年11月から100%グリーン水素を使用。シングルモルトだけでなくライ・ウイスキー'RyeLaw'も製造(2023年4月)。初シングルモルトは2025年5月リリース。",
+    "signature": {
+      "name": "InchDairnie 2019 Single Malt (2025)",
+      "cask": "アメリカン・バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "モダンなローランド、クリーン、フレッシュ、イノベーティブなレシピ使用の実験的スペクトル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "RyeLaw (ライウイスキー、2023年4月)", "type": "常売(ライ)"},
+        {"name": "InchDairnie Single Malt (2025年5月〜)", "type": "常売(新)"}
+      ],
+      "limited": [
+        {"name": "Single Cask Release", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Inchdairnie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "port_ellen": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Port_Ellen_distillery.jpg/800px-Port_Ellen_distillery.jpg",
     "characteristics": "アイラ島南端、ポート・エレン。1825年モルトミル開設、1833年蒸留所として本格稼働。Diageo所有。1930-1966/67, 1983-2024年の2度の閉鎖を経て、2024年3月19日、40年ぶりに復活(£1.85億/$2.35億投資)。年産270万L、スチル2対。仕込み水はLeorin湖。1980年代の工場記録を元にオリジナルスタイルを忠実に再現。レガシー・ポートエレンは世界屈指の希少品。",
