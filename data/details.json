@@ -850,6 +850,125 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "tullibardine": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tullibardine_distillery.jpg/800px-Tullibardine_distillery.jpg",
+    "characteristics": "南ハイランド、パースシャー、ブラックフォード。1949年創業(元は1488年ジェームズ4世時代の製ビール所とされる歴史あり)、Picard Vins & Spiritueux所有(2011〜)。1995年Whyte & Mackayによる沈黙後、2003年復活。スチル2対、年産270万L。仕込み水はOchil丘陵とDanny川。フレンチオーナーらしく多彩なワイン樽フィニッシュが特徴。",
+    "signature": {
+      "name": "Tullibardine Sovereign (NAS)",
+      "cask": "ファーストフィル・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "バニラ、ハニー、青リンゴ、シトラス、軽やかでフレッシュなハイランド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Tullibardine Sovereign", "type": "常売"},
+        {"name": "Tullibardine 225 Sauternes Cask", "type": "常売"},
+        {"name": "Tullibardine 228 Burgundy Cask", "type": "常売"},
+        {"name": "Tullibardine 500 Sherry Cask", "type": "常売"},
+        {"name": "Tullibardine 15 / 20 / 25", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Tullibardine Banyuls Finish", "type": "限定"},
+        {"name": "Vintage Releases (1962〜)", "type": "限定(希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Tullibardine_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glenwyvis": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/GlenWyvis_distillery.jpg/800px-GlenWyvis_distillery.jpg",
+    "characteristics": "北ハイランド、ロス=シャー、ディングウォール。2015年創業の'コミュニティ所有'協同組合型蒸留所(2,000人超のクラウドファンディング£260万)。ディングウォール100年(1926〜)ぶりの蒸留所復活。水力・風力・太陽光・バイオマスの100%再生可能エネルギー運営。スチル2対、2017年11月操業開始。4年ものから瓶詰開始。",
+    "signature": {
+      "name": "GlenWyvis Inaugural Release (4年)",
+      "cask": "シェリー樽(各種)+バーボン樽",
+      "color": "ゴールド",
+      "taste": "若々しいがクリーン、ハニー、フローラル、コミュニティ精神を体現するハイランド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "GlenWyvis Inaugural Release (4年)", "type": "常売"},
+        {"name": "GoodWill Gin (各種)", "type": "常売ジン"},
+        {"name": "Christmas GoodWill Spiced Gin (2019 IWSC Gold)", "type": "常売ジン"}
+      ],
+      "limited": [
+        {"name": "Founder's Reserve", "type": "限定"},
+        {"name": "Single Cask Release", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/GlenWyvis_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "aberargie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Aberargie_distillery.jpg/800px-Aberargie_distillery.jpg",
+    "characteristics": "ローランド、パース&キンロス、アベラーギ。2017年Morrison家族創業(元Auchentoshan/Glen Garioch/Bowmoreのオーナー一族、1994年Suntory売却後23年ぶりの蒸留所復帰)。300エーカー農場内で自家栽培のゴールデン・プロミス大麦を使用、12箱のミツバチも飼育。スチル2基(ウォッシュ15,000L+スピリット10,000L)、年産75万L。蒸留→瓶詰まで一貫。初シングルモルトは2026年3月予定。",
+    "signature": {
+      "name": "Aberargie Single Malt (2026予定)",
+      "cask": "アメリカン・バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "ゴールデン・プロミス大麦由来のリッチなモルティさ、ハニー、フルーツ、高品質な農場クラフト"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Aberargie Single Malt (2026年3月予定)", "type": "常売予定"}
+      ],
+      "limited": [
+        {"name": "Inaugural Release (2026)", "type": "限定予定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Aberargie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "strathearn": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Strathearn_distillery.jpg/800px-Strathearn_distillery.jpg",
+    "characteristics": "南ハイランド、パース&キンロス、メスヴェン近郊。2013年創業、Douglas Laing & Co所有(2019〜)。160年の石造り農家納屋に設置。ポルトガル製50Lアランビック・スチル2基使用、'スコットランド最小の蒸留所'と言われる。96時間という超長時間発酵。仕込み水はタレット湖。2017年初ウイスキーリリース、2022年Douglas Laing体制初のシングルモルト'The Heart'。",
+    "signature": {
+      "name": "Strathearn The Heart",
+      "cask": "アメリカン・バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "リッチモルト、ハニー、フローラル、スパイス、96時間発酵由来の複雑さ、小規模ならではの個性"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Strathearn The Heart (2022〜)", "type": "常売"},
+        {"name": "Strathearn Classic Gin / Citrus / Heather Rose / Oaked Highland", "type": "常売ジン"},
+        {"name": "Teasmith Gin (スリランカ茶, 2025)", "type": "常売ジン"}
+      ],
+      "limited": [
+        {"name": "Strathearn Single Cask", "type": "限定"},
+        {"name": "Honey Whisky Blend", "type": "限定ブレンド"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Strathearn_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "borders": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Borders_distillery.jpg/800px-Borders_distillery.jpg",
+    "characteristics": "ローランド、スコティッシュボーダーズ、ホーウィック。2018年3月稼働、5月1日一般公開。1837年以来ボーダーズ地方初のスコッチ蒸留所。Mossburn Distillers所有。スチル4基、年産200万L。仕込み水はTeviot川。Forsyth特製Carter Headスチル(ジン用)。ボーダーズ地域産大麦使用。2022年'WS:01 Borders Malt & Rye'(185年ぶりボーダーズ地方のブレンド)をリリース。",
+    "signature": {
+      "name": "Borders Single Malt (初リリース予定)",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "軽快、フルーティ、地元大麦のテロワール、モダンなローランドスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Clan Fraser / Clan Fraser Reserve (ブレンデッド)", "type": "常売ブレンド"},
+        {"name": "Lower East Side (ブレンデッド)", "type": "常売ブレンド"},
+        {"name": "William Kerr's Borders Gin", "type": "常売ジン"},
+        {"name": "Puffing Billy Steam Vodka", "type": "常売ウォッカ"}
+      ],
+      "limited": [
+        {"name": "WS:01 Borders Malt & Rye (2022)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Borders_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "isle_of_harris": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Isle_of_Harris_distillery.jpg/800px-Isle_of_Harris_distillery.jpg",
     "characteristics": "外ヘブリディーズ諸島ハリス島タルベート。2015年創業、ハリス島初の合法蒸留所。投資総額£1,000万。スチル2基(ウォッシュ7,000L+スピリット5,000L)、年産23万L。初期は'Harris Gin'(砂糖海藻使用、2021年WGAゴールド受賞)で知名度確立。2023年秋、待望のシングルモルト'The Hearach'(ハリス島民の意)をリリース。2017年時点で来訪者14万人以上、17の賞受賞。",
