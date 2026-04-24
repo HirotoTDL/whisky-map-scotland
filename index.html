@@ -126,6 +126,49 @@
   .marker-Lowland { filter: hue-rotate(-20deg); }
   .marker-Campbeltown { filter: hue-rotate(280deg); }
 
+  /* Pulsing halo for selected distillery marker */
+  @keyframes pulse-ring {
+    0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.9); }
+    70% { transform: translate(-50%, -50%) scale(1.8); opacity: 0.3; box-shadow: 0 0 0 30px rgba(255, 193, 7, 0); }
+    100% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+  }
+  @keyframes marker-bounce {
+    0%, 100% { transform: rotate(-45deg) scale(1); }
+    50% { transform: rotate(-45deg) scale(1.35); }
+  }
+  .selected-marker-halo {
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 193, 7, 0.3);
+    border: 3px solid #ffc107;
+    animation: pulse-ring 1.5s infinite;
+    pointer-events: none;
+  }
+  .selected-marker .marker-body {
+    animation: marker-bounce 1s infinite !important;
+    box-shadow: 0 0 12px 4px rgba(255, 193, 7, 0.85) !important;
+    border-color: #ffc107 !important;
+    border-width: 3px !important;
+    z-index: 999 !important;
+  }
+
+  /* Persistent popup styling */
+  .leaflet-popup.persistent-popup .leaflet-popup-close-button {
+    display: block;
+    color: #5a2d0c;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 8px;
+  }
+  .leaflet-popup.persistent-popup .leaflet-popup-tip-container { display: block; }
+  .persistent-popup .leaflet-popup-content-wrapper {
+    background: #fff8e1;
+    border: 2px solid #ffc107;
+    box-shadow: 0 0 16px rgba(255, 193, 7, 0.5);
+  }
+
   #region-filter { display: flex; gap: 6px; flex-wrap: wrap; }
   .region-chip {
     padding: 4px 10px; border: 1px solid #8b5a2b; border-radius: 12px;
@@ -262,29 +305,38 @@ function toggleRegion(region) {
 }
 
 function selectFromList(id) {
-  const d = allDistilleries.find(x => x.id === id);
-  if (!d || !d.lat) return;
-  map.setView([d.lat, d.lon], 12);
-  if (markers[id]) {
-    setTimeout(() => markers[id].openPopup(), 300);
-  }
-  showDetail(id);
+  selectDistillery(id);
   document.querySelectorAll('.region-item').forEach(el => el.classList.remove('active'));
   const activeEl = document.querySelector(`.region-item[data-id="${id}"]`);
   if (activeEl) activeEl.classList.add('active');
 }
 
 function initMap() {
-  map = L.map('map', { preferCanvas: true }).setView([57.0, -4.5], 7);
+  map = L.map('map', { preferCanvas: true }).setView([57.0, -4.5], 6);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors',
     maxZoom: 18
   }).addTo(map);
   markerLayer = L.markerClusterGroup({
     maxClusterRadius: 35,
-    disableClusteringAtZoom: 10
+    disableClusteringAtZoom: 9,
+    spiderfyOnMaxZoom: true
   });
   map.addLayer(markerLayer);
+
+  // Add "Show whole Scotland" control
+  const viewControl = L.control({ position: 'topright' });
+  viewControl.onAdd = function() {
+    const div = L.DomUtil.create('div', 'scotland-view-btn');
+    div.innerHTML = `<button onclick="showScotlandOverview()" style="padding:6px 12px;background:#fff;border:2px solid #8b5a2b;border-radius:20px;color:#5a2d0c;font-size:12px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,0.2);font-weight:600;">🗺️ スコットランド全域</button>`;
+    return div;
+  };
+  viewControl.addTo(map);
+}
+
+function showScotlandOverview() {
+  // Show all of Scotland, but keep the selected marker highlighted
+  map.flyTo([57.5, -4.5], 6, { duration: 1.0 });
 }
 
 function initFilter() {
@@ -308,16 +360,20 @@ function initFilter() {
   });
 }
 
-function createIconFull(d) {
+let selectedId = null;
+
+function createIconFull(d, isSelected) {
   const color = REGION_COLORS[d.region] || '#666';
   const hasDetail = detailData[d.id];
   const border = hasDetail ? '#fff' : '#ccc';
   const opacity = hasDetail ? '1' : '0.7';
+  const sel = isSelected ? 'selected-marker' : '';
+  const haloHtml = isSelected ? '<div class="selected-marker-halo"></div>' : '';
   return L.divIcon({
-    className: 'custom-marker',
-    html: `<div style="background:${color};width:18px;height:18px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid ${border};box-shadow:0 1px 3px rgba(0,0,0,0.4);opacity:${opacity};"></div>`,
-    iconSize: [18, 18],
-    iconAnchor: [9, 18]
+    className: 'custom-marker ' + sel,
+    html: `<div style="position:relative;">${haloHtml}<div class="marker-body" style="background:${color};width:20px;height:20px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2px solid ${border};box-shadow:0 1px 3px rgba(0,0,0,0.4);opacity:${opacity};"></div></div>`,
+    iconSize: [20, 20],
+    iconAnchor: [10, 20]
   });
 }
 
@@ -328,7 +384,8 @@ function renderMarkers() {
   allDistilleries.forEach(d => {
     if (!activeRegions.has(d.region)) return;
     if (!d.lat || !d.lon) return;
-    const marker = L.marker([d.lat, d.lon], { icon: createIconFull(d) });
+    const isSel = d.id === selectedId;
+    const marker = L.marker([d.lat, d.lon], { icon: createIconFull(d, isSel) });
     const hasDetail = !!detailData[d.id];
     if (hasDetail) withDetail++;
     marker.bindPopup(`
@@ -336,13 +393,47 @@ function renderMarkers() {
         <div class="popup-title">${d.name_en}${hasDetail ? ' ✓' : ''}</div>
         <div class="popup-ja">${d.name_ja}</div>
         <div class="popup-region">${d.region}${d.subregion ? ' / ' + d.subregion : ''}</div>
+        ${d.town ? `<div style="font-size:11px;color:#666;margin-top:2px;">📍 ${d.town}</div>` : ''}
       </div>
-    `);
-    marker.on('click', () => showDetail(d.id));
+    `, {
+      closeOnClick: false,
+      autoClose: false,
+      closeButton: true,
+      className: 'persistent-popup',
+      autoPan: false
+    });
+    marker.on('click', () => selectDistillery(d.id));
     markerLayer.addLayer(marker);
     markers[d.id] = marker;
   });
   updateStatusBar(withDetail);
+}
+
+function highlightMarker(id) {
+  // Reset previous
+  if (selectedId && markers[selectedId]) {
+    const prev = allDistilleries.find(x => x.id === selectedId);
+    if (prev) markers[selectedId].setIcon(createIconFull(prev, false));
+  }
+  selectedId = id;
+  const d = allDistilleries.find(x => x.id === id);
+  if (d && markers[id]) {
+    markers[id].setIcon(createIconFull(d, true));
+    // Close any other popups first to avoid stack
+    map.closePopup();
+    markers[id].openPopup();
+  }
+}
+
+function selectDistillery(id) {
+  const d = allDistilleries.find(x => x.id === id);
+  if (!d || !d.lat) return;
+  // Pan to show the distillery in regional context (not zoom in too deep)
+  // Use zoom 9 so both the marker and surrounding area are visible
+  const targetZoom = Math.max(map.getZoom(), 8);
+  map.flyTo([d.lat, d.lon], targetZoom, { duration: 0.8 });
+  highlightMarker(id);
+  showDetail(id);
 }
 
 function updateStatusBar(detailCount) {
@@ -377,9 +468,7 @@ function initSearch() {
         const id = el.dataset.id;
         const d = allDistilleries.find(x => x.id === id);
         if (d && d.lat) {
-          map.setView([d.lat, d.lon], 11);
-          if (markers[id]) markers[id].openPopup();
-          showDetail(id);
+          selectDistillery(id);
           results.classList.remove('active');
           box.value = d.name_en;
         }

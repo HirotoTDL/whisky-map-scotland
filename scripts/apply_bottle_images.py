@@ -12,6 +12,29 @@ DETAILS_FILE = ROOT / 'data' / 'details.json'
 
 # Distillery-specific TWE codes (prefix in filename)
 # These codes are unique per distillery; matching them confirms the bottle
+DISTILLERY_CODES_V2 = {  # will be merged
+    'tomatin': ['tomob', 'tomsig', 'mini_sm_tom', 'cubob'],  # Cu Bocan
+    'glen_moray': ['gmyob', 'gmysig', 'mini_sm_gmy', 'gmyglm'],  # G&M
+    'linkwood': ['lkwob', 'lkwsig', 'lkwed', 'lkwg'],
+    'glen_grant': ['ggtob', 'ggtind', 'ggtsig', 'ggtcd', 'ggted'],
+    'knockando': ['kadob', 'kadsig'],
+    'glendullan': ['gdlob', 'gdlff', 'gdlsig'],
+    'glen_elgin': ['gegob', 'gegsig'],
+    'speyburn': ['spbob', 'spbsig'],
+    'brora': ['broob', 'broor', 'brosig', 'sets_bro'],
+    'holyrood': ['holob', 'holsig'],
+    'lochlea': ['lolob', 'pm_lolob'],
+    'isle_of_raasay': ['raaob', 'raasig', 'gin_raa'],
+    'torabhaig': ['trbob', 'pm_trbob', 'trbsig'],
+    'ardnahoe': ['anhob', 'anhsig'],
+    'glenwyvis': ['gwvob', 'gwvsig'],
+    'inchdairnie': ['incob', 'grain_inc'],
+    'port_ellen': ['pelob', 'pelmg'],
+    'arbikie': ['grain_arb', 'gin_arb', 'vodka_arb', 'arbsig'],
+    'ardnamurchan': ['amcob', 'amcsig'],
+    'bonnington': ['bonob', 'bonsig'],
+}
+
 DISTILLERY_CODES = {
     'macallan': ['macob', 'mac_', 'macsig', 'macg', 'maccd'],
     'ardbeg': ['abgob', 'abg_', 'abgsig', 'abgg'],
@@ -88,15 +111,23 @@ DISTILLERY_CODES = {
 
 def is_valid_match(did, filename):
     """Check if filename code matches the distillery"""
-    codes = DISTILLERY_CODES.get(did, [])
+    codes = list(DISTILLERY_CODES.get(did, []))
+    codes += list(DISTILLERY_CODES_V2.get(did, []))
     lower = filename.lower()
-    return any(lower.startswith(c) for c in codes)
+    # Direct match
+    if any(lower.startswith(c) for c in codes):
+        return True
+    # Contains match (for prefixed like "pm_lgvob")
+    for c in codes:
+        if c in lower:
+            return True
+    return False
 
 
 def main():
     # Parse result files
     results = {}
-    for f in ['twe_chunk1_results.txt', 'twe_chunk2a_results.txt', 'twe_chunk2c_results.txt']:
+    for f in ['twe_chunk1_results.txt', 'twe_chunk2a_results.txt', 'twe_chunk2c_results.txt', 'twe_chunk3_results.txt']:
         path = ROOT / 'scripts' / f
         if not path.exists():
             continue
@@ -105,12 +136,12 @@ def main():
                 continue
             k, v = line.split('=', 1)
             if k in results:
-                continue  # Earlier chunks take precedence? No, later chunks have better DOM parsing. Prefer later.
+                continue
             results[k] = v.strip()
     # Also re-parse to prefer chunk 2 (DOM parsed) over chunk 1 (regex)
     # Re-scan chunks and override with later ones
     results = {}
-    for f in ['twe_chunk1_results.txt', 'twe_chunk2a_results.txt', 'twe_chunk2c_results.txt']:
+    for f in ['twe_chunk1_results.txt', 'twe_chunk2a_results.txt', 'twe_chunk2c_results.txt', 'twe_chunk3_results.txt']:
         path = ROOT / 'scripts' / f
         if not path.exists():
             continue
