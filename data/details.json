@@ -850,6 +850,103 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "holyrood": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Holyrood_distillery.jpg/800px-Holyrood_distillery.jpg",
+    "characteristics": "ローランド、エジンバラ。2019年創業、Rob & Kelly Carpenter夫妻とDavid Robertson氏らによる。エジンバラでは約100年ぶりの新設シングルモルト蒸留所。旧セント・レナーズ駅貨物倉庫を改装。スチル1対、年産5.3万L(超小規模)。ヘリテージ/国際酵母、スペシャルティモルト、特殊発酵を活用した実験的アプローチが特徴。2025年WWAで'Distiller of the Year'受賞。",
+    "signature": {
+      "name": "Holyrood Arrival",
+      "cask": "バーボン樽+シェリー樽の組合せ",
+      "color": "ゴールド",
+      "taste": "スパイス、ハニー、バニラ、フレッシュフルーツ、モダンでエクスペリメンタルなローランド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Arrival (2023初リリース)", "type": "常売"},
+        {"name": "Embra (ピーテッド)", "type": "常売"},
+        {"name": "Ambir (スペシャルティモルト)", "type": "常売"},
+        {"name": "Pitch (スペシャル酵母)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Re-Rack Series (2025〜)", "type": "限定シリーズ"},
+        {"name": "Strong Waters (ヘリテージ酵母ニューメイク)", "type": "限定"},
+        {"name": "Height of Arrows Gin", "type": "併売ジン"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Holyrood_Distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "port_of_leith": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Port_of_Leith_distillery.jpg/800px-Port_of_Leith_distillery.jpg",
+    "characteristics": "ローランド、エジンバラ、リース港、Ocean Terminal近郊(Royal Yacht Britanniaの近く)。Paddy Fletcher & Ian Stirling(Lind & Lime gin創設者)による。英国初の垂直型9階建て蒸留所。2023年10月開業、2024年初蒸留。狭小地対応の縦型設計で建築費£1,200万。スチル1対、年産40万L。最上階のバーからエジンバラの眺望。",
+    "signature": {
+      "name": "Port of Leith Single Malt (今後)",
+      "cask": "未定(3年熟成中)",
+      "color": "—",
+      "taste": "—(2027年以降リリース予定)"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Lind & Lime Gin", "type": "常売ジン"},
+        {"name": "Port of Leith Sherry (姉妹ブランド)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Distillery Exclusive (蒸留所限定)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Port_of_Leith_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "lochlea": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lochlea_distillery.jpg/800px-Lochlea_distillery.jpg",
+    "characteristics": "ローランド、南エアシャー、タルボルトン近郊の農場。詩人ロバート・バーンズが暮らしたロッホリー農場跡地に2018年Neil McGeoch氏創業。'シングルエステート'を掲げ、農場の約90ヘクタール(うち50ヘクタール)で醸造用大麦を自家栽培。スチル1対、年産20万L。2021年10月初リリース、2023年5月カスクストレングス版。",
+    "signature": {
+      "name": "Lochlea Our Barley",
+      "cask": "アメリカン・バーボン樽+オロロソ・シェリー樽+STR樽",
+      "color": "ゴールド",
+      "taste": "シトラス、ハニー、バニラ、青リンゴ、シリアル、若いが繊細で農場直結のテロワール感"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Lochlea Our Barley", "type": "常売"},
+        {"name": "Lochlea Sowing Edition (春)", "type": "常売シーズナル"},
+        {"name": "Lochlea Harvest Edition (秋)", "type": "常売シーズナル"},
+        {"name": "Lochlea Fallow Edition", "type": "常売シーズナル"},
+        {"name": "Lochlea Ploughing Edition", "type": "常売シーズナル"}
+      ],
+      "limited": [
+        {"name": "Cask Strength", "type": "限定(バッチ毎)"},
+        {"name": "Burns Night Edition (毎年1月)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Lochlea_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "dornoch": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Dornoch_distillery.jpg/800px-Dornoch_distillery.jpg",
+    "characteristics": "北ハイランド、サザーランド、ドーノック。19世紀ヴィクトリア朝の消防署を改装した超小規模蒸留所。2017年Simon & Philip Thompson兄弟創業、Thompson Independent Traders社運営。'Thompson Bros.'ブランドで独立瓶詰もリリース。スチル1対、超低生産量。2022年初シングルモルト'Dornoch 2017 3 Year Old Single Cask #001'。2025年£700万規模のStruie蒸留所新設計画。",
+    "signature": {
+      "name": "Dornoch 2017 3 Year Old (#001)",
+      "cask": "単樽(バッチ毎)",
+      "color": "ペールゴールド",
+      "taste": "若々しいフルーツ、シトラス、スパイス、ピート入/非ピート両方、カルトな'Thompsonスタイル'"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Dornoch Single Cask Series", "type": "常売(超少量)"},
+        {"name": "Thompson Bros. Mediterranean Gin", "type": "常売ジン"}
+      ],
+      "limited": [
+        {"name": "Experimental Gin (2017)", "type": "限定"},
+        {"name": "Thompson Bros. 独立瓶詰(他蒸留所の樽)", "type": "関連"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Dornoch_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "brora": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Brora_distillery.jpg/800px-Brora_distillery.jpg",
     "characteristics": "北ハイランド、サザーランド、ブローラ。1819年創業(元名Clynelish)、Diageo所有。1968年に新Clynelishが隣接してオープンした際'Brora'に改称。1969-1973年は主にアイラ島のピート不足対応でヘビーピーテッドを生産(現在の伝説的ブローラ)、1973年以降はライトピート。1983年閉鎖→2021年復活(38年ぶり)。仕込み水はClynemilton川。1972年ヴィンテージ40年(2014年£7,000)はDiageo最高額単品。",
