@@ -850,6 +850,58 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "arbikie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Arbikie_distillery.jpg/800px-Arbikie_distillery.jpg",
+    "characteristics": "東ハイランド、アンガス、インバーキーラー(ルナン湾東海岸)、2,000エーカーのArbikie Highland Estate農場内。2013年Stirling兄弟(John/Iain/David、4世代目農場主)創業、90%の原材料を自家農場から。年産20万L。2014年スコットランド初のポテトウォッカ、2020年スコットランド約100年ぶりのライウイスキー(Highland Rye)、気候ポジティブなNàdar Ginなどイノベーション重視。2022年ビジターセンター開業。",
+    "signature": {
+      "name": "Arbikie Highland Rye 1794",
+      "cask": "ニューアメリカンオーク+バーボン樽",
+      "color": "ディープゴールド",
+      "taste": "ライ由来のスパイシーさ、シナモン、ジンジャー、バニラ、ドライフルーツ、100年ぶりスコッチライの個性"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Arbikie Highland Rye 1794", "type": "常売"},
+        {"name": "Arbikie Highland Single Malt", "type": "常売"},
+        {"name": "Kirsty's Gin (海藻・カーリンアザミ)", "type": "常売ジン"},
+        {"name": "Nàdar Gin (豆由来、気候ポジティブ)", "type": "常売ジン"},
+        {"name": "Arbikie Potato Vodka (Maris Piper等)", "type": "常売ウォッカ"}
+      ],
+      "limited": [
+        {"name": "Highland Rye Chateau d'Yquem Finish", "type": "限定"},
+        {"name": "Single Cask Release", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Arbikie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glasgow": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Glasgow_distillery.jpg/800px-Glasgow_distillery.jpg",
+    "characteristics": "ローランド、グラスゴー南西部ヒリントン。2015年Liam Hughes・Mike Hayward・Ian McDougall氏ら創業。グラスゴー内では1902年以来100年以上ぶりの稼働蒸留所。仕込み水はカトリン湖。年産44万L、スチル2対(Frances & Margaret MacDonald姉妹の名)。'1770'ブランドは1770年創業のオリジナルGlasgow Distillery(Dundashill、1902年閉鎖)の名と歴史へのオマージュ。2020年スコッチウイスキーアワード'Distillery of the Year'。ジン(Makar)とラム(Banditti Club)も生産。",
+    "signature": {
+      "name": "Glasgow 1770 The Original",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "トロピカルフルーツ、バニラ、シナモン、シトラス、軽いオイリー、モダンでクリーンなローランドスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "1770 The Original (NAS)", "type": "常売"},
+        {"name": "1770 Peated", "type": "常売"},
+        {"name": "1770 Triple Distilled", "type": "常売"},
+        {"name": "1770 Signature 5 Year Old (2023〜)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Single Cask Series", "type": "限定"},
+        {"name": "Annual Release (毎年)", "type": "限定"},
+        {"name": "Makar Gin / Banditti Club Rum", "type": "併売"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glasgow_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "dalmunach": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Dalmunach_distillery.jpg/800px-Dalmunach_distillery.jpg",
     "characteristics": "スペイサイド、キャロン。2015年創業、Chivas Brothers (Pernod Ricard)所有。年産1,000万L(スコットランド最大級)。8基のスチル(ウォッシュ4+スピリット4)、玉ねぎ型スピリットスチル(前Imperial蒸留所へのオマージュ)。仕込み水はMannoch丘陵のBallinom川。麦ワラ束にインスパイアされたモダンデザインで2015年RIBAスコットランド賞受賞。£2,500万投資、Nicola Sturgeon首相(当時)が開業式。主にChivas Regalブレンド用。2019年初シングルモルト(4年単樽)。",

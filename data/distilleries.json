@@ -3,7 +3,7 @@
   "last_updated": "2026-04-24",
   "distilleries": [
     {"id": "aberfeldy", "name_en": "Aberfeldy", "name_ja": "アバフェルディ", "region": "Highland", "subregion": "South Highland", "lat": 56.6245, "lon": -3.8499, "status": "active", "established": 1898, "owner": "John Dewar & Sons (Bacardi)", "town": "Aberfeldy, Perthshire"},
-    {"id": "arbikie", "name_en": "Arbikie", "name_ja": "アービッキー", "region": "Highland", "subregion": "East Highland", "lat": 56.6250, "lon": -2.5450, "status": "active", "established": 2014, "owner": "Stirling family", "town": "Arbikie, Angus"},
+    {"id": "arbikie", "name_en": "Arbikie", "name_ja": "アービッキー", "region": "Highland", "subregion": "East Highland", "lat": 56.6656, "lon": -2.5275, "status": "active", "established": 2014, "owner": "Stirling family", "town": "Inverkeilor, Angus"},
     {"id": "ardmore", "name_en": "Ardmore", "name_ja": "アードモア", "region": "Highland", "subregion": "East Highland", "lat": 57.3597, "lon": -2.6869, "status": "active", "established": 1898, "owner": "Beam Suntory", "town": "Kennethmont, Aberdeenshire"},
     {"id": "ardnamurchan", "name_en": "Ardnamurchan", "name_ja": "アードナマッハン", "region": "Highland", "subregion": "West Highland", "lat": 56.7197, "lon": -6.0031, "status": "active", "established": 2014, "owner": "Adelphi Distillery", "town": "Glenbeg, Ardnamurchan"},
     {"id": "ardross", "name_en": "Ardross", "name_ja": "アードロス", "region": "Highland", "subregion": "North Highland", "lat": 57.7417, "lon": -4.3833, "status": "active", "established": 2019, "owner": "Greenwood Distillers", "town": "Ardross, Ross-shire"},
@@ -153,7 +153,7 @@
     {"id": "daftmill", "name_en": "Daftmill", "name_ja": "ダフトミル", "region": "Lowland", "lat": 56.2500, "lon": -3.1500, "status": "active", "established": 2005, "owner": "Cuthbert family", "town": "Cupar, Fife"},
     {"id": "eden_mill", "name_en": "Eden Mill", "name_ja": "エデンミル", "region": "Lowland", "lat": 56.3536, "lon": -2.8131, "status": "active", "established": 2014, "owner": "Eden Mill Distillery", "town": "St Andrews, Fife"},
     {"id": "falkirk", "name_en": "Falkirk", "name_ja": "ファルカーク", "region": "Lowland", "lat": 56.0019, "lon": -3.7839, "status": "active", "established": 2020, "owner": "Falkirk Distillery Co.", "town": "Falkirk, Stirlingshire"},
-    {"id": "glasgow", "name_en": "Glasgow", "name_ja": "グラスゴー", "region": "Lowland", "lat": 55.8642, "lon": -4.2518, "status": "active", "established": 2015, "owner": "Glasgow Distillery Co.", "town": "Glasgow"},
+    {"id": "glasgow", "name_en": "Glasgow", "name_ja": "グラスゴー", "region": "Lowland", "lat": 55.8633, "lon": -4.3621, "status": "active", "established": 2015, "owner": "Glasgow Distillery Co.", "town": "Hillington, Glasgow", "note": "Brand name: 1770"},
     {"id": "glenkinchie", "name_en": "Glenkinchie", "name_ja": "グレンキンチー", "region": "Lowland", "lat": 55.8900, "lon": -2.8914, "status": "active", "established": 1837, "owner": "Diageo", "town": "Pencaitland, East Lothian"},
     {"id": "holyrood", "name_en": "Holyrood", "name_ja": "ホーリールード", "region": "Lowland", "lat": 55.9444, "lon": -3.1789, "status": "active", "established": 2019, "owner": "Holyrood Distillery", "town": "Edinburgh"},
     {"id": "inchdairnie", "name_en": "Inchdairnie", "name_ja": "インチデアニー", "region": "Lowland", "lat": 56.1833, "lon": -3.1667, "status": "active", "established": 2016, "owner": "InchDairnie Distillery", "town": "Glenrothes, Fife"},
