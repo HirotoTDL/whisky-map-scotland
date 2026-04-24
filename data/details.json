@@ -410,6 +410,446 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "glenfarclas": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Glenfarclas_distillery.jpg/800px-Glenfarclas_distillery.jpg",
+    "characteristics": "スペイサイド、バリンダロッホ、ベンリネス山麓。1836年創業、J. & G. Grant家族経営(1865年〜独立維持)。スペイサイド最大のスチル(ウォッシュ29,600L×3、スピリット25,000L×3)、年産400万L。ダネージ式熟成庫に1953年以降の68,000樽を保管。仕込み水はベンリネス山。シェリー樽主体の伝統的ハイランドスタイル。",
+    "signature": {
+      "name": "Glenfarclas 105 (カスクストレングス, 60%)",
+      "cask": "オロロソ・シェリー樽",
+      "color": "ディープアンバー〜マホガニー",
+      "taste": "濃厚なシェリー感、ドライフルーツ、レーズン、ダークチョコレート、オーク、スパイス、力強く長いフィニッシュ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glenfarclas 10", "type": "常売"},
+        {"name": "Glenfarclas 12", "type": "常売"},
+        {"name": "Glenfarclas 15 (46%)", "type": "常売"},
+        {"name": "Glenfarclas 17", "type": "常売"},
+        {"name": "Glenfarclas 21", "type": "常売"},
+        {"name": "Glenfarclas 25", "type": "常売"},
+        {"name": "Glenfarclas 30", "type": "常売"},
+        {"name": "Glenfarclas 105 (CS)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Family Casks (1952-2007 単樽シリーズ)", "type": "限定(ヴィンテージ毎)"},
+        {"name": "Glenfarclas 40", "type": "限定"},
+        {"name": "150th Anniversary £511.19s.0d", "type": "限定(2015)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glenfarclas_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "bunnahabhain": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bunnahabhain_distillery.jpg/800px-Bunnahabhain_distillery.jpg",
+    "characteristics": "アイラ島北東、ポート・アスケイグ近郊。1881年創業、Distell(Heineken)所有。ゲール語で'川の口'の意。アイラ島では珍しい伝統的にノンピートまたはライトピートのスタイル。年産350万L。",
+    "signature": {
+      "name": "Bunnahabhain 12 Year Old",
+      "cask": "シェリー樽+バーボン樽のミックス",
+      "color": "アンバー",
+      "taste": "ナッツ、ドライフルーツ、ブリニー(塩気)、ほのかなシェリー、マイルドな海潮、スムースで飲みやすいアイラ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Stiuireadair (NAS)", "type": "常売"},
+        {"name": "Toiteach A Dhà (ピーテッド)", "type": "常売"},
+        {"name": "Bunnahabhain 12", "type": "常売"},
+        {"name": "Bunnahabhain 18", "type": "常売"},
+        {"name": "Bunnahabhain 25", "type": "常売"},
+        {"name": "Bunnahabhain 30", "type": "常売"},
+        {"name": "Bunnahabhain 40 (41.9%)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Feis Ile (毎年、アイラ島祭り限定)", "type": "限定"},
+        {"name": "Moine シリーズ (ピーテッド)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Bunnahabhain_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "caol_ila": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Caol_Ila_distillery.jpg/800px-Caol_Ila_distillery.jpg",
+    "characteristics": "アイラ島北東岸、ポート・アスケイグ近郊。1846年創業、Diageo所有。ロッホ・ナン・バンを仕込み水とする。6基のスチル、年産650万L(アイラ島最大級)。生産量の約95%がブレンド(特にJohnnie Walker Black Label)用。1999年以降ノンピートの'ハイランドスピリット'も生産。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Caol Ila 12 Year Old",
+      "cask": "アメリカンオーク(バーボン樽)",
+      "color": "ペールストロー、アイラでも淡い色合い",
+      "taste": "ライトなピートスモーク、フローラル、ペッパー、海潮、シトラス、エレガントでクリーン"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Caol Ila 12", "type": "常売"},
+        {"name": "Caol Ila Distillers Edition (Moscatel Finish)", "type": "常売"},
+        {"name": "Caol Ila Moch (NAS)", "type": "常売"},
+        {"name": "Caol Ila 18", "type": "常売"},
+        {"name": "Caol Ila 25", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Caol Ila Cask Strength (NAS)", "type": "限定"},
+        {"name": "Special Releases (毎年)", "type": "限定"},
+        {"name": "Unpeated Stitchell Reserve", "type": "限定(希少)"}
+      ],
+      "flora_fauna": {"name": "Caol Ila 12 Year Old Flora & Fauna", "type": "花と動物シリーズ(廃盤後、標準12年として継承)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Caol_Ila_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "bruichladdich": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Bruichladdich_distillery.jpg/800px-Bruichladdich_distillery.jpg",
+    "characteristics": "アイラ島リンズ半島、インダール湾沿い。1881年創業、2001年再開、Rémy Cointreau所有(2012〜)。ヴィクトリア時代の機械をほぼそのまま使用、コンピュータ制御なし。スコットランド産大麦限定使用(アイラ産増加)。3ブランド(ブルックラディ=ノンピート / ポートシャーロット=ヘビーピート / オクトモア=世界最強ピート)を使い分ける。",
+    "signature": {
+      "name": "Classic Laddie Scottish Barley",
+      "cask": "複数タイプ(ほぼバーボン樽)、各種フィニッシュ",
+      "color": "ペールゴールド",
+      "taste": "フローラル、麦の甘み、シトラス、軽いオイリー感、ミネラル。アイラで唯一の'ピート無し'コアボトル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Classic Laddie Scottish Barley", "type": "常売"},
+        {"name": "Islay Barley (ヴィンテージ)", "type": "常売"},
+        {"name": "The Organic (有機大麦)", "type": "常売"},
+        {"name": "Bere Barley (古代大麦)", "type": "常売"},
+        {"name": "Port Charlotte 10 (ヘビーピート)", "type": "常売"},
+        {"name": "Port Charlotte Islay Barley", "type": "常売"},
+        {"name": "Octomore 13.1/13.2/13.3/13.4 (世界最強ピート)", "type": "常売(年毎に更新)"}
+      ],
+      "limited": [
+        {"name": "Black Art (シークレットブレンド)", "type": "限定(エディション毎)"},
+        {"name": "Octomore Masterclass", "type": "限定"},
+        {"name": "Bruichladdich Rare Cask Series", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Bruichladdich_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "kilchoman": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Kilchoman_distillery.jpg/800px-Kilchoman_distillery.jpg",
+    "characteristics": "アイラ島北西部、マキール湾近郊。2005年Anthony Wills氏創業、独立系ファミリー経営。スコットランド屈指のフロアモルティング蒸留所の1つで、大麦栽培から瓶詰めまで全てアイラ島内で完結する'100% Islay'の真のアイラ原産ウイスキーを掲げる。2基ずつのスチル、年産50万L。自家モルト約20ppm / Port Ellen購入約50ppm。",
+    "signature": {
+      "name": "Machir Bay",
+      "cask": "バーボン樽主体+シェリー樽",
+      "color": "ゴールド",
+      "taste": "ピートスモーク、海潮、バニラ、若々しいフルーツ感、バランス型アイラ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Machir Bay", "type": "常売"},
+        {"name": "Sanaig (シェリーフィニッシュ)", "type": "常売"},
+        {"name": "100% Islay (完全アイラ産)", "type": "常売"},
+        {"name": "Loch Gorm (オロロソシェリー)", "type": "常売(毎年)"}
+      ],
+      "limited": [
+        {"name": "PX Sherry Cask Matured (2023, 23,000本)", "type": "限定"},
+        {"name": "Kilchoman 16 Year (最古)", "type": "限定"},
+        {"name": "20th Anniversary Cask Series (2025)", "type": "限定"},
+        {"name": "Vintage Release (毎年)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Kilchoman_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glen_grant": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Glen_Grant_Distillery.jpg/800px-Glen_Grant_Distillery.jpg",
+    "characteristics": "スペイサイド、ロシーズ。1840年創業、Campari Group所有(2005〜)。19世紀後半にMajor James Grant氏が導入した背の高いスチル+純化器(purifier)によるクリーンで明るい酒質が特徴。年産590万L、8基のスチル(ウォッシュ4+スピリット4)。イタリアで最も売れるシングルモルト。",
+    "signature": {
+      "name": "Glen Grant Arboralis",
+      "cask": "アメリカン・バーボン樽+シェリー樽",
+      "color": "ペールゴールド(自然色に近い明るさ)",
+      "taste": "フレッシュなリンゴ、洋ナシ、モルトの甘さ、ほのかなバニラ、非常にクリーンで軽快"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Arboralis", "type": "常売"},
+        {"name": "Major's Reserve", "type": "常売"},
+        {"name": "10 Year Old", "type": "常売"},
+        {"name": "12 Year Old", "type": "常売"},
+        {"name": "15 Year Old Batch Strength", "type": "常売"},
+        {"name": "18 Year Old Rare Edition", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Dennis Malcolm 60th Anniversary", "type": "限定"},
+        {"name": "Five Decades", "type": "限定"},
+        {"name": "Vintage 1953/1958/1961 etc (Gordon & MacPhail経由)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glen_Grant_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glenrothes": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Glenrothes_Distillery.jpg/800px-Glenrothes_Distillery.jpg",
+    "characteristics": "スペイサイド、ロシーズ。1879年創業、Edrington所有。10基のスチル(ウォッシュ5+スピリット5)、年産520万L。見学は招待制のみ(非公開)。ヴィンテージ表記の先駆者として知られ、丸形の独特なボトルが象徴的。",
+    "signature": {
+      "name": "Glenrothes 12 Year Old (Soleo Collection)",
+      "cask": "オロロソ・シェリー樽主体",
+      "color": "ディープゴールド",
+      "taste": "バニラ、シトラス、スパイス、リンゴ、マーマレード、リッチなシェリー、丸みのある後味"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glenrothes 10", "type": "常売"},
+        {"name": "Glenrothes 12", "type": "常売"},
+        {"name": "Glenrothes 15", "type": "常売"},
+        {"name": "Glenrothes 18", "type": "常売"},
+        {"name": "Glenrothes 25", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Glenrothes 32", "type": "限定"},
+        {"name": "Glenrothes 42", "type": "限定"},
+        {"name": "Glenrothes 51", "type": "限定(希少)"},
+        {"name": "Vintage Reserve", "type": "限定(年度毎)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glenrothes_Distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "benromach": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Benromach_distillery.jpg/800px-Benromach_distillery.jpg",
+    "characteristics": "スペイサイド、フォレス。1898年創業、Gordon & MacPhail所有(1993〜)。1998年にチャールズ皇太子(当時)により再開。仕込み水はチャペルトン泉。スチル1対、年産40万Lと小規模。1960年代以前のクラシック・スペイサイドスタイル(軽いピート使用)を再現することを志向。赤い扉が象徴。",
+    "signature": {
+      "name": "Benromach 10 Year Old",
+      "cask": "アメリカンオーク(80%) + シェリー樽(20%)",
+      "color": "ディープゴールド",
+      "taste": "ほのかなピートスモーク、ヘザー、蜂蜜、シェリー、オレンジ、バニラ、スモーキーでクラシック"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Benromach 10", "type": "常売"},
+        {"name": "Benromach 15", "type": "常売"},
+        {"name": "Benromach 21", "type": "常売"},
+        {"name": "Benromach Peat Smoke", "type": "常売"},
+        {"name": "Benromach Organic Special Edition", "type": "常売"},
+        {"name": "Benromach Contrasts: Air Dried Oak", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Benromach Cask Strength Vintage (1978, etc)", "type": "限定"},
+        {"name": "Benromach 40", "type": "限定"},
+        {"name": "Red Door Gin (併売)", "type": "併売ジン"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Benromach_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "cardhu": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Cardhu_distillery.jpg/800px-Cardhu_distillery.jpg",
+    "characteristics": "スペイサイド、アーキーズタウン近郊。1824年、元密造者John Cumming夫妻創業。Diageo所有。ゲール語'Carn Dubh'(黒い岩)由来。Johnnie Walkerブレンドの重要構成要素。仕込み水はマノック丘陵とラインバーン。2003年のブレンデッドモルト表記騒動後、2006年からシングルモルトに回帰。",
+    "signature": {
+      "name": "Cardhu 12 Year Old",
+      "cask": "アメリカン・バーボン樽+リフィル樽",
+      "color": "ゴールド",
+      "taste": "ハニー、梨、バニラ、モルト、軽いシルキーテクスチャ、柔らかな甘さ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Cardhu 12", "type": "常売"},
+        {"name": "Cardhu 15", "type": "常売"},
+        {"name": "Cardhu 18", "type": "常売"},
+        {"name": "Cardhu Gold Reserve", "type": "常売"},
+        {"name": "Cardhu Amber Rock", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Cardhu 11 (2020 Special Release, 56%)", "type": "限定"},
+        {"name": "Cardhu 14 (2019/2021, 55%)", "type": "限定"},
+        {"name": "Cardhu 21 (2014, 54.2%)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Cardhu_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "mortlach": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mortlach_distillery.jpg/800px-Mortlach_distillery.jpg",
+    "characteristics": "スペイサイド、ダフタウンで最古(1823年、ダフタウン初の合法蒸留所)。Diageo所有。6基のスチル(ウォッシュ3+スピリット3)を'2.81回蒸留'と呼ばれる独特な複雑シーケンスで使い分けることで知られ、'The Beast of Dufftown'の異名を持つリッチで肉質な酒質を生む。Johnnie Walkerブレンドの重要構成要素。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Mortlach 12 The Wee Witchie",
+      "cask": "アメリカン・バーボン樽+ヨーロピアンオーク・シェリー樽",
+      "color": "ディープアンバー",
+      "taste": "肉質(ミーティ)、ドライフルーツ、シェリー、スパイス、ダークチョコレート、非常に濃厚でリッチ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Mortlach 12 The Wee Witchie", "type": "常売"},
+        {"name": "Mortlach 16 Distiller's Dram", "type": "常売"},
+        {"name": "Mortlach 20 Cowie's Blue Seal", "type": "常売"},
+        {"name": "Mortlach 14 Alexander's Way (免税)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "The Katana's Edge (2023, 58%)", "type": "限定"},
+        {"name": "The Lure of the Blood Moon (2022, 57.8%)", "type": "限定"},
+        {"name": "Rare Old (NAS)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Mortlach 16 Flora & Fauna", "type": "花と動物シリーズ(廃盤)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Mortlach_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "cragganmore": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cragganmore_distillery.jpg/800px-Cragganmore_distillery.jpg",
+    "characteristics": "スペイサイド、バリンダロッホ。1869年創業、Diageo所有。平頂型で短いスピリットスチルが特徴で、この形状がドライで複雑なハウスキャラクターを生む。年産152万L、4基のスチル。1988年クラシック・モルト・オブ・スコットランド6蒸留所の1つ。仕込み水はクラガン川。",
+    "signature": {
+      "name": "Cragganmore 12 Year Old",
+      "cask": "アメリカンオーク(バーボン)+リフィル樽",
+      "color": "アンバー",
+      "taste": "ドライで複雑、ハーブ、スパイス、リッチなモルト、ほのかなスモーク、バランス型スペイサイド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Cragganmore 12", "type": "常売"},
+        {"name": "Cragganmore 10 Sherry Cask", "type": "常売"},
+        {"name": "Distillers Edition (Port finish)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Cragganmore 25 (2014 Special Release)", "type": "限定"},
+        {"name": "Special Releases (毎年)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Cragganmore_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "tomatin": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tomatin_distillery.jpg/800px-Tomatin_distillery.jpg",
+    "characteristics": "中央ハイランド、インバネスから南25分。1897年創業、日本の宝酒造所有(1986年〜、日本企業による初のスコッチ買収)。12基のスチル(ウォッシュ6+スピリット6)、年産505万L。生産の約80%がブレンド(Antiquary、Talisman)用。",
+    "signature": {
+      "name": "Tomatin 12 Year Old",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "フルーツ(リンゴ・洋ナシ)、バニラ、バタースコッチ、軽いスパイス、滑らかでソフトなハイランド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Tomatin Legacy (NAS)", "type": "常売"},
+        {"name": "Tomatin 12", "type": "常売"},
+        {"name": "Tomatin 14 Port Finish", "type": "常売"},
+        {"name": "Tomatin 18", "type": "常売"},
+        {"name": "Tomatin 30", "type": "常売"},
+        {"name": "Tomatin 36", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Cù Bòcan (年1週間だけ生産するピーテッド)", "type": "限定シリーズ"},
+        {"name": "Tomatin 40", "type": "限定"},
+        {"name": "Single Cask Series", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Tomatin_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glen_moray": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Glen_Moray_distillery.jpg/800px-Glen_Moray_distillery.jpg",
+    "characteristics": "スペイサイド、エルギン、ロッシー川沿い。1897年創業、La Martiniquaise所有(2008〜)。10基のスチル(ウォッシュ4+スピリット6)、年産850万L(スペイサイド有数の規模)。仕込み水はロッシー川。アメリカンオーク主体の軽快なスタイルで、ワインカスクフィニッシュ系が充実。",
+    "signature": {
+      "name": "Glen Moray Classic",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "バニラ、バタースコッチ、フレッシュフルーツ、モルト、ライトで入門に最適"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Classic (NAS)", "type": "常売"},
+        {"name": "Classic Peated", "type": "常売"},
+        {"name": "Classic Port Cask / Sherry Cask / Chardonnay Cask / Madeira / Cabernet", "type": "常売(ワインカスクフィニッシュ)"},
+        {"name": "Glen Moray 12", "type": "常売"},
+        {"name": "Glen Moray 15", "type": "常売"},
+        {"name": "Glen Moray 18", "type": "常売"},
+        {"name": "Glen Moray 21 Port Finish", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Phoenix Rising (2024 WWA Best Speyside)", "type": "限定"},
+        {"name": "Warehouse 1 Collection", "type": "限定"},
+        {"name": "1994 Sherry Cask Finish", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glen_Moray_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "linkwood": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Linkwood_distillery.jpg/800px-Linkwood_distillery.jpg",
+    "characteristics": "スペイサイド、エルギン。1821年創業、Diageo所有。2つの蒸溜所建物に計6基のスチル(旧スチルの完全レプリカを維持)、年産250万L。仕込み水はミルブエス湖近郊の泉。花のような繊細な酒質が特徴で、マネージャーRoderick Mackenzie氏の'蒸留所の全要素が酒質を作る'哲学で知られる。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Linkwood 12 Flora & Fauna",
+      "cask": "リフィル樽主体",
+      "color": "ペールゴールド",
+      "taste": "フローラル、リンゴの花、バラ、ハニー、シトラス、非常にエレガントで繊細"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Linkwood 12 Flora & Fauna", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Rare Malts 26 / 30", "type": "限定(廃盤)"},
+        {"name": "Special Releases 37 (2016)", "type": "限定"},
+        {"name": "1978 Vintage (50.3%)", "type": "限定"},
+        {"name": "Woven Honor (Orphan Barrel, 2024)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Linkwood 12 Year Old Flora & Fauna", "type": "花と動物シリーズ (現行)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Linkwood_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glenallachie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Glenallachie_distillery.jpg/800px-Glenallachie_distillery.jpg",
+    "characteristics": "スペイサイド、アバロア、ベンリネス山麓。1967年Mackinlay McPherson氏創業、2017年Billy Walker氏(ex-GlenDronach)ら3人に買収され独立系に。仕込み水はベンリネス山泉。160時間の長時間発酵が特徴。16棟の熟成庫に50,000樽以上貯蔵。フルーティで樽使いのバリエーション豊富。",
+    "signature": {
+      "name": "GlenAllachie 12 Year Old",
+      "cask": "PXシェリー樽+オロロソ・シェリー樽+ヴァージンオーク",
+      "color": "リッチアンバー",
+      "taste": "チョコレート、オレンジ、ハニー、スパイス、シェリー、リッチでフルボディ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "GlenAllachie 10 Cask Strength", "type": "常売(バッチ毎)"},
+        {"name": "GlenAllachie 12", "type": "常売"},
+        {"name": "GlenAllachie 15", "type": "常売"},
+        {"name": "GlenAllachie 18", "type": "常売"},
+        {"name": "GlenAllachie 21", "type": "常売"},
+        {"name": "GlenAllachie 25", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Wood Collection (PX / Rioja / Port / Virgin Oak 各種)", "type": "限定シリーズ"},
+        {"name": "Single Cask (毎年)", "type": "限定"},
+        {"name": "MacNair's (姉妹ブレンド)", "type": "関連"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glenallachie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "craigellachie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Craigellachie_distillery.jpg/800px-Craigellachie_distillery.jpg",
+    "characteristics": "スペイサイド、クレイゲラキ村(マッカランの近く)。1891年創業、John Dewar & Sons (Bacardi)所有。年産400万L、4基のスチル。ワームタブ凝縮器+スチームコイル加熱(伝統的手法)を今も維持しており、マンファルな(肉質な)酒質を生む。Dewar'sブレンドの重要構成要素。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Craigellachie 13 Year Old",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "リッチゴールド",
+      "taste": "ピートスモーク(控えめ)、マッチ棒のような硫黄香(ミーティ)、ドライフルーツ、スパイス、リッチで個性的"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Craigellachie 13", "type": "常売"},
+        {"name": "Craigellachie 13 Bas-Armagnac Finish", "type": "常売"},
+        {"name": "Craigellachie 17", "type": "常売"},
+        {"name": "Craigellachie 23", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Craigellachie 19 (2014 travel retail)", "type": "限定"},
+        {"name": "Craigellachie 31/33", "type": "限定(希少)"}
+      ],
+      "flora_fauna": {"name": "Craigellachie 14 Flora & Fauna", "type": "花と動物シリーズ(廃盤)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Craigellachie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "oban": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Oban_distillery.jpg/800px-Oban_distillery.jpg",
     "characteristics": "西ハイランド、オーバン町の中心にある小さな蒸留所(スコットランド最小級)。1794年Stevenson兄弟創業、Diageo所有。ポットスチル僅か2基、年産67万L。仕込み水はアードコンネル山中の2つの湖。1988年クラシック・モルト・オブ・スコットランドに選定。西ハイランド特有の'アイランドとハイランドの中間'の個性。",
