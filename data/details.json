@@ -850,6 +850,28 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "uilebheist": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Uilebheist_distillery.jpg/800px-Uilebheist_distillery.jpg",
+    "characteristics": "中央ハイランド、インヴァネス市内、ネス川沿い。2022年創業、130年ぶりのインヴァネス新設蒸留所。'Brewstillery'(ビール+ウイスキー併用)としてスコットランド初。Heriot-Watt大学醸造蒸留修士のBruce Smith氏がマスターディスティラー。ネス川の水とエネルギー(ハイドロ)を100%活用、地元産大麦100%使用のサステナブル運営。ゲール語で'怪物'の意(ネッシー由来)。",
+    "signature": {
+      "name": "Uile-bheist Single Malt (熟成中)",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "—(2025年以降段階リリース)",
+      "taste": "—(ネス川水+地元大麦のテロワール重視)"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Uile-bheist Craft Beer (ビール各種)", "type": "常売(ビール)"}
+      ],
+      "limited": [
+        {"name": "Uile-bheist Cask Programme", "type": "限定"},
+        {"name": "Inaugural Release (今後)", "type": "限定予定"}
+      ]
+    },
+    "sources": ["https://www.uilebheist.com/"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "falkirk": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Falkirk_distillery.jpg/800px-Falkirk_distillery.jpg",
     "characteristics": "ローランド、スターリングシャー、ファルカーク。2020年George Stewart家創業(£900万)。ノンピート・ローランドシングルモルト。スチル1対、年産20万L。閉鎖Caperdonich蒸留所(スペイサイド)の銅スチル/マッシュタンを移設。ダネージ式倉庫。Rosebank(1993閉鎖)以来ファルカーク地域で初のウイスキー蒸留所復活。アントニヌスの長城近隣で特別な建築許可を取得。廃棄物を微細藻類飼料に転換する循環経済型の設計。2023年12月初ボトル・オークション、2024年1月一般販売(24時間で完売)。",
