@@ -850,6 +850,28 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "ardross": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ardross_distillery.jpg/800px-Ardross_distillery.jpg",
+    "characteristics": "北ハイランド、ロス=シャー、アルネス。2019年Greenwood Distillers創業、マスターブレンダーAndrew Rankin氏による£5,000万投資、50エーカー敷地に19世紀建物修復+新設。仕込み水はLoch Dubh。スチル1対、年産100万L。2021年12月、クリスティーズ・オークションで史上初のニューメイク・スピリット(樽)出品。ジン'Theodore'(ピクト人テーマ)も製造。",
+    "signature": {
+      "name": "Ardross Single Malt (熟成中)",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "—(2024年以降段階リリース)",
+      "taste": "—(若年期はフルーティ&バニラ予想、熟成中)"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Theodore Gin", "type": "常売ジン"}
+      ],
+      "limited": [
+        {"name": "Cask Auction Release (Christie's 2021)", "type": "限定(歴史的)"},
+        {"name": "Single Cask Release (今後)", "type": "限定予定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Ardross_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "tullibardine": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tullibardine_distillery.jpg/800px-Tullibardine_distillery.jpg",
     "characteristics": "南ハイランド、パースシャー、ブラックフォード。1949年創業(元は1488年ジェームズ4世時代の製ビール所とされる歴史あり)、Picard Vins & Spiritueux所有(2011〜)。1995年Whyte & Mackayによる沈黙後、2003年復活。スチル2対、年産270万L。仕込み水はOchil丘陵とDanny川。フレンチオーナーらしく多彩なワイン樽フィニッシュが特徴。",
