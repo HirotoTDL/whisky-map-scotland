@@ -850,6 +850,68 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "dalmunach": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Dalmunach_distillery.jpg/800px-Dalmunach_distillery.jpg",
+    "characteristics": "スペイサイド、キャロン。2015年創業、Chivas Brothers (Pernod Ricard)所有。年産1,000万L(スコットランド最大級)。8基のスチル(ウォッシュ4+スピリット4)、玉ねぎ型スピリットスチル(前Imperial蒸留所へのオマージュ)。仕込み水はMannoch丘陵のBallinom川。麦ワラ束にインスパイアされたモダンデザインで2015年RIBAスコットランド賞受賞。£2,500万投資、Nicola Sturgeon首相(当時)が開業式。主にChivas Regalブレンド用。2019年初シングルモルト(4年単樽)。",
+    "signature": {
+      "name": "Dalmunach (シングルカスクのみ)",
+      "cask": "アメリカンオーク(バーボン)",
+      "color": "ペールゴールド",
+      "taste": "モダンクリーン、フレッシュフルーツ、バニラ、シリアル、スムース、ブレンド向けの高品質スペイサイド"
+    },
+    "bottles": {
+      "core": [],
+      "limited": [
+        {"name": "Dalmunach 4 Year Single Cask (2019)", "type": "限定"},
+        {"name": "Chivas Secret Speyside Series (Dalmunach)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Dalmunach_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "braeval": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Braeval_distillery.jpg/800px-Braeval_distillery.jpg",
+    "characteristics": "スペイサイド、バンフシャー、チャペルタウン。1973年'Braes of Glenlivet'として創業(混同避けるため改名)、Chivas Brothers (Pernod Ricard)所有。標高350m、スコットランド最高所の蒸留所。2002-2008年沈黙。年産420万L、スチル6基(ウォッシュ2+スピリット4)。仕込み水はPreenie/Kate's Well。主にChivas Regalブレンド用。2017年初Braeval公式シングルモルト。",
+    "signature": {
+      "name": "Braeval 10 (Chivas Brothers)",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ゴールド",
+      "taste": "高地清涼、フローラル、青リンゴ、ハニー、シリアル、クリーンでソフト"
+    },
+    "bottles": {
+      "core": [],
+      "limited": [
+        {"name": "Braeval 10 (Chivas 2017)", "type": "限定"},
+        {"name": "Chivas Secret Speyside Series (Braeval)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Braeval_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "allt_a_bhainne": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Allt-A-Bhainne_distillery.jpg/800px-Allt-A-Bhainne_distillery.jpg",
+    "characteristics": "スペイサイド、ダフタウン近郊。1975年Seagrams社が、Chivas Brothersブレンド向けバルクモルト供給目的で建設。2001年Pernod Ricard傘下に。ゲール語で'ミルクのような小川'の意。近代的な効率重視の設計。長らく公式シングルモルトを持たなかったが、2018年'The Unforgettable'ブランドで単一モルト開始。ピーテッド版も生産。",
+    "signature": {
+      "name": "Allt-A-Bhainne (The Unforgettable シリーズ)",
+      "cask": "バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "クリーン、フルーティ、ハニー、軽い、ブレンド寄りのニュートラル。ピーテッド版は軽めのスモーク"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Allt-A-Bhainne (2018〜 独自ブランド)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Chivas Secret Speyside Series", "type": "限定"},
+        {"name": "Allt-A-Bhainne Peated Cask Strength", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Allt-A-Bhainne_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "glengyle": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Glengyle_distillery.jpg/800px-Glengyle_distillery.jpg",
     "characteristics": "キャンベルタウン。1872年William Mitchell創業→1925年閉鎖→2000年再開(Springbankと同族経営のMitchell's Glengyle Ltd.)。年産75万L、スチル1対。仕込み水はCrosshill湖。商標'Glengyle'はLoch Lomond社保有のため、'Kilkerran'(古キャンベルタウンの名)ブランドで展開。2004年蒸留再開で'ミレニアム初の新設蒸留所'。",
