@@ -109,7 +109,7 @@
     {"id": "tomintoul", "name_en": "Tomintoul", "name_ja": "トミントール", "region": "Speyside", "lat": 57.3120, "lon": -3.4124, "status": "active", "established": 1964, "owner": "Angus Dundee Distillers", "town": "Kirkmichael, Moray"},
     {"id": "tormore", "name_en": "Tormore", "name_ja": "トーモア", "region": "Speyside", "lat": 57.3994, "lon": -3.4708, "status": "active", "established": 1958, "owner": "Elixir Distillers", "town": "Advie, Moray"},
     {"id": "cabrach", "name_en": "Cabrach", "name_ja": "カブラック", "region": "Speyside", "lat": 57.3667, "lon": -2.9333, "status": "active", "established": 2023, "owner": "The Cabrach Trust", "town": "Cabrach, Moray"},
-    {"id": "dunphail", "name_en": "Dunphail", "name_ja": "ダンフェイル", "region": "Speyside", "lat": 57.5167, "lon": -3.6333, "status": "active", "established": 2023, "owner": "Bimber Distillery", "town": "Dunphail, Moray"},
+    {"id": "dunphail", "name_en": "Dunphail", "name_ja": "ダンフェイル", "region": "Speyside", "lat": 57.5242, "lon": -3.6098, "status": "active", "established": 2023, "owner": "Bimber Distillery", "town": "Wester Greens, Dunphail, Moray"},
     {"id": "kinrara", "name_en": "Kinrara", "name_ja": "キンララ", "region": "Speyside", "lat": 57.1000, "lon": -3.8500, "status": "planned", "established": null, "owner": "Kinrara Distillery", "town": "Aviemore, Inverness-shire"},
 
     {"id": "abhainn_dearg", "name_en": "Abhainn Dearg", "name_ja": "アビンジャラク", "region": "Islands", "subregion": "Isle of Lewis", "lat": 58.1967, "lon": -7.0264, "status": "active", "established": 2008, "owner": "Mark Tayburn", "town": "Uig, Isle of Lewis"},

@@ -850,6 +850,49 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "dunphail": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Dunphail_distillery.jpg/800px-Dunphail_distillery.jpg",
+    "characteristics": "スペイサイド北部、フォレス近郊ダンフェイル。2023年10月6日Dariusz Plazewski・Ewelina Chruszczyk夫妻(ロンドンのBimber Distillery共同創設者)により創業。改装した農場建物を使用。スチル3基(直接火加熱)、年産10万L。1898年以来スペイサイドで初めてフロアモルティングを再現、100%自家モルト製造(Springbankに次ぐスコットランド2例目)。144時間の超長時間発酵、ダグラスファー材のウォッシュバック12基。ピーテッド/ノンピート両方生産。",
+    "signature": {
+      "name": "Dunphail New Make / Inaugural Release",
+      "cask": "250Lリフィル・ホグスヘッド+シェリー樽+ルビー/トウニーポート樽",
+      "color": "ゴールド",
+      "taste": "テクスチュラル、リッチ、フルーティ、直接火加熱+フロアモルト+超長時間発酵の全部盛り伝統手法"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Dunphail Inaugural (熟成中、2026予定)", "type": "常売予定"}
+      ],
+      "limited": [
+        {"name": "Dunphail Single Cask Founders' Release", "type": "限定"},
+        {"name": "Peated Spirit Release", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Dunphail_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "cabrach": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Cabrach_distillery.jpg/800px-Cabrach_distillery.jpg",
+    "characteristics": "スペイサイド北端、キャバラック、インバハロック農場(ダフタウンから8マイル、ケアンゴームズ国立公園北端)。2013年設立の慈善団体'The Cabrach Trust'(Grant Gordon OBE創設)が2023年10月25日に約170年ぶりに蒸留再開(Kate Forbes副首相出席)。歴史的にはスコットランドのモルトウイスキーの揺籃の地、密造者の聖地。キャバラック地域の文化遺産保存と再生が目的のコミュニティ主導プロジェクト。",
+    "signature": {
+      "name": "The Cabrach (未リリース、2024プリリリース)",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "—(熟成中)",
+      "taste": "—(17世紀の密造時代を彷彿させる伝統スタイルを復元中)"
+    },
+    "bottles": {
+      "core": [
+        {"name": "The Cabrach First Distillation Pre-Release (2024)", "type": "限定"}
+      ],
+      "limited": [
+        {"name": "Founders Cask Programme", "type": "限定"}
+      ]
+    },
+    "sources": ["https://cabrachtrust.org/", "https://www.thecabrach.com/"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "ardross": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ardross_distillery.jpg/800px-Ardross_distillery.jpg",
     "characteristics": "北ハイランド、ロス=シャー、アルネス。2019年Greenwood Distillers創業、マスターブレンダーAndrew Rankin氏による£5,000万投資、50エーカー敷地に19世紀建物修復+新設。仕込み水はLoch Dubh。スチル1対、年産100万L。2021年12月、クリスティーズ・オークションで史上初のニューメイク・スピリット(樽)出品。ジン'Theodore'(ピクト人テーマ)も製造。",
