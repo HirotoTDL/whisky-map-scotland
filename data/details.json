@@ -59,7 +59,9 @@
         },
         {
           "name": "Archival Series (Folio 1-7)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://www.themacallan.com/-/media/themacallan-v3/images/whisky/pdp/2023/sherry-oak-12/tm-sherry-oak-12yo-product-front-700.png",
+          "_is_rep": true
         }
       ]
     },
@@ -493,11 +495,15 @@
         },
         {
           "name": "Cask Strength Release",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/hlpob.12yov54.jpg",
+          "_is_rep": true
         },
         {
           "name": "Single Cask Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/hlpob.12yov54.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -540,13 +546,17 @@
         },
         {
           "name": "No.1 / No.3",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/bowob.12yov10.jpg",
+          "_is_rep": true
         }
       ],
       "limited": [
         {
           "name": "Bowmore Arc-52 (Aston Martinコラボ)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/bowob.12yov10.jpg",
+          "_is_rep": true
         },
         {
           "name": "French Oak Barrique",
@@ -621,11 +631,15 @@
       "limited": [
         {
           "name": "Cellar Collection (1959-1983 cask strength)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/glvob.non11.jpg",
+          "_is_rep": true
         },
         {
           "name": "Enigma / Captain's Reserve (免税)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/glvob.non11.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -751,7 +765,9 @@
         },
         {
           "name": "DCS Compendium (1960s〜ヴィンテージ単樽)",
-          "type": "限定(超希少)"
+          "type": "限定(超希少)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Balvenie_DoubleWood_Single_Malt.jpg/500px-Balvenie_DoubleWood_Single_Malt.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -872,11 +888,15 @@
         },
         {
           "name": "Local Barley シリーズ",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/sprob.10yov29.jpg",
+          "_is_rep": true
         },
         {
           "name": "Longrow Red / 18",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/sprob.10yov29.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -921,11 +941,15 @@
         },
         {
           "name": "Dalwhinnie 29",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Dalwhinnie_Single_Highland_Malt_15_years_old.jpg/500px-Dalwhinnie_Single_Highland_Malt_15_years_old.jpg",
+          "_is_rep": true
         },
         {
           "name": "Dalwhinnie 36",
-          "type": "限定(希少)"
+          "type": "限定(希少)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Dalwhinnie_Single_Highland_Malt_15_years_old.jpg/500px-Dalwhinnie_Single_Highland_Malt_15_years_old.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1000,7 +1024,9 @@
         },
         {
           "name": "150th Anniversary £511.19s.0d",
-          "type": "限定(2015)"
+          "type": "限定(2015)",
+          "image": "https://img.thewhiskyexchange.com/380/gfcob.10yo.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1065,7 +1091,9 @@
         },
         {
           "name": "Moine シリーズ (ピーテッド)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/bunob.non10.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1120,11 +1148,15 @@
         },
         {
           "name": "Special Releases (毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/cilob.12yov1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Unpeated Stitchell Reserve",
-          "type": "限定(希少)"
+          "type": "限定(希少)",
+          "image": "https://img.thewhiskyexchange.com/380/cilob.12yov1.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -1198,7 +1230,9 @@
         },
         {
           "name": "Bruichladdich Rare Cask Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/bruob.non35.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1248,15 +1282,21 @@
         },
         {
           "name": "Kilchoman 16 Year (最古)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/kilob.non26.jpg",
+          "_is_rep": true
         },
         {
           "name": "20th Anniversary Cask Series (2025)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/kilob.non26.jpg",
+          "_is_rep": true
         },
         {
           "name": "Vintage Release (毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/kilob.non26.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1321,7 +1361,9 @@
         },
         {
           "name": "Vintage 1953/1958/1961 etc (Gordon & MacPhail経由)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/ggtob.non12.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1359,7 +1401,9 @@
         },
         {
           "name": "Glenrothes 18",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/grsdt.2013.jpg",
+          "_is_rep": true
         },
         {
           "name": "Glenrothes 25",
@@ -1385,7 +1429,9 @@
         },
         {
           "name": "Vintage Reserve",
-          "type": "限定(年度毎)"
+          "type": "限定(年度毎)",
+          "image": "https://img.thewhiskyexchange.com/380/grsdt.2013.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1440,7 +1486,9 @@
       "limited": [
         {
           "name": "Benromach Cask Strength Vintage (1978, etc)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/brmob.15yov1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Benromach 40",
@@ -1450,7 +1498,8 @@
         {
           "name": "Red Door Gin (併売)",
           "type": "併売ジン",
-          "image": ""
+          "image": "https://img.thewhiskyexchange.com/380/brmob.15yov1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1566,7 +1615,9 @@
         },
         {
           "name": "Rare Old (NAS)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mtlob.12yov6.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -1615,7 +1666,9 @@
         },
         {
           "name": "Special Releases (毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/cgmob.12yo.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1680,7 +1733,9 @@
         },
         {
           "name": "Single Cask Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_tom11.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1745,7 +1800,9 @@
         },
         {
           "name": "Warehouse 1 Collection",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_gmy2.jpg",
+          "_is_rep": true
         },
         {
           "name": "1994 Sherry Cask Finish",
@@ -1780,7 +1837,9 @@
       "limited": [
         {
           "name": "Rare Malts 26 / 30",
-          "type": "限定(廃盤)"
+          "type": "限定(廃盤)",
+          "image": "https://img.thewhiskyexchange.com/380/lkwob.12yov11.jpg",
+          "_is_rep": true
         },
         {
           "name": "Special Releases 37 (2016)",
@@ -1794,7 +1853,9 @@
         },
         {
           "name": "Woven Honor (Orphan Barrel, 2024)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/lkwob.12yov11.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -1846,7 +1907,9 @@
         },
         {
           "name": "GlenAllachie 25",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/gleob.10yov14.jpg",
+          "_is_rep": true
         }
       ],
       "limited": [
@@ -1857,11 +1920,15 @@
         },
         {
           "name": "Single Cask (毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gleob.10yov14.jpg",
+          "_is_rep": true
         },
         {
           "name": "MacNair's (姉妹ブレンド)",
-          "type": "関連"
+          "type": "関連",
+          "image": "https://img.thewhiskyexchange.com/380/gleob.10yov14.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -1939,17 +2006,23 @@
       "core": [
         {
           "name": "Uile-bheist Craft Beer (ビール各種)",
-          "type": "常売(ビール)"
+          "type": "常売(ビール)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Uilebheist_distillery.jpg/800px-Uilebheist_distillery.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Uile-bheist Cask Programme",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Uilebheist_distillery.jpg/800px-Uilebheist_distillery.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Inaugural Release (今後)",
-          "type": "限定予定"
+          "type": "限定予定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Uilebheist_distillery.jpg/800px-Uilebheist_distillery.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -1972,17 +2045,23 @@
       "core": [
         {
           "name": "Falkirk Single Malt (NAS)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Falkirk_Distillery_Company_-_geograph.org.uk_-_5436701.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Inaugural Release (2024年1月, 完売)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Falkirk_Distillery_Company_-_geograph.org.uk_-_5436701.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Founders Cask Programme",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Falkirk_Distillery_Company_-_geograph.org.uk_-_5436701.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -2006,7 +2085,9 @@
       "limited": [
         {
           "name": "Ardgowan Inaugural (2028年以降予定)",
-          "type": "限定予定"
+          "type": "限定予定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Baker_Street_-_geograph.org.uk_-_610893.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -2062,13 +2143,17 @@
       "core": [
         {
           "name": "The Cabrach First Distillation Pre-Release (2024)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Cabrach_distillery.jpg/800px-Cabrach_distillery.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Founders Cask Programme",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Cabrach_distillery.jpg/800px-Cabrach_distillery.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -2092,17 +2177,23 @@
       "core": [
         {
           "name": "Theodore Gin",
-          "type": "常売ジン"
+          "type": "常売ジン",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Ardross_distillery_-_geograph.org.uk_-_7423747.jpg/960px-Ardross_distillery_-_geograph.org.uk_-_7423747.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Cask Auction Release (Christie's 2021)",
-          "type": "限定(歴史的)"
+          "type": "限定(歴史的)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Ardross_distillery_-_geograph.org.uk_-_7423747.jpg/960px-Ardross_distillery_-_geograph.org.uk_-_7423747.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Single Cask Release (今後)",
-          "type": "限定予定"
+          "type": "限定予定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Ardross_distillery_-_geograph.org.uk_-_7423747.jpg/960px-Ardross_distillery_-_geograph.org.uk_-_7423747.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -2152,11 +2243,15 @@
       "limited": [
         {
           "name": "Tullibardine Banyuls Finish",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/tulob.non1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Vintage Releases (1962〜)",
-          "type": "限定(希少)"
+          "type": "限定(希少)",
+          "image": "https://img.thewhiskyexchange.com/380/tulob.non1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2189,17 +2284,23 @@
         },
         {
           "name": "Christmas GoodWill Spiced Gin (2019 IWSC Gold)",
-          "type": "常売ジン"
+          "type": "常売ジン",
+          "image": "https://img.thewhiskyexchange.com/380/gwvob.non1.jpg",
+          "_is_rep": true
         }
       ],
       "limited": [
         {
           "name": "Founder's Reserve",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gwvob.non1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Single Cask Release",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gwvob.non1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2222,13 +2323,17 @@
       "core": [
         {
           "name": "Aberargie Single Malt (2026年3月予定)",
-          "type": "常売予定"
+          "type": "常売予定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Arable_land%2C_Aberargie_-_geograph.org.uk_-_7099185.jpg/960px-Arable_land%2C_Aberargie_-_geograph.org.uk_-_7099185.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Inaugural Release (2026)",
-          "type": "限定予定"
+          "type": "限定予定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Arable_land%2C_Aberargie_-_geograph.org.uk_-_7099185.jpg/960px-Arable_land%2C_Aberargie_-_geograph.org.uk_-_7099185.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -2268,11 +2373,15 @@
       "limited": [
         {
           "name": "Strathearn Single Cask",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/senop.2018.jpg",
+          "_is_rep": true
         },
         {
           "name": "Honey Whisky Blend",
-          "type": "限定ブレンド"
+          "type": "限定ブレンド",
+          "image": "https://img.thewhiskyexchange.com/380/senop.2018.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2295,25 +2404,35 @@
       "core": [
         {
           "name": "Clan Fraser / Clan Fraser Reserve (ブレンデッド)",
-          "type": "常売ブレンド"
+          "type": "常売ブレンド",
+          "image": "https://upload.wikimedia.org/wikipedia/en/9/9b/Borders_Distillery_Logo.png",
+          "_is_exterior": true
         },
         {
           "name": "Lower East Side (ブレンデッド)",
-          "type": "常売ブレンド"
+          "type": "常売ブレンド",
+          "image": "https://upload.wikimedia.org/wikipedia/en/9/9b/Borders_Distillery_Logo.png",
+          "_is_exterior": true
         },
         {
           "name": "William Kerr's Borders Gin",
-          "type": "常売ジン"
+          "type": "常売ジン",
+          "image": "https://upload.wikimedia.org/wikipedia/en/9/9b/Borders_Distillery_Logo.png",
+          "_is_exterior": true
         },
         {
           "name": "Puffing Billy Steam Vodka",
-          "type": "常売ウォッカ"
+          "type": "常売ウォッカ",
+          "image": "https://upload.wikimedia.org/wikipedia/en/9/9b/Borders_Distillery_Logo.png",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "WS:01 Borders Malt & Rye (2022)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/en/9/9b/Borders_Distillery_Logo.png",
+          "_is_exterior": true
         }
       ]
     },
@@ -2348,11 +2467,15 @@
       "limited": [
         {
           "name": "Founders Edition",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/harob.non1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Cask Samples",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/harob.non1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2424,7 +2547,9 @@
         },
         {
           "name": "Single Cask Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/anhob.non1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2474,11 +2599,15 @@
       "limited": [
         {
           "name": "Highland Rye Chateau d'Yquem Finish",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/grain_arb7.jpg",
+          "_is_rep": true
         },
         {
           "name": "Single Cask Release",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/grain_arb7.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2556,7 +2685,9 @@
         },
         {
           "name": "Chivas Secret Speyside Series (Dalmunach)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/dmnob.2015.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2585,7 +2716,9 @@
         },
         {
           "name": "Chivas Secret Speyside Series (Braeval)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/brvomc2009.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2615,11 +2748,15 @@
       "limited": [
         {
           "name": "Chivas Secret Speyside Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/altob.1991.jpg",
+          "_is_rep": true
         },
         {
           "name": "Allt-A-Bhainne Peated Cask Strength",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/altob.1991.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2715,7 +2852,9 @@
         },
         {
           "name": "Cask Strength Single Cask",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/dafob.2011.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2738,29 +2877,41 @@
       "core": [
         {
           "name": "Ailsa Bay (NAS, ピーテッド)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Grant%27s_Distillery%2C_Girvan_-_geograph.org.uk_-_262939.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Ailsa Bay 1.2 Sweet Smoke (再製造版)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Grant%27s_Distillery%2C_Girvan_-_geograph.org.uk_-_262939.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Aerstone Land Cask 10 (Sherry)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Grant%27s_Distillery%2C_Girvan_-_geograph.org.uk_-_262939.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Aerstone Sea Cask 10 (Bourbon)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Grant%27s_Distillery%2C_Girvan_-_geograph.org.uk_-_262939.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Ailsa Bay Blockchain Edition (2019)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Grant%27s_Distillery%2C_Girvan_-_geograph.org.uk_-_262939.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Sample Release 2/3/4",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Grant%27s_Distillery%2C_Girvan_-_geograph.org.uk_-_262939.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -2793,17 +2944,23 @@
         },
         {
           "name": "Founders' Selection",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/annob.2018v5.jpg",
+          "_is_rep": true
         }
       ],
       "limited": [
         {
           "name": "Single Cask Series (顧客自身が樽購入可能)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/annob.2018v5.jpg",
+          "_is_rep": true
         },
         {
           "name": "Vintage Collection",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/annob.2018v5.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2838,7 +2995,9 @@
       "limited": [
         {
           "name": "Single Cask Release",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/grain_inc2018.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2877,7 +3036,9 @@
         },
         {
           "name": "Annual Releases (Special Releases, 毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/pelmg.1981.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2907,11 +3068,15 @@
       "limited": [
         {
           "name": "Inaugural Bottling (2022)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gfcdl.1965v1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Cask Samples / Distillery Exclusive",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gfcdl.1965v1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -2946,7 +3111,9 @@
         },
         {
           "name": "Mannochmore 25 (2016 Special Release)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mnmff.12yov1.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -2980,11 +3147,15 @@
       "limited": [
         {
           "name": "Glenlossie 23 (2010 Special Release)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gloob.10yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Rare Malts 21 (1998)",
-          "type": "限定(廃盤)"
+          "type": "限定(廃盤)",
+          "image": "https://img.thewhiskyexchange.com/380/gloob.10yo.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -3018,7 +3189,9 @@
       "limited": [
         {
           "name": "Auchroisk 25 (2016 Special Release)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/aukg!m10yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Singleton of Auchroisk (2008, 廃盤)",
@@ -3094,7 +3267,9 @@
       "limited": [
         {
           "name": "Strathmill 25 (2014 Special Release)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/strob.12yo.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -3128,7 +3303,9 @@
       "limited": [
         {
           "name": "Glen Spey 21 (2010 Special Release)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gsyob.12yov1.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -3155,7 +3332,9 @@
       "core": [
         {
           "name": "Miltonduff 15 (G&M)",
-          "type": "独立瓶詰"
+          "type": "独立瓶詰",
+          "image": "https://img.thewhiskyexchange.com/380/mtwsig1976v2.jpg",
+          "_is_rep": true
         },
         {
           "name": "Mosstowie (ローターシュティル使用, 廃盤)",
@@ -3166,11 +3345,15 @@
       "limited": [
         {
           "name": "Chivas Secret Speyside Series (Miltonduff 15/18)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mtwsig1976v2.jpg",
+          "_is_rep": true
         },
         {
           "name": "Single Cask (ヴィンテージ)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mtwsig1976v2.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -3225,11 +3408,15 @@
       "limited": [
         {
           "name": "Balmenach 25 (2013 Official)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gin_cao1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Balmenach 1979 (G&M)",
-          "type": "独立瓶詰"
+          "type": "独立瓶詰",
+          "image": "https://img.thewhiskyexchange.com/380/gin_cao1.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -3266,25 +3453,35 @@
         },
         {
           "name": "Cabernet Sauvignon Cask Finish",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/tmnob.1966.jpg",
+          "_is_rep": true
         },
         {
           "name": "Pinot Noir Cask Finish",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/tmnob.1966.jpg",
+          "_is_rep": true
         },
         {
           "name": "Tempranillo / Grenache Cask Finish",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/tmnob.1966.jpg",
+          "_is_rep": true
         }
       ],
       "limited": [
         {
           "name": "American Cabernet Sauvignon (2021)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/tmnob.1966.jpg",
+          "_is_rep": true
         },
         {
           "name": "Sauvignon Blanc Finish (2022, 白ワイン樽)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/tmnob.1966.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -3357,21 +3554,29 @@
       "core": [
         {
           "name": "Glen Keith Distillery Edition (NAS)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Glen_Keith_Distillery_-_geograph.org.uk_-_713120.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Glen Keith 1983",
-          "type": "限定(1990s)"
+          "type": "限定(1990s)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Glen_Keith_Distillery_-_geograph.org.uk_-_713120.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Glen Keith 10",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Glen_Keith_Distillery_-_geograph.org.uk_-_713120.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Glenisla / Craigduff (ピーテッド実験)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Glen_Keith_Distillery_-_geograph.org.uk_-_713120.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -3421,7 +3626,9 @@
       "limited": [
         {
           "name": "J&B Ultima 1994 (128種混合, 500周年記念)",
-          "type": "限定(関連ブレンド)"
+          "type": "限定(関連ブレンド)",
+          "image": "https://img.thewhiskyexchange.com/380/kadob.12yov1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -3461,11 +3668,15 @@
       "limited": [
         {
           "name": "Glendullan 12 Flora & Fauna (廃盤)",
-          "type": "限定(廃盤)"
+          "type": "限定(廃盤)",
+          "image": "https://img.thewhiskyexchange.com/380/gdlff.12yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Glendullan 36 (2018 Special Release)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gdlff.12yo.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -3504,11 +3715,15 @@
         },
         {
           "name": "Glen Elgin 20 (廃盤)",
-          "type": "限定(廃盤)"
+          "type": "限定(廃盤)",
+          "image": "https://img.thewhiskyexchange.com/380/gegob.12yov2.jpg",
+          "_is_rep": true
         },
         {
           "name": "Cadenhead 18",
-          "type": "独立瓶詰"
+          "type": "独立瓶詰",
+          "image": "https://img.thewhiskyexchange.com/380/gegob.12yov2.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -3538,11 +3753,15 @@
       "limited": [
         {
           "name": "Glenburgie Single Cask (Chivas Secret Speyside series)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gbgg!m25yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Ballantine's Master Edition 15",
-          "type": "関連ブレンド"
+          "type": "関連ブレンド",
+          "image": "https://img.thewhiskyexchange.com/380/gbgg!m25yo.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -3565,17 +3784,23 @@
       "core": [
         {
           "name": "Glentauchers 15 (2000 official)",
-          "type": "常売(希少)"
+          "type": "常売(希少)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Glentauchers_distillery_-_geograph.org.uk_-_3457816.jpg/960px-Glentauchers_distillery_-_geograph.org.uk_-_3457816.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Gordon & MacPhail Generations (各年)",
-          "type": "独立瓶詰"
+          "type": "独立瓶詰",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Glentauchers_distillery_-_geograph.org.uk_-_3457816.jpg/960px-Glentauchers_distillery_-_geograph.org.uk_-_3457816.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Chivas Secret Speyside Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Glentauchers_distillery_-_geograph.org.uk_-_3457816.jpg/960px-Glentauchers_distillery_-_geograph.org.uk_-_3457816.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -3598,17 +3823,23 @@
       "core": [
         {
           "name": "Dailuaine 16 Flora & Fauna",
-          "type": "常売(F&F経由)"
+          "type": "常売(F&F経由)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Dailuaine_Distillery_-_geograph.org.uk_-_1627046.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Dailuaine 34 (2020 Special Release)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Dailuaine_Distillery_-_geograph.org.uk_-_1627046.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Rare Malts Collection 22 (1997)",
-          "type": "限定(廃盤)"
+          "type": "限定(廃盤)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Dailuaine_Distillery_-_geograph.org.uk_-_1627046.jpg",
+          "_is_exterior": true
         }
       ],
       "flora_fauna": {
@@ -3635,17 +3866,23 @@
       "core": [
         {
           "name": "Inchgower 14 Flora & Fauna",
-          "type": "常売(F&F経由)"
+          "type": "常売(F&F経由)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Inchgower_Distillery_-_geograph.org.uk_-_1133237.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Inchgower 27 (2018 Special Release)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Inchgower_Distillery_-_geograph.org.uk_-_1133237.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Rare Malts 22 (1997)",
-          "type": "限定(廃盤)"
+          "type": "限定(廃盤)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Inchgower_Distillery_-_geograph.org.uk_-_1133237.jpg",
+          "_is_exterior": true
         }
       ],
       "flora_fauna": {
@@ -3704,7 +3941,9 @@
         },
         {
           "name": "Tamdhu Reopening Commemorative (1000本)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/tamob.10yov12.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -3764,11 +4003,15 @@
       "limited": [
         {
           "name": "Peaty Tang (ピーテッド/ノンピートのヴァッティング)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_tmt10yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Tomintoul 40",
-          "type": "限定(超希少)"
+          "type": "限定(超希少)",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_tmt10yo.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -3813,15 +4056,21 @@
       "limited": [
         {
           "name": "Re-Rack Series (2025〜)",
-          "type": "限定シリーズ"
+          "type": "限定シリーズ",
+          "image": "https://img.thewhiskyexchange.com/380/holob.non9.jpg",
+          "_is_rep": true
         },
         {
           "name": "Strong Waters (ヘリテージ酵母ニューメイク)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/holob.non9.jpg",
+          "_is_rep": true
         },
         {
           "name": "Height of Arrows Gin",
-          "type": "併売ジン"
+          "type": "併売ジン",
+          "image": "https://img.thewhiskyexchange.com/380/holob.non9.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -3844,17 +4093,23 @@
       "core": [
         {
           "name": "Lind & Lime Gin",
-          "type": "常売ジン"
+          "type": "常売ジン",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Port_of_Leith_Distillery.jpg/960px-Port_of_Leith_Distillery.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Port of Leith Sherry (姉妹ブランド)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Port_of_Leith_Distillery.jpg/960px-Port_of_Leith_Distillery.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Distillery Exclusive (蒸留所限定)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Port_of_Leith_Distillery.jpg/960px-Port_of_Leith_Distillery.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -3904,7 +4159,9 @@
       "limited": [
         {
           "name": "Cask Strength",
-          "type": "限定(バッチ毎)"
+          "type": "限定(バッチ毎)",
+          "image": "https://img.thewhiskyexchange.com/380/lolob.non3.jpg",
+          "_is_rep": true
         },
         {
           "name": "Burns Night Edition (毎年1月)",
@@ -3974,7 +4231,9 @@
         },
         {
           "name": "Brora 50",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/sets_bro2.jpg",
+          "_is_rep": true
         }
       ],
       "limited": [
@@ -3985,7 +4244,9 @@
         },
         {
           "name": "Rare Malts Collection 20/21/22 (1990s)",
-          "type": "限定(希少)"
+          "type": "限定(希少)",
+          "image": "https://img.thewhiskyexchange.com/380/sets_bro2.jpg",
+          "_is_rep": true
         },
         {
           "name": "Brora Special Release (2002-2019毎年)",
@@ -4040,11 +4301,15 @@
         },
         {
           "name": "Exceptional Cask (ヴィンテージ)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_abf12yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Napa Valley Red Wine Cask Finish",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_abf12yo.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -4093,15 +4358,21 @@
       "limited": [
         {
           "name": "Straight From The Cask (カスクストレングス)",
-          "type": "限定シリーズ"
+          "type": "限定シリーズ",
+          "image": "https://img.thewhiskyexchange.com/380/edrob.10yov1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Super Tuscan Cask / Marsala Cask / Barolo Cask 他",
-          "type": "限定シリーズ"
+          "type": "限定シリーズ",
+          "image": "https://img.thewhiskyexchange.com/380/edrob.10yov1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Edradour 30 / 40",
-          "type": "限定(希少)"
+          "type": "限定(希少)",
+          "image": "https://img.thewhiskyexchange.com/380/edrob.10yov1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -4124,21 +4395,29 @@
       "core": [
         {
           "name": "Lagg Kilmory Edition (46%)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/The_new_Lagg_Distillery_-_geograph.org.uk_-_6579683.jpg/960px-The_new_Lagg_Distillery_-_geograph.org.uk_-_6579683.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Lagg Corriecravie Edition (55%, オロロソ)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/The_new_Lagg_Distillery_-_geograph.org.uk_-_6579683.jpg/960px-The_new_Lagg_Distillery_-_geograph.org.uk_-_6579683.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Lagg Single Cask Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/The_new_Lagg_Distillery_-_geograph.org.uk_-_6579683.jpg/960px-The_new_Lagg_Distillery_-_geograph.org.uk_-_6579683.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Batch 1 Inaugural (2022)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/The_new_Lagg_Distillery_-_geograph.org.uk_-_6579683.jpg/960px-The_new_Lagg_Distillery_-_geograph.org.uk_-_6579683.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -4161,25 +4440,35 @@
       "core": [
         {
           "name": "Shetland Reel Single Malt",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Shetland_Reel_distillery.jpg/960px-Shetland_Reel_distillery.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Shetland Reel Gin (8種ボタニカル)",
-          "type": "常売ジン"
+          "type": "常売ジン",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Shetland_Reel_distillery.jpg/960px-Shetland_Reel_distillery.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Glenglassaugh 4種 (2015, Saxa Vord瓶詰)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Shetland_Reel_distillery.jpg/960px-Shetland_Reel_distillery.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Up Helly Aa Cask-Aged Gin",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Shetland_Reel_distillery.jpg/960px-Shetland_Reel_distillery.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Space Countdown Gin",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Shetland_Reel_distillery.jpg/960px-Shetland_Reel_distillery.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -4224,11 +4513,15 @@
         },
         {
           "name": "anCnoc Vintage 1994/1995/2005",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/ancob.12yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "anCnoc 30",
-          "type": "限定(希少)"
+          "type": "限定(希少)",
+          "image": "https://img.thewhiskyexchange.com/380/ancob.12yo.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -4260,17 +4553,23 @@
         },
         {
           "name": "The Deveron 12",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/gdrob.1990.jpg",
+          "_is_rep": true
         },
         {
           "name": "The Deveron 18",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/gdrob.1990.jpg",
+          "_is_rep": true
         }
       ],
       "limited": [
         {
           "name": "Glen Deveron Royal Burgh Collection",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gdrob.1990.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -4293,11 +4592,15 @@
       "core": [
         {
           "name": "The Original Ten (10年, 43%)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_bnr12yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "The Smoky Ten (10年, 46%, ピーテッド)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_bnr12yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "The Twelve (12年, 46%)",
@@ -4333,11 +4636,15 @@
         },
         {
           "name": "Quarter Cask Peated",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_bnr12yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Single Cask Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_bnr12yo.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -4422,7 +4729,9 @@
         },
         {
           "name": "Rare Malts Collection 20 (1998)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/rblob.12yov3.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -4449,25 +4758,35 @@
       "core": [
         {
           "name": "MCDXCIV (NAS)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Lindores_Abbey_Distillery_opened_in_2017.jpg/960px-Lindores_Abbey_Distillery_opened_in_2017.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Commemorative First Release (2021)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Lindores_Abbey_Distillery_opened_in_2017.jpg/960px-Lindores_Abbey_Distillery_opened_in_2017.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Aqua Vitae (伝統ハーブスピリッツ)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Lindores_Abbey_Distillery_opened_in_2017.jpg/960px-Lindores_Abbey_Distillery_opened_in_2017.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Friar John Cor Reserve",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Lindores_Abbey_Distillery_opened_in_2017.jpg/960px-Lindores_Abbey_Distillery_opened_in_2017.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Distillery Exclusive Cask",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Lindores_Abbey_Distillery_opened_in_2017.jpg/960px-Lindores_Abbey_Distillery_opened_in_2017.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -4490,21 +4809,29 @@
       "core": [
         {
           "name": "Stobcross (NAS)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/The_Queen%27s_Dock_Pumping_House%2C_River_Clyde%2C_Glasgow%2C_Scotland.jpg/960px-The_Queen%27s_Dock_Pumping_House%2C_River_Clyde%2C_Glasgow%2C_Scotland.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Stobcross Port Cask Finish",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/The_Queen%27s_Dock_Pumping_House%2C_River_Clyde%2C_Glasgow%2C_Scotland.jpg/960px-The_Queen%27s_Dock_Pumping_House%2C_River_Clyde%2C_Glasgow%2C_Scotland.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Single Cask Release",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/The_Queen%27s_Dock_Pumping_House%2C_River_Clyde%2C_Glasgow%2C_Scotland.jpg/960px-The_Queen%27s_Dock_Pumping_House%2C_River_Clyde%2C_Glasgow%2C_Scotland.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Founders Collection",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/The_Queen%27s_Dock_Pumping_House%2C_River_Clyde%2C_Glasgow%2C_Scotland.jpg/960px-The_Queen%27s_Dock_Pumping_House%2C_River_Clyde%2C_Glasgow%2C_Scotland.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -4544,15 +4871,21 @@
       "limited": [
         {
           "name": "Na Sia Single Cask Series (6種)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/raaob.non14.jpg",
+          "_is_rep": true
         },
         {
           "name": "Distillery of the Year Edition",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/raaob.non14.jpg",
+          "_is_rep": true
         },
         {
           "name": "Isle of Raasay Gin",
-          "type": "併売ジン"
+          "type": "併売ジン",
+          "image": "https://img.thewhiskyexchange.com/380/raaob.non14.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -4580,7 +4913,9 @@
         },
         {
           "name": "Allt Gleann (46%)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/pm_trbob.non1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Cnoc na Moine",
@@ -4591,11 +4926,15 @@
       "limited": [
         {
           "name": "The Pollonahasting Edition",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/pm_trbob.non1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Single Cask Release",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/pm_trbob.non1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -4650,7 +4989,9 @@
         },
         {
           "name": "Hopkins Reserve",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/spbob.non1.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -4704,7 +5045,9 @@
         },
         {
           "name": "Vintage Releases (Gordon & MacPhail経由)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/stlob.12yov19.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -4764,7 +5107,9 @@
         },
         {
           "name": "Single Cask Release (1970s-1990sヴィンテージ)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/grnob.08yov4.jpg",
+          "_is_rep": true
         },
         {
           "name": "Kingsman Edition (映画コラボ)",
@@ -4860,11 +5205,15 @@
       "limited": [
         {
           "name": "Single Cask Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/amcob.non25.jpg",
+          "_is_rep": true
         },
         {
           "name": "Paul Launois (Vintage 2014)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/amcob.non25.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -4887,25 +5236,35 @@
       "core": [
         {
           "name": "Nc'nean Organic Single Malt (NAS)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nc%E2%80%99nean_Distillery_in_Drimnin_die_Brennblasen.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Nc'nean Botanical Spirit (熟成前ボタニカル)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nc%E2%80%99nean_Distillery_in_Drimnin_die_Brennblasen.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Quiet Rebels シリーズ(Lorna/Gordon/etc)",
-          "type": "限定シリーズ"
+          "type": "限定シリーズ",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nc%E2%80%99nean_Distillery_in_Drimnin_die_Brennblasen.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Huntress Vintage 2022/2023/2024/2025",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nc%E2%80%99nean_Distillery_in_Drimnin_die_Brennblasen.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Aon (ドイツ専用単樽)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nc%E2%80%99nean_Distillery_in_Drimnin_die_Brennblasen.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -4928,37 +5287,53 @@
       "core": [
         {
           "name": "Wolfburn Northland (NAS)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Wolfburn_stills_lacquered_low_res.jpg/960px-Wolfburn_stills_lacquered_low_res.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Wolfburn Morven (NAS, ピーテッド)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Wolfburn_stills_lacquered_low_res.jpg/960px-Wolfburn_stills_lacquered_low_res.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Wolfburn Aurora (NAS, シェリー樽)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Wolfburn_stills_lacquered_low_res.jpg/960px-Wolfburn_stills_lacquered_low_res.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Wolfburn Langskip (NAS, カスクストレングス)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Wolfburn_stills_lacquered_low_res.jpg/960px-Wolfburn_stills_lacquered_low_res.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Wolfburn 10 (2023)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Wolfburn_stills_lacquered_low_res.jpg/960px-Wolfburn_stills_lacquered_low_res.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Wolfburn 12 (2025)",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Wolfburn_stills_lacquered_low_res.jpg/960px-Wolfburn_stills_lacquered_low_res.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Wolfburn 8 (2025, 2種)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Wolfburn_stills_lacquered_low_res.jpg/960px-Wolfburn_stills_lacquered_low_res.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Single Cask Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Wolfburn_stills_lacquered_low_res.jpg/960px-Wolfburn_stills_lacquered_low_res.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -5003,11 +5378,15 @@
       "limited": [
         {
           "name": "Distillery Cask Series",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/kgbob.non8.jpg",
+          "_is_rep": true
         },
         {
           "name": "Darnley's Gin Original/Spiced/Navy Strength",
-          "type": "併売ジン"
+          "type": "併売ジン",
+          "image": "https://img.thewhiskyexchange.com/380/kgbob.non8.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5178,7 +5557,9 @@
         },
         {
           "name": "Cask Strength 54°",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/ofcob.12yov1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5201,17 +5582,23 @@
       "core": [
         {
           "name": "Teaninich 10 Flora & Fauna",
-          "type": "常売(F&F経由)"
+          "type": "常売(F&F経由)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Teaninich_Distillery_-_geograph.org.uk_-_1140657.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Teaninich 17 (2017 Special Release)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Teaninich_Distillery_-_geograph.org.uk_-_1140657.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Teaninich 27",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Teaninich_Distillery_-_geograph.org.uk_-_1140657.jpg",
+          "_is_exterior": true
         }
       ],
       "flora_fauna": {
@@ -5238,25 +5625,35 @@
       "core": [
         {
           "name": "The Singleton of Glen Ord 12",
-          "type": "常売(アジア専用)"
+          "type": "常売(アジア専用)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Glen_ord_distillery.jpg",
+          "_is_exterior": true
         },
         {
           "name": "The Singleton of Glen Ord 15",
-          "type": "常売(アジア専用)"
+          "type": "常売(アジア専用)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Glen_ord_distillery.jpg",
+          "_is_exterior": true
         },
         {
           "name": "The Singleton of Glen Ord 18",
-          "type": "常売(アジア専用)"
+          "type": "常売(アジア専用)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Glen_ord_distillery.jpg",
+          "_is_exterior": true
         }
       ],
       "limited": [
         {
           "name": "Singleton Reserve / Signature",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Glen_ord_distillery.jpg",
+          "_is_exterior": true
         },
         {
           "name": "Special Releases (毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Glen_ord_distillery.jpg",
+          "_is_exterior": true
         }
       ]
     },
@@ -5342,7 +5739,9 @@
         },
         {
           "name": "Special Releases (毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Glenkinchie_single_malt_Scotch_whisky_12_year_old.jpg/500px-Glenkinchie_single_malt_Scotch_whisky_12_year_old.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -5396,15 +5795,21 @@
       "limited": [
         {
           "name": "Valinch シリーズ",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Auchentoshan_American_OAK.jpg",
+          "_is_rep": true
         },
         {
           "name": "1975 / 1978 Vintage",
-          "type": "限定(希少)"
+          "type": "限定(希少)",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Auchentoshan_American_OAK.jpg",
+          "_is_rep": true
         },
         {
           "name": "Solera",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Auchentoshan_American_OAK.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5447,7 +5852,9 @@
         },
         {
           "name": "Pure Scot (ブレンド)",
-          "type": "関連"
+          "type": "関連",
+          "image": "https://img.thewhiskyexchange.com/380/bdnob.non10.jpg",
+          "_is_rep": true
         }
       ],
       "limited": [
@@ -5468,7 +5875,9 @@
         },
         {
           "name": "Alinta (ピーテッド)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/bdnob.non10.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -5527,11 +5936,15 @@
         },
         {
           "name": "Fino Finish / PX Finish",
-          "type": "限定シリーズ"
+          "type": "限定シリーズ",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_dst12yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Kentucky Cask Matured",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_dst12yo.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5581,7 +5994,9 @@
         },
         {
           "name": "Aultmore Cask Strength",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/aulob.12yov12.jpg",
+          "_is_rep": true
         }
       ],
       "flora_fauna": {
@@ -5635,11 +6050,15 @@
         },
         {
           "name": "Ledaig Rioja Cask Finish",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/tobob.12yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Ledaig 42",
-          "type": "限定(希少)"
+          "type": "限定(希少)",
+          "image": "https://img.thewhiskyexchange.com/380/tobob.12yo.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5720,11 +6139,15 @@
         },
         {
           "name": "Clynelish Select Reserve",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Clynelish_Single_Malt_Scotch_Whisky_14_Years.jpg/500px-Clynelish_Single_Malt_Scotch_Whisky_14_Years.jpg",
+          "_is_rep": true
         },
         {
           "name": "Special Releases (毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Clynelish_Single_Malt_Scotch_Whisky_14_Years.jpg/500px-Clynelish_Single_Malt_Scotch_Whisky_14_Years.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5764,11 +6187,15 @@
       "limited": [
         {
           "name": "Balmoral Platinum Edition (2022, プラチナジュビリー)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/rlnob.12yo.jpg",
+          "_is_rep": true
         },
         {
           "name": "Special Releases (毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/rlnob.12yo.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5818,7 +6245,9 @@
       "limited": [
         {
           "name": "Jura Tide / Time / Loch",
-          "type": "限定シリーズ"
+          "type": "限定シリーズ",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_ioj2.jpg",
+          "_is_rep": true
         },
         {
           "name": "Jura 21 Tide",
@@ -5827,7 +6256,9 @@
         },
         {
           "name": "Jura 40",
-          "type": "限定(希少)"
+          "type": "限定(希少)",
+          "image": "https://img.thewhiskyexchange.com/380/mini_sm_ioj2.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5860,7 +6291,9 @@
         },
         {
           "name": "Arran 14",
-          "type": "常売"
+          "type": "常売",
+          "image": "https://img.thewhiskyexchange.com/380/arrob.10yov1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Arran 18",
@@ -5886,11 +6319,15 @@
         },
         {
           "name": "Robert Burns Single Malt",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/arrob.10yov1.jpg",
+          "_is_rep": true
         },
         {
           "name": "Private Cask Selection",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/arrob.10yov1.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5940,15 +6377,21 @@
       "limited": [
         {
           "name": "The Mermaid (Icons Of Campbeltown)",
-          "type": "限定(2023〜)"
+          "type": "限定(2023〜)",
+          "image": "https://img.thewhiskyexchange.com/380/gstob.non3.jpg",
+          "_is_rep": true
         },
         {
           "name": "The Dragon (Icons Of Campbeltown)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gstob.non3.jpg",
+          "_is_rep": true
         },
         {
           "name": "Festival Release (毎年)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://img.thewhiskyexchange.com/380/gstob.non3.jpg",
+          "_is_rep": true
         }
       ]
     },
@@ -5977,7 +6420,8 @@
         {
           "name": "Oban 18",
           "type": "常売",
-          "image": ""
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Oban-14-2009-gje.jpg/500px-Oban-14-2009-gje.jpg",
+          "_is_rep": true
         },
         {
           "name": "Oban Little Bay (NAS)",
@@ -5993,7 +6437,9 @@
         },
         {
           "name": "Oban 32 (6,000本限定)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Oban-14-2009-gje.jpg/500px-Oban-14-2009-gje.jpg",
+          "_is_rep": true
         },
         {
           "name": "Distiller's Edition (Montilla Finoフィニッシュ)",
@@ -6002,7 +6448,9 @@
         },
         {
           "name": "Soul of Calypso 11 (カリビアンラム樽, 2023)",
-          "type": "限定"
+          "type": "限定",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Oban-14-2009-gje.jpg/500px-Oban-14-2009-gje.jpg",
+          "_is_rep": true
         }
       ]
     },

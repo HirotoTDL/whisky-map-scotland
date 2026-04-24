@@ -101,7 +101,15 @@
     background: #fff; border: 1px solid #e4d4b7; border-radius: 6px;
     padding: 8px; text-align: center; font-size: 11px;
   }
+  .bottle-card { position: relative; }
   .bottle-card img { width: 100%; height: 120px; object-fit: contain; margin-bottom: 6px; background: #f9f3e7; }
+  .bottle-card .img-badge {
+    position: absolute; top: 4px; right: 4px;
+    background: rgba(139, 90, 43, 0.85); color: #fff;
+    padding: 1px 5px; border-radius: 3px; font-size: 9px;
+    font-family: 'Hiragino Sans', 'Meiryo', sans-serif;
+  }
+  .bottle-card.rep-img img, .bottle-card.ext-img img { opacity: 0.75; }
   .bottle-placeholder {
     width: 100%; height: 120px; background: linear-gradient(180deg, #f9f3e7 0%, #e8d8bf 100%);
     border-radius: 4px; margin-bottom: 6px;
@@ -507,13 +515,19 @@ function showDetail(id) {
   const floraFauna = detail.bottles?.flora_fauna || null;
   const hasAnyBottle = officialBottles.length > 0 || limitedBottles.length > 0 || floraFauna;
 
-  const bottleCard = (b) => `
-    <div class="bottle-card">
-      ${b.image ? `<img src="${b.image}" alt="${b.name}" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=&quot;bottle-placeholder&quot;>🥃</div>'">` : '<div class="bottle-placeholder">🥃</div>'}
+  const bottleCard = (b) => {
+    const isRep = b._is_rep;
+    const isExt = b._is_exterior;
+    const badge = isExt ? '<div class="img-badge">蒸留所外観</div>' : (isRep ? '<div class="img-badge">代表画像</div>' : '');
+    const klass = 'bottle-card' + (isRep ? ' rep-img' : '') + (isExt ? ' ext-img' : '');
+    return `
+    <div class="${klass}">
+      ${b.image ? `<img src="${b.image}" alt="${b.name}" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=&quot;bottle-placeholder&quot;>🥃</div>'">${badge}` : '<div class="bottle-placeholder">🥃</div>'}
       <div class="bottle-name">${b.name}</div>
       ${b.type ? `<div class="bottle-type">${b.type}</div>` : ''}
     </div>
   `;
+  };
 
   panel.innerHTML = `
     <div class="distillery-header">
