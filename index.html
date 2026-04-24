@@ -410,17 +410,19 @@ function renderMarkers() {
 }
 
 function highlightMarker(id) {
-  // Reset previous
-  if (selectedId && markers[selectedId]) {
-    const prev = allDistilleries.find(x => x.id === selectedId);
-    if (prev) markers[selectedId].setIcon(createIconFull(prev, false));
+  // Close ALL popups (persistent popups can stack)
+  Object.values(markers).forEach(m => m.closePopup());
+  // Reset ALL markers to non-selected state (safer than tracking one)
+  for (const [mid, marker] of Object.entries(markers)) {
+    if (mid === id) continue;
+    const d = allDistilleries.find(x => x.id === mid);
+    if (d) marker.setIcon(createIconFull(d, false));
   }
+  // Set new selected
   selectedId = id;
   const d = allDistilleries.find(x => x.id === id);
   if (d && markers[id]) {
     markers[id].setIcon(createIconFull(d, true));
-    // Close any other popups first to avoid stack
-    map.closePopup();
     markers[id].openPopup();
   }
 }
