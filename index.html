@@ -390,6 +390,18 @@ function initSearch() {
 function showDetail(id) {
   const d = allDistilleries.find(x => x.id === id);
   if (!d) return;
+  // Highlight in region list
+  document.querySelectorAll('.region-item').forEach(el => el.classList.remove('active'));
+  const activeEl = document.querySelector(`.region-item[data-id="${id}"]`);
+  if (activeEl) {
+    activeEl.classList.add('active');
+    // Expand region if collapsed
+    const section = activeEl.closest('.region-section');
+    if (section && section.classList.contains('collapsed')) {
+      section.classList.remove('collapsed');
+    }
+    activeEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
   const detail = detailData[id] || {};
   const panel = document.getElementById('detail-panel');
 
