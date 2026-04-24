@@ -850,6 +850,170 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "miltonduff": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Miltonduff_distillery.jpg/800px-Miltonduff_distillery.jpg",
+    "characteristics": "スペイサイド、エルギン近郊。1824年創業、Chivas Brothers (Pernod Ricard)所有。年産580万L(スペイサイド最大級)、スチル6基(各18,000L)。1936年以降Ballantine'sブレンドの中核。1960年に業界初のウォッシュスチル熱交換技術導入。2022年£8,800万の持続可能化投資、2025年までにMVR技術導入予定。'Mosstowie'というライト型シングルモルトも生産。",
+    "signature": {
+      "name": "Miltonduff 15 Year Old (Gordon & MacPhail)",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ゴールド",
+      "taste": "フローラル、シトラス、ハニー、シリアル、軽やか、Ballantine'sの軽い芯"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Miltonduff 15 (G&M)", "type": "独立瓶詰"},
+        {"name": "Mosstowie (ローターシュティル使用, 廃盤)", "type": "限定(廃盤)"}
+      ],
+      "limited": [
+        {"name": "Chivas Secret Speyside Series (Miltonduff 15/18)", "type": "限定"},
+        {"name": "Single Cask (ヴィンテージ)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Miltonduff_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "roseisle": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Roseisle_distillery.jpg/800px-Roseisle_distillery.jpg",
+    "characteristics": "スペイサイド、ローズアイル、エルギン近郊。2010年Diageoにより新設(£4000万、3,000㎡)。14基のスチル、年産1,000万L(Diageo最大のモルト蒸留所)。主にブレンド用。2010年スコティッシュデザインアワード+RICSサステナビリティ賞。Special Releasesで単発のシングルモルトがリリース(2023年9月初)。2024年Johnnie Walker Black Rubyの重要構成。",
+    "signature": {
+      "name": "Roseisle 12 (2023 Special Release, Diageo初シングルモルト)",
+      "cask": "リフィル・アメリカンオーク",
+      "color": "ペールゴールド",
+      "taste": "フローラル、バニラ、クリーミー、軽いフルーツ、モダンで清潔感あるスペイサイド"
+    },
+    "bottles": {
+      "core": [],
+      "limited": [
+        {"name": "Roseisle 12 (2023 Diageo Special Release)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Roseisle_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "balmenach": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Balmenach_distillery.jpg/800px-Balmenach_distillery.jpg",
+    "characteristics": "スペイサイド、クロムデール、スペイ川沿い。1824年James McGregor創業、Inver House Distillers所有(1997〜)。1823年消費税法後最初期の合法蒸留所の1つ。年産200万L、スチル6基。仕込み水はクロムデール丘陵泉。主にCaorunn Ginのベースとして有名(2009〜、1920年代の銅製ベリーチャンバー使用)。1941-1947年沈黙、1969年まで専用鉄道引込線あり。",
+    "signature": {
+      "name": "Balmenach (Gordon & MacPhail経由各種)",
+      "cask": "シェリー樽+バーボン樽",
+      "color": "アンバー",
+      "taste": "リッチモルト、ミーティ、ドライフルーツ、スパイス、スモーキーな硫黄香、肉質のハイランド系スペイサイド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Caorunn Gin (主力製品)", "type": "常売ジン"}
+      ],
+      "limited": [
+        {"name": "Balmenach 25 (2013 Official)", "type": "限定"},
+        {"name": "Balmenach 1979 (G&M)", "type": "独立瓶詰"}
+      ],
+      "flora_fauna": {"name": "Balmenach 12 Flora & Fauna (廃盤)", "type": "花と動物シリーズ(旧)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Balmenach_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "tamnavulin": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tamnavulin_distillery.jpg/800px-Tamnavulin_distillery.jpg",
+    "characteristics": "スペイサイド、バリンダロッホ近郊、トムナヴォーリン。1966年Invergordon Distillers創業、現Whyte & Mackay所有(2014年Alliance Global傘下£4億3000万で買収)。年産400万L、スチル6基。仕込み水はEasterton地下泉。2016年50周年でUK市場に単一モルトとして再ローンチ。ワイン樽フィニッシュシリーズに力を入れる。",
+    "signature": {
+      "name": "Tamnavulin Double Cask",
+      "cask": "アメリカン・バーボン樽+シェリー樽フィニッシュ",
+      "color": "ゴールド",
+      "taste": "フレッシュフルーツ、バニラ、ハニー、シナモン、スムースでライト、入門向け"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Double Cask (NAS)", "type": "常売"},
+        {"name": "Tamnavulin Sherry Cask Edition", "type": "常売"},
+        {"name": "Cabernet Sauvignon Cask Finish", "type": "常売"},
+        {"name": "Pinot Noir Cask Finish", "type": "常売"},
+        {"name": "Tempranillo / Grenache Cask Finish", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "American Cabernet Sauvignon (2021)", "type": "限定"},
+        {"name": "Sauvignon Blanc Finish (2022, 白ワイン樽)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Tamnavulin_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "dufftown": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Dufftown_distillery.jpg/800px-Dufftown_distillery.jpg",
+    "characteristics": "スペイサイド、ダフタウン。1895年創業(元名Dufftown-Glenlivet)、Diageo所有。年産400万L、スチル6基(ウォッシュ3×13,100L+スピリット3×15,300L)。仕込み水はJock's Well/Conval丘陵泉。Bell'sブレンドの主要構成要素。'The Singleton of Dufftown'としてヨーロッパ市場専用で展開(12/15/18年)。",
+    "signature": {
+      "name": "The Singleton of Dufftown 12",
+      "cask": "アメリカンオーク(ex-bourbon)+ヨーロピアンオーク(ex-sherry)",
+      "color": "ゴールド",
+      "taste": "フルーツ(洋ナシ、リンゴ)、ハニー、バニラ、軽いスパイス、スムースでアクセシブル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Singleton of Dufftown 12", "type": "常売(欧州専用)"},
+        {"name": "Singleton of Dufftown 15 Malt Master's Selection", "type": "常売"},
+        {"name": "Singleton of Dufftown 18", "type": "常売"},
+        {"name": "Dufftown 15", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Singleton Tailfire / Sunray / Spey Cascade (NAS)", "type": "常売(NAS)"}
+      ],
+      "flora_fauna": {"name": "Dufftown 15 Flora & Fauna", "type": "花と動物シリーズ(現行の15年の原型)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Dufftown_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glen_keith": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Glen_Keith_distillery.jpg/800px-Glen_Keith_distillery.jpg",
+    "characteristics": "スペイサイド、キース。1957年創業(1898年の恐慌以来初のスペイサイド新設)、Chivas Brothers (Pernod Ricard)所有。1999-2013年沈黙、年産350万L、スチル6基。Chivas Regal、Passport、100 Pipersなど主要ブレンドの中核。Chivasの技術研究ラボとしても使われ、スコットランド初のガス直火蒸留、独自酵母株開発の舞台。",
+    "signature": {
+      "name": "Glen Keith Distillery Edition (NAS)",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ゴールド",
+      "taste": "洋ナシ、青リンゴ、ハニー、バニラ、ライトでブレンド向けのクリーンな酒質"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glen Keith Distillery Edition (NAS)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Glen Keith 1983", "type": "限定(1990s)"},
+        {"name": "Glen Keith 10", "type": "限定"},
+        {"name": "Glenisla / Craigduff (ピーテッド実験)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glen_Keith_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "knockando": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Knockando_distillery.jpg/800px-Knockando_distillery.jpg",
+    "characteristics": "スペイサイド、ノッカンドゥ。1898年John Tytler Thomson創業、Diageo所有。スコットランドで最初に電灯を導入した蒸留所。年産180万L、スチル2対。仕込み水はカードナック泉。ゲール語'Cnoc Cheannachd'(商いの丘)由来。J&Bブレンドの重要構成要素。ヴィンテージ年表記の先駆者。",
+    "signature": {
+      "name": "Knockando 12 Year Old",
+      "cask": "アメリカン・ホワイトオーク(ex-bourbon)+ヨーロピアンオーク(ex-sherry)",
+      "color": "ゴールド",
+      "taste": "フローラル、ハニー、バニラ、ナッツ、バランスのとれた柔らかいスペイサイド"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Knockando 12 (40%)", "type": "常売(ヴィンテージ表記)"},
+        {"name": "Knockando 15 Richly Matured", "type": "常売"},
+        {"name": "Knockando 18 Slow Matured (43%)", "type": "常売"},
+        {"name": "Knockando 21 Master Reserve", "type": "常売"},
+        {"name": "Knockando 25", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "J&B Ultima 1994 (128種混合, 500周年記念)", "type": "限定(関連ブレンド)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Knockando_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "glendullan": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Glendullan_distillery.jpg/800px-Glendullan_distillery.jpg",
     "characteristics": "スペイサイド、ダフタウン。1897年William Williams氏(アバディーン)創業、Diageo所有。年産370万L、スチル6基(ウォッシュ3+スピリット3)。仕込み水はGoats Well泉(Conval Hill由来)。1972年に隣接して2号蒸留所建設(1985年1号閉鎖、2号継続)。Diageoブレンドの主要構成、2023年以降は'The Singleton of Glendullan'として12/15/18年をリリース。",
