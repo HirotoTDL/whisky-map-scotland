@@ -12,6 +12,33 @@ DETAILS_FILE = ROOT / 'data' / 'details.json'
 
 # Distillery-specific TWE codes (prefix in filename)
 # These codes are unique per distillery; matching them confirms the bottle
+DISTILLERY_CODES_V3 = {  # chunk 4 codes
+    'springbank': ['sprob', 'lgrob', 'hazob', 'sets_spr'],
+    'glenfarclas': ['gfcob', 'gfccd', 'gfcdl'],  # Gordon dalmore-like
+    'ballindalloch': ['bdlob', 'gfcdl'],  # ? need to verify
+    'mannochmore': ['mnmob', 'mnmff', 'lcdob'],  # Loch Dhu was Mannochmore
+    'glenlossie': ['gloob', 'glosig'],
+    'auchroisk': ['aukob', 'aukg', 'auksig'],
+    'allt_a_bhainne': ['altob', 'altsig'],
+    'dalmunach': ['dmnob', 'dmnsig'],
+    'braeval': ['brvomc', 'brvob', 'brvsig'],  # Brae of Glenlivet MacPhail
+    'glen_spey': ['gsyob', 'gsysig'],
+    'strathmill': ['strob', 'strsig'],
+    'miltonduff': ['mtwsig', 'mtwob'],  # Miltonduff-Glenlivet sig
+    'roseisle': ['rosob', 'rossig'],
+    'balmenach': ['gin_cao', 'caorun', 'bmhob'],  # Caorunn gin
+    'glenburgie': ['gbgob', 'gbgg'],
+    'isle_of_harris': ['harob', 'gin_har', 'harsig'],
+    'pulteney': ['opnob', 'opncd', 'blmff'],  # blmff might be Balmenach F&F wrong
+    'sets_bro': ['sets_bro'],  # set of Brora
+    'tomatin': ['tomob', 'cubob'],
+    'port_ellen': ['pelob', 'pelmg', 'pelsig'],
+    'allt_a_bhainne': ['altob'],
+    'falkirk': ['flkob', 'flksig'],
+    'dunphail': ['dphob', 'dphsig'],
+    'aberargie': ['abaob', 'abasig'],
+}
+
 DISTILLERY_CODES_V2 = {  # will be merged
     'tomatin': ['tomob', 'tomsig', 'mini_sm_tom', 'cubob'],  # Cu Bocan
     'glen_moray': ['gmyob', 'gmysig', 'mini_sm_gmy', 'gmyglm'],  # G&M
@@ -113,6 +140,7 @@ def is_valid_match(did, filename):
     """Check if filename code matches the distillery"""
     codes = list(DISTILLERY_CODES.get(did, []))
     codes += list(DISTILLERY_CODES_V2.get(did, []))
+    codes += list(DISTILLERY_CODES_V3.get(did, []))
     lower = filename.lower()
     # Direct match
     if any(lower.startswith(c) for c in codes):
@@ -127,7 +155,7 @@ def is_valid_match(did, filename):
 def main():
     # Parse result files
     results = {}
-    for f in ['twe_chunk1_results.txt', 'twe_chunk2a_results.txt', 'twe_chunk2c_results.txt', 'twe_chunk3_results.txt']:
+    for f in ['twe_chunk1_results.txt', 'twe_chunk2a_results.txt', 'twe_chunk2c_results.txt', 'twe_chunk3_results.txt', 'twe_chunk4_results.txt']:
         path = ROOT / 'scripts' / f
         if not path.exists():
             continue
@@ -141,7 +169,7 @@ def main():
     # Also re-parse to prefer chunk 2 (DOM parsed) over chunk 1 (regex)
     # Re-scan chunks and override with later ones
     results = {}
-    for f in ['twe_chunk1_results.txt', 'twe_chunk2a_results.txt', 'twe_chunk2c_results.txt', 'twe_chunk3_results.txt']:
+    for f in ['twe_chunk1_results.txt', 'twe_chunk2a_results.txt', 'twe_chunk2c_results.txt', 'twe_chunk3_results.txt', 'twe_chunk4_results.txt']:
         path = ROOT / 'scripts' / f
         if not path.exists():
             continue
