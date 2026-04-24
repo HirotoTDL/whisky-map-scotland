@@ -850,6 +850,318 @@
     "verified": false,
     "last_updated": "2026-04-24"
   },
+  "glenkinchie": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Glenkinchie_distillery.jpg/800px-Glenkinchie_distillery.jpg",
+    "characteristics": "ローランド地方、東ロージアン州ペンケイトランド。1837年George/John Rate兄弟創業、Diageo所有。スチル1対(ウォッシュ30,963L、スピリット20,998L)は現役最大級。年産270万L。1988年クラシック・モルト・オブ・スコットランド6蒸留所の1つ。1969年フロアモルティング廃止、跡地は博物館に。2020年新ビジターセンター開業。'エジンバラ・モルト'とも呼ばれる。",
+    "signature": {
+      "name": "Glenkinchie 12 Year Old",
+      "cask": "アメリカン・バーボン樽+リフィル樽",
+      "color": "ペールゴールド",
+      "taste": "フレッシュな青草、花、シトラス、蜂蜜、軽快でフローラル、ローランドの典型的な軽いスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Glenkinchie 12", "type": "常売"},
+        {"name": "Distiller's Edition (アモンティリャード樽フィニッシュ)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Glenkinchie 24 (2016 Special Release)", "type": "限定"},
+        {"name": "Special Releases (毎年)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Glenkinchie 10 Flora & Fauna", "type": "花と動物シリーズ(廃盤、12年で継承)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glenkinchie_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "auchentoshan": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Auchentoshan_distillery.jpg/800px-Auchentoshan_distillery.jpg",
+    "characteristics": "ローランド、グラスゴー郊外ダルミュア。1823年創業、Suntory Global Spirits所有。'グラスゴーのモルト'、'朝食のウイスキー'として知られる。スコットランドでは珍しい3回蒸留(ローランド伝統)を続ける数少ない蒸留所。ノンピート麦芽を使用、最終スピリット81%ABVまで高濃度化。仕込み水はカトリン湖。年産180万L。",
+    "signature": {
+      "name": "Auchentoshan American Oak (NAS)",
+      "cask": "ファーストフィル・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "バニラ、ココナッツ、シトラス、甘いモルト、非常に軽く繊細でスムース、3回蒸留らしいクリーンさ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "American Oak (NAS)", "type": "常売"},
+        {"name": "12 Year Old", "type": "常売"},
+        {"name": "18 Year Old", "type": "常売"},
+        {"name": "21 Year Old", "type": "常売"},
+        {"name": "Three Wood (バーボン→オロロソ→PX)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Valinch シリーズ", "type": "限定"},
+        {"name": "1975 / 1978 Vintage", "type": "限定(希少)"},
+        {"name": "Solera", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Auchentoshan_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "bladnoch": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Bladnoch_distillery.jpg/800px-Bladnoch_distillery.jpg",
+    "characteristics": "ローランド最南端、ダンフリース&ギャロウェイ、ブラドノッホ川沿い。1817年McClelland兄弟創業、スコットランド最南の蒸留所。現所有者はオーストラリア人起業家David Prior氏(2015〜)。元Macallanマスターディスティラー Nick Savage氏がマスターディスティラー就任(2019〜)。スチル2対、年産150万L。ダグラスファー材の木製ウォッシュバック。",
+    "signature": {
+      "name": "Bladnoch Vinaya",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "ペールゴールド",
+      "taste": "フローラル、シトラス、バニラ、ハニー、軽いフルーツ、ローランドスタイルの柔らかさ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Vinaya (NAS)", "type": "常売"},
+        {"name": "Bladnoch 11", "type": "常売"},
+        {"name": "Bladnoch 14", "type": "常売"},
+        {"name": "Bladnoch 15", "type": "常売"},
+        {"name": "Pure Scot (ブレンド)", "type": "関連"}
+      ],
+      "limited": [
+        {"name": "Samsara (NAS, 2016)", "type": "限定"},
+        {"name": "Adela 15", "type": "限定"},
+        {"name": "Talia 25", "type": "限定"},
+        {"name": "Alinta (ピーテッド)", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Bladnoch 10 Flora & Fauna", "type": "花と動物シリーズ(廃盤)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Bladnoch_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "deanston": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Deanston_distillery.jpg/800px-Deanston_distillery.jpg",
+    "characteristics": "南ハイランド、パースシャー、Teith川沿い。1785年綿紡績工場を1965年に蒸留所転用。CVH Spirits所有。スコットランド唯一の100%自家水力発電蒸留所。10人の職人による手作り。ノンチル濾過、着色料無添加、46.3%標準。24,000樽収容の1830年代の織布倉庫熟成庫。2000年から有機認証。",
+    "signature": {
+      "name": "Deanston 12 Year Old",
+      "cask": "アメリカン・バーボン樽",
+      "color": "ゴールド(自然色)",
+      "taste": "ハニー、シリアル、ヘーゼルナッツ、蜂蜜、バニラ、クリーミーなテクスチャ、非チル濾過のオイリー感"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Deanston 12", "type": "常売"},
+        {"name": "Virgin Oak (NAS)", "type": "常売"},
+        {"name": "Deanston 18", "type": "常売"},
+        {"name": "Deanston Organic", "type": "常売"},
+        {"name": "Deanston 15 Organic", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Deanston 40", "type": "限定"},
+        {"name": "Fino Finish / PX Finish", "type": "限定シリーズ"},
+        {"name": "Kentucky Cask Matured", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Deanston_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "aultmore": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Aultmore_distillery.jpg/800px-Aultmore_distillery.jpg",
+    "characteristics": "スペイサイド、キース近郊。1895年Alexander Edward創業、John Dewar & Sons (Bacardi)所有。4基のスチル、年産210万L。ゲール語'An t-Allt Mòr'(大きな川)由来。元は水車動力→蒸気機関に転換(当時の蒸気機関が展示)。ブレンダーに高く評価され'Buckie Road'と呼ばれる伝説的な独立瓶詰の元銘柄。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Aultmore 12 Year Old",
+      "cask": "リフィル・バーボン樽",
+      "color": "ペールゴールド",
+      "taste": "フレッシュな草、青リンゴ、ライム、ミント、非常にクリーンで繊細、スペイサイドの隠れた名品"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Aultmore 12", "type": "常売"},
+        {"name": "Aultmore 18", "type": "常売"},
+        {"name": "Aultmore 21", "type": "常売"},
+        {"name": "Aultmore 25", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Aultmore 23", "type": "限定"},
+        {"name": "Aultmore Cask Strength", "type": "限定"}
+      ],
+      "flora_fauna": {"name": "Aultmore 12 Flora & Fauna", "type": "花と動物シリーズ(現行の12年の原型)"}
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Aultmore_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "tobermory": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Tobermory_distillery.jpg/800px-Tobermory_distillery.jpg",
+    "characteristics": "マル島トバモリー、島唯一の蒸留所。1798年John Sinclair創業、Distell(Heineken)所有。年産100万L、スチル2対。ノンピートの'Tobermory'とヘビーピートの'Ledaig(レダイグ)'の2ブランドを製造。熟成はDeanston蒸留所で行う(バーボン樽+シェリー樽)。2019年からHebridean Gin(13種のボタニカル)も製造。",
+    "signature": {
+      "name": "Tobermory 12 Year Old / Ledaig 10 Year Old",
+      "cask": "バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "Tobermory: フルーツ、ハニー、軽いスパイス、フローラル / Ledaig: 海潮、ピートスモーク、タール、肉質"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Tobermory 12", "type": "常売"},
+        {"name": "Tobermory 21", "type": "常売"},
+        {"name": "Ledaig 10 (ピーテッド)", "type": "常売"},
+        {"name": "Ledaig 18 (ピーテッド)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Tobermory 15 / 23", "type": "限定"},
+        {"name": "Ledaig Rioja Cask Finish", "type": "限定"},
+        {"name": "Ledaig 42", "type": "限定(希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Tobermory_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "scapa": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scapa_distillery.jpg/800px-Scapa_distillery.jpg",
+    "characteristics": "オークニー諸島メインランド島、スキャパ湾沿い、Highland Parkの南800m。1885年創業、Chivas Brothers(Pernod Ricard)所有。年産100万L、スチル1対。麦芽はピート乾燥しない(稀なオークニー流儀)、仕込み水はLingro川をパイプラインで運び、ピートに触れさせない。結果、ハニー主体で他のアイランドと異なる酒質。",
+    "signature": {
+      "name": "Scapa Skiren",
+      "cask": "ファーストフィル・アメリカンオーク",
+      "color": "ゴールド",
+      "taste": "ハニー、ヘザー、海塩、トロピカルフルーツ、バニラ、非ピート、エレガントで柔らか"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Scapa Skiren (NAS)", "type": "常売"},
+        {"name": "Scapa Glansa (軽いピーテッド)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Scapa 14 (2005/2008 SFWS Gold)", "type": "限定(廃盤)"},
+        {"name": "Scapa 16 (2016年廃盤)", "type": "限定(希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Scapa_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "clynelish": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Clynelish_distillery.jpg/800px-Clynelish_distillery.jpg",
+    "characteristics": "北ハイランド、ブローラ近郊。1819年創業(現施設は1967年建設)。Diageo所有、6基のスチル、年産480万L。仕込み水はクライネミルトン川。約95%の生産量がJohnnie Walker(特にGold Label Reserve)ブレンドへ。特徴的なワクシー(ワックス状の)テクスチャで'ワクシー・クライヌリッシュ'として知られる。隣接する旧蒸留所が現在のブローラ蒸留所で、1983年閉鎖以降のヘビーピーテッドは今や希少品。Flora & Fauna 26蒸留所の1つ。",
+    "signature": {
+      "name": "Clynelish 14 Year Old",
+      "cask": "アメリカン・バーボン樽+シェリー樽",
+      "color": "ゴールド",
+      "taste": "ハニー、シトラス、ワクシー感、ミネラル、海風、ほのかなスモーク、クリーミーで長い後味"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Clynelish 14", "type": "常売"},
+        {"name": "Distillery Only Bottling (NAS, 48%)", "type": "常売(蒸留所限定)"}
+      ],
+      "limited": [
+        {"name": "Clynelish 20 Bi-Centenary (2019, 57.3%)", "type": "限定"},
+        {"name": "Clynelish Select Reserve", "type": "限定"},
+        {"name": "Special Releases (毎年)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Clynelish_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "royal_lochnagar": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Royal_Lochnagar_distillery.jpg/800px-Royal_Lochnagar_distillery.jpg",
+    "characteristics": "東ハイランド、バルモラル城近郊、ロイヤル・ディーサイド。1845年John Begg氏創業、Diageo所有の最小蒸留所。年産45万L、スチル1対(超小型)。1848年ヴィクトリア女王より、2022年エリザベス女王プラチナ・ジュビリー時点までロイヤルワラント取得。Johnnie Walker Black/Blue Labelの重要構成要素。",
+    "signature": {
+      "name": "Royal Lochnagar 12 Year Old",
+      "cask": "アメリカンオーク+ヨーロピアンオーク(シェリー)",
+      "color": "ディープアンバー",
+      "taste": "ハニー、オレンジ、ドライフルーツ、スパイス、リッチでエレガント、伝統的ハイランドスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Royal Lochnagar 12", "type": "常売"},
+        {"name": "Selected Reserve (NAS)", "type": "常売"},
+        {"name": "Distillers Edition (Moscatelフィニッシュ)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Balmoral Platinum Edition (2022, プラチナジュビリー)", "type": "限定"},
+        {"name": "Special Releases (毎年)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Royal_Lochnagar_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "isle_of_jura": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Jura_distillery.jpg/800px-Jura_distillery.jpg",
+    "characteristics": "インナーヘブリディーズ諸島ジュラ島、唯一の蒸留所。1810年Archibald Campbell氏創業、1963年再建(スチル高くして多様なモルト生産可能に)。Whyte & Mackay所有。4基のスチル、年産250万L。仕込み水はロッホ・ア・バイル・ハルガー。島の人口約200人に対してシカが約5,000頭、島民より鹿が多い場所。",
+    "signature": {
+      "name": "Jura 10 Year Old",
+      "cask": "アメリカン・バーボン樽+オロロソシェリー樽フィニッシュ",
+      "color": "ゴールド",
+      "taste": "ハニー、フルーツ、オーク、シェリー、ほのかなピートスモーク、丸みのある甘さ"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Jura Journey (NAS)", "type": "常売"},
+        {"name": "Jura 10", "type": "常売"},
+        {"name": "Jura 12", "type": "常売"},
+        {"name": "Jura 18", "type": "常売"},
+        {"name": "Jura Seven Wood", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Jura Tide / Time / Loch", "type": "限定シリーズ"},
+        {"name": "Jura 21 Tide", "type": "限定"},
+        {"name": "Jura 40", "type": "限定(希少)"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Jura_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "lochranza": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Lochranza_distillery.jpg/800px-Lochranza_distillery.jpg",
+    "characteristics": "アラン島ロックランザ。1995年創業、Isle of Arran Distillers所有。仕込み水はロッホ・ナ・ダヴィー。2基ずつのスチル、年産75万L。'アイル・オブ・アラン'としてリリース。2019年にラグ蒸留所(同社)がオープンし、アラン2蒸留所体制に。ロバート・バーンズ・シングルモルト独占ブランド権を保有。",
+    "signature": {
+      "name": "Arran 10 Year Old",
+      "cask": "バーボン樽主体、一部シェリー樽",
+      "color": "ゴールド",
+      "taste": "フレッシュフルーツ(リンゴ、桃、バナナ)、バニラ、シトラス、軽いスパイス、クリーンなアイランドスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Arran 10", "type": "常売"},
+        {"name": "Arran Sherry Cask The Bodega", "type": "常売"},
+        {"name": "Arran 14", "type": "常売"},
+        {"name": "Arran 18", "type": "常売"},
+        {"name": "Arran 21", "type": "常売"},
+        {"name": "Arran 25", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "Machrie Moor (ピーテッドバージョン)", "type": "常売(毎年バッチ)"},
+        {"name": "Robert Burns Single Malt", "type": "限定"},
+        {"name": "Private Cask Selection", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Arran_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
+  "glen_scotia": {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Glen_Scotia_distillery.jpg/800px-Glen_Scotia_distillery.jpg",
+    "characteristics": "キャンベルタウン、1832年創業、Loch Lomond Group所有(2014〜)。スタッフ8名、年産約70万L。幅広で短いネックの銅製ポットスチルを使用。仕込み水はクロスヒル湖。ノンピートからヘビーピートまで対応。2021年サンフランシスコ・ワールドスピリッツで'World's Best Whisky'受賞。",
+    "signature": {
+      "name": "Glen Scotia Victoriana",
+      "cask": "ヘビーチャーのバーボン樽+オロロソシェリー樽フィニッシュ",
+      "color": "ディープゴールド",
+      "taste": "海塩、トフィー、ダークチョコレート、ピートスモーク、トロピカルフルーツ、リッチでヴィクトリア朝の伝統的キャンベルタウンスタイル"
+    },
+    "bottles": {
+      "core": [
+        {"name": "Double Cask (46%)", "type": "常売"},
+        {"name": "15 Year Old (46%)", "type": "常売"},
+        {"name": "Victoriana (54.2%)", "type": "常売"},
+        {"name": "18 Year Old (46%)", "type": "常売"},
+        {"name": "25 Year Old (48.8%)", "type": "常売"}
+      ],
+      "limited": [
+        {"name": "The Mermaid (Icons Of Campbeltown)", "type": "限定(2023〜)"},
+        {"name": "The Dragon (Icons Of Campbeltown)", "type": "限定"},
+        {"name": "Festival Release (毎年)", "type": "限定"}
+      ]
+    },
+    "sources": ["https://en.wikipedia.org/wiki/Glen_Scotia_distillery"],
+    "verified": false,
+    "last_updated": "2026-04-24"
+  },
   "oban": {
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Oban_distillery.jpg/800px-Oban_distillery.jpg",
     "characteristics": "西ハイランド、オーバン町の中心にある小さな蒸留所(スコットランド最小級)。1794年Stevenson兄弟創業、Diageo所有。ポットスチル僅か2基、年産67万L。仕込み水はアードコンネル山中の2つの湖。1988年クラシック・モルト・オブ・スコットランドに選定。西ハイランド特有の'アイランドとハイランドの中間'の個性。",
