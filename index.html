@@ -2,7 +2,12 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<meta name="theme-color" content="#8b5a2b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ウイスキーマップ">
+<meta name="mobile-web-app-capable" content="yes">
 <title>Whisky Distilleries in Scotland - Interactive Map</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
@@ -185,26 +190,94 @@
   }
   .region-chip.active { background: #8b5a2b; color: #fff; }
 
+  /* Hamburger button for mobile */
+  #mobile-menu-btn {
+    display: none;
+    background: #8b5a2b; color: #fff;
+    border: none; padding: 8px 12px; border-radius: 6px;
+    font-size: 18px; cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  /* Mobile detail toggle handle */
+  #mobile-detail-handle {
+    display: none;
+    position: absolute; top: -22px; left: 50%; transform: translateX(-50%);
+    background: #8b5a2b; color: #fff;
+    padding: 4px 16px 4px 16px; border-radius: 12px 12px 0 0;
+    font-size: 12px; cursor: pointer;
+    z-index: 1002; user-select: none;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  }
+
   @media (max-width: 1100px) {
     #app { grid-template-columns: 1fr 380px; }
-    #region-list { display: none; }
+    #region-list {
+      position: fixed; top: 0; left: 0; bottom: 0; width: 280px;
+      z-index: 2000;
+      transform: translateX(-100%);
+      transition: transform 0.25s ease;
+      box-shadow: 4px 0 16px rgba(0,0,0,0.2);
+      display: block !important;
+    }
+    #region-list.open { transform: translateX(0); }
+    #mobile-menu-btn { display: inline-block; }
+    #region-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 1999;
+      display: none;
+    }
+    #region-overlay.show { display: block; }
   }
-  @media (max-width: 900px) {
-    #app { grid-template-columns: 1fr; grid-template-rows: 60vh 40vh; }
-    #region-list { display: none; }
-    #detail-panel { border-left: none; border-top: 2px solid #8b5a2b; }
-    header { flex-direction: column; align-items: flex-start; gap: 8px; }
-    #search-results { width: calc(100% - 40px); }
+  @media (max-width: 700px) {
+    #app { grid-template-columns: 1fr; grid-template-rows: 1fr 0; }
+    #app.detail-open { grid-template-rows: 30vh 70vh; }
+    #map-container { min-height: 0; }
+    #detail-panel {
+      border-left: none; border-top: 2px solid #8b5a2b;
+      padding: 14px 14px 60px 14px;
+      position: relative; overflow-y: auto;
+      transition: max-height 0.3s ease;
+    }
+    #mobile-detail-handle { display: block; }
+    header {
+      flex-wrap: wrap; gap: 8px; padding: 8px 12px;
+      align-items: center;
+    }
+    h1 { font-size: 15px; line-height: 1.2; }
+    h1 .year { display: none; }
+    #search-box {
+      flex: 1 1 100%; max-width: none;
+      font-size: 16px; /* prevents iOS zoom */
+      padding: 10px 14px;
+    }
+    #region-filter { width: 100%; gap: 4px; }
+    .region-chip { padding: 5px 10px; font-size: 11px; min-height: 28px; }
+    #status-count { font-size: 10px; margin-left: 0; }
+    #search-results { left: 12px; width: calc(100% - 24px); top: auto; max-height: 50vh; }
+    .distillery-header h2 { font-size: 18px; }
+    .distillery-image { max-height: 200px; object-fit: cover; }
+    .bottle-grid { grid-template-columns: repeat(auto-fill, minmax(95px, 1fr)); gap: 6px; }
+    .bottle-card { padding: 6px; font-size: 10px; }
+    .bottle-card img, .bottle-placeholder { height: 90px; }
+    .bottle-card .bottle-name { font-size: 10px; line-height: 1.2; }
+    .info-grid { font-size: 12px; }
+    .section h3 { font-size: 14px; }
+    /* Bigger tap targets for region items */
+    .region-item { padding: 10px 14px 10px 28px; min-height: 44px; }
+    .region-header { padding: 12px 14px; min-height: 44px; }
+    /* Scotland overview button bigger */
+    .scotland-view-btn button { padding: 10px 14px !important; font-size: 13px !important; }
   }
 </style>
 </head>
 <body>
 <div id="app">
+  <div id="region-overlay" onclick="toggleRegionList(false)"></div>
   <aside id="region-list"></aside>
   <div id="map-container">
     <header>
+      <button id="mobile-menu-btn" onclick="toggleRegionList()" aria-label="地域リスト">☰</button>
       <h1>Whisky Distilleries in Scotland <span class="year">2023</span></h1>
-      <input type="text" id="search-box" placeholder="蒸留所名を検索 (Search by name / カタカナ / Alphabet)" autocomplete="off" />
+      <input type="text" id="search-box" placeholder="蒸留所を検索 / カタカナ / Alphabet" autocomplete="off" />
       <div id="region-filter"></div>
       <span id="status-count" style="font-size:11px;color:#8b5a2b;margin-left:8px;">—</span>
     </header>
@@ -212,6 +285,7 @@
     <div id="map"></div>
   </div>
   <aside id="detail-panel">
+    <div id="mobile-detail-handle" onclick="toggleDetailPanel()">▲ 詳細</div>
     <div class="empty">
       <p style="font-size: 18px;">🥃</p>
       <p>蒸留所を選択してください</p>
@@ -347,6 +421,36 @@ function showScotlandOverview() {
   map.flyTo([57.5, -4.5], 6, { duration: 1.0 });
 }
 
+function toggleRegionList(force) {
+  const list = document.getElementById('region-list');
+  const overlay = document.getElementById('region-overlay');
+  const open = force === undefined ? !list.classList.contains('open') : force;
+  list.classList.toggle('open', open);
+  overlay.classList.toggle('show', open);
+}
+
+function toggleDetailPanel() {
+  const app = document.getElementById('app');
+  const handle = document.getElementById('mobile-detail-handle');
+  app.classList.toggle('detail-open');
+  handle.textContent = app.classList.contains('detail-open') ? '▼ 閉じる' : '▲ 詳細';
+  // Trigger map resize so Leaflet recalculates
+  setTimeout(() => map && map.invalidateSize(), 320);
+}
+
+// Auto-open detail on mobile when distillery selected
+function autoOpenDetailOnMobile() {
+  if (window.innerWidth <= 700) {
+    const app = document.getElementById('app');
+    if (!app.classList.contains('detail-open')) {
+      app.classList.add('detail-open');
+      const handle = document.getElementById('mobile-detail-handle');
+      if (handle) handle.textContent = '▼ 閉じる';
+      setTimeout(() => map && map.invalidateSize(), 320);
+    }
+  }
+}
+
 function initFilter() {
   const container = document.getElementById('region-filter');
   Object.keys(REGION_COLORS).forEach(region => {
@@ -444,6 +548,9 @@ function selectDistillery(id) {
   map.flyTo([d.lat, d.lon], targetZoom, { duration: 0.8 });
   highlightMarker(id);
   showDetail(id);
+  // Auto-close region list on mobile after selection
+  if (window.innerWidth <= 1100) toggleRegionList(false);
+  autoOpenDetailOnMobile();
 }
 
 function updateStatusBar(detailCount) {
