@@ -231,6 +231,12 @@
     #region-overlay.show { display: block; }
   }
   @media (max-width: 700px) {
+    /* Push Leaflet zoom controls below the header on mobile so they don't
+       overlap with the hamburger button */
+    .leaflet-top.leaflet-left { top: 12px !important; left: auto !important; right: 8px !important; }
+    .leaflet-control-zoom { margin-right: 0 !important; }
+    /* Move Scotland overview button to bottom-right to avoid header */
+    .scotland-view-btn { margin-top: 56px !important; }
     /* Split view: map top half, detail bottom half (resizable) */
     #app { grid-template-columns: 1fr; grid-template-rows: 50vh 50vh; }
     #app.map-expanded { grid-template-rows: 80vh 20vh; }
