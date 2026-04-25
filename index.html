@@ -198,15 +198,18 @@
     font-size: 18px; cursor: pointer;
     -webkit-tap-highlight-color: transparent;
   }
-  /* Mobile detail toggle handle */
+  /* Mobile detail toggle handle (split view) */
   #mobile-detail-handle {
     display: none;
-    position: absolute; top: -22px; left: 50%; transform: translateX(-50%);
+    position: sticky; top: 0; left: 0; right: 0;
     background: #8b5a2b; color: #fff;
-    padding: 4px 16px 4px 16px; border-radius: 12px 12px 0 0;
-    font-size: 12px; cursor: pointer;
-    z-index: 1002; user-select: none;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 13px; font-weight: 600; cursor: pointer;
+    z-index: 100; user-select: none;
+    margin: -14px -14px 10px -14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    -webkit-tap-highlight-color: transparent;
   }
 
   @media (max-width: 1100px) {
@@ -228,16 +231,18 @@
     #region-overlay.show { display: block; }
   }
   @media (max-width: 700px) {
-    #app { grid-template-columns: 1fr; grid-template-rows: 1fr 0; }
-    #app.detail-open { grid-template-rows: 30vh 70vh; }
+    /* Split view: map top half, detail bottom half (resizable) */
+    #app { grid-template-columns: 1fr; grid-template-rows: 50vh 50vh; }
+    #app.map-expanded { grid-template-rows: 80vh 20vh; }
+    #app.detail-expanded { grid-template-rows: 20vh 80vh; }
     #map-container { min-height: 0; }
     #detail-panel {
       border-left: none; border-top: 2px solid #8b5a2b;
       padding: 14px 14px 60px 14px;
       position: relative; overflow-y: auto;
-      transition: max-height 0.3s ease;
+      transition: none;
     }
-    #mobile-detail-handle { display: block; }
+    #mobile-detail-handle { display: block; cursor: ns-resize; }
     header {
       flex-wrap: wrap; gap: 8px; padding: 8px 12px;
       align-items: center;
@@ -285,7 +290,7 @@
     <div id="map"></div>
   </div>
   <aside id="detail-panel">
-    <div id="mobile-detail-handle" onclick="toggleDetailPanel()">▲ 詳細</div>
+    <div id="mobile-detail-handle" onclick="toggleDetailPanel()">▲ 詳細を全画面</div>
     <div class="empty">
       <p style="font-size: 18px;">🥃</p>
       <p>蒸留所を選択してください</p>
@@ -429,25 +434,28 @@ function toggleRegionList(force) {
   overlay.classList.toggle('show', open);
 }
 
+// Cycle: split (50/50) -> detail-expanded (20/80) -> map-expanded (80/20) -> split
 function toggleDetailPanel() {
   const app = document.getElementById('app');
   const handle = document.getElementById('mobile-detail-handle');
-  app.classList.toggle('detail-open');
-  handle.textContent = app.classList.contains('detail-open') ? '▼ 閉じる' : '▲ 詳細';
-  // Trigger map resize so Leaflet recalculates
-  setTimeout(() => map && map.invalidateSize(), 320);
+  if (app.classList.contains('detail-expanded')) {
+    app.classList.remove('detail-expanded');
+    app.classList.add('map-expanded');
+    handle.textContent = '▼ 詳細を表示';
+  } else if (app.classList.contains('map-expanded')) {
+    app.classList.remove('map-expanded');
+    handle.textContent = '▲ 詳細を全画面';
+  } else {
+    app.classList.add('detail-expanded');
+    handle.textContent = '▼ 半分に戻す';
+  }
+  setTimeout(() => map && map.invalidateSize(), 220);
 }
 
-// Auto-open detail on mobile when distillery selected
 function autoOpenDetailOnMobile() {
+  // Split view is default - just resize map after detail loads
   if (window.innerWidth <= 700) {
-    const app = document.getElementById('app');
-    if (!app.classList.contains('detail-open')) {
-      app.classList.add('detail-open');
-      const handle = document.getElementById('mobile-detail-handle');
-      if (handle) handle.textContent = '▼ 閉じる';
-      setTimeout(() => map && map.invalidateSize(), 320);
-    }
+    setTimeout(() => map && map.invalidateSize(), 100);
   }
 }
 
