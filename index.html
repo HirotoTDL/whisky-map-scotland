@@ -15,7 +15,34 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Helvetica Neue', 'Hiragino Sans', 'Meiryo', sans-serif; color: #2d1810; background: #f5ede0; }
-  #app { display: grid; grid-template-columns: 280px 1fr 420px; height: 100vh; }
+  #app {
+    display: grid;
+    grid-template-columns: 280px 1fr 6px var(--detail-w, 420px);
+    height: 100vh;
+    --detail-w: 420px;
+    --map-h: 50vh;
+  }
+  /* Resize handle */
+  #resize-handle {
+    background: linear-gradient(90deg, #d4b88c 0%, #a07840 50%, #d4b88c 100%);
+    cursor: col-resize;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 5;
+    transition: background 0.15s;
+  }
+  #resize-handle:hover, #resize-handle.dragging {
+    background: linear-gradient(90deg, #b88a4a 0%, #8b5a2b 50%, #b88a4a 100%);
+  }
+  #resize-handle::before {
+    content: '⋮';
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5a2d0c; font-size: 18px;
+    font-weight: bold; line-height: 1;
+    pointer-events: none;
+  }
   #region-list {
     overflow-y: auto; background: #f5ede0; border-right: 2px solid #8b5a2b;
     padding: 12px 0;
@@ -198,6 +225,33 @@
     font-size: 18px; cursor: pointer;
     -webkit-tap-highlight-color: transparent;
   }
+  /* Always-visible selection effect (works at any zoom level) */
+  @keyframes selection-pulse-large {
+    0% { transform: scale(0.8); opacity: 1; }
+    70% { transform: scale(2.2); opacity: 0.2; }
+    100% { transform: scale(0.8); opacity: 0; }
+  }
+  .selection-pulse-marker .pulse-ring {
+    position: absolute; left: 50%; top: 50%;
+    width: 50px; height: 50px;
+    margin-left: -25px; margin-top: -25px;
+    border-radius: 50%;
+    background: rgba(255, 193, 7, 0.35);
+    border: 4px solid #ffc107;
+    animation: selection-pulse-large 1.6s infinite;
+    pointer-events: none;
+  }
+  .selection-pulse-marker .pulse-dot {
+    position: absolute; left: 50%; top: 50%;
+    width: 18px; height: 18px;
+    margin-left: -9px; margin-top: -9px;
+    background: #ffc107;
+    border: 3px solid #5a2d0c;
+    border-radius: 50%;
+    box-shadow: 0 0 14px 4px #ffc107;
+    pointer-events: none;
+  }
+
   /* Mobile detail toggle handle (split view) */
   #mobile-detail-handle {
     display: none;
@@ -213,7 +267,7 @@
   }
 
   @media (max-width: 1100px) {
-    #app { grid-template-columns: 1fr 380px; }
+    #app { grid-template-columns: 1fr 6px var(--detail-w, 380px); }
     #region-list {
       position: fixed; top: 0; left: 0; bottom: 0; width: 280px;
       z-index: 2000;
@@ -237,10 +291,22 @@
     .leaflet-control-zoom { margin-right: 0 !important; }
     /* Move Scotland overview button to bottom-right to avoid header */
     .scotland-view-btn { margin-top: 56px !important; }
-    /* Split view: map top half, detail bottom half (resizable) */
-    #app { grid-template-columns: 1fr; grid-template-rows: 50vh 50vh; }
-    #app.map-expanded { grid-template-rows: 80vh 20vh; }
-    #app.detail-expanded { grid-template-rows: 20vh 80vh; }
+    /* Split view: map top, drag handle, detail bottom (resizable) */
+    #app {
+      grid-template-columns: 1fr;
+      grid-template-rows: var(--map-h, 50vh) 8px 1fr;
+    }
+    #resize-handle {
+      cursor: row-resize;
+      background: linear-gradient(180deg, #d4b88c 0%, #a07840 50%, #d4b88c 100%);
+    }
+    #resize-handle:hover, #resize-handle.dragging {
+      background: linear-gradient(180deg, #b88a4a 0%, #8b5a2b 50%, #b88a4a 100%);
+    }
+    #resize-handle::before {
+      content: '⋯';
+      font-size: 22px;
+    }
     #map-container { min-height: 0; }
     #detail-panel {
       border-left: none; border-top: 2px solid #8b5a2b;
@@ -295,6 +361,7 @@
     <div id="search-results"></div>
     <div id="map"></div>
   </div>
+  <div id="resize-handle" title="ドラッグでサイズ変更"></div>
   <aside id="detail-panel">
     <div id="mobile-detail-handle" onclick="toggleDetailPanel()">▲ 詳細を全画面</div>
     <div class="empty">
@@ -347,6 +414,7 @@ async function loadData() {
   initSearch();
   renderMarkers();
   renderRegionList();
+  initResizeHandle();
 }
 
 function renderRegionList() {
@@ -430,6 +498,92 @@ function initMap() {
 function showScotlandOverview() {
   // Show all of Scotland, but keep the selected marker highlighted
   map.flyTo([57.5, -4.5], 6, { duration: 1.0 });
+}
+
+// ========== Always-visible selection overlay (works at any zoom) ==========
+let selectionOverlay = null;
+
+function showSelectionOverlay(d) {
+  if (selectionOverlay) {
+    map.removeLayer(selectionOverlay);
+    selectionOverlay = null;
+  }
+  if (!d || !d.lat) return;
+  const icon = L.divIcon({
+    className: 'selection-pulse-marker',
+    html: '<div class="pulse-ring"></div><div class="pulse-dot"></div>',
+    iconSize: [50, 50],
+    iconAnchor: [25, 25]
+  });
+  selectionOverlay = L.marker([d.lat, d.lon], {
+    icon,
+    interactive: false,
+    keyboard: false,
+    zIndexOffset: 9999
+  });
+  selectionOverlay.addTo(map);
+}
+
+// ========== Resize handle (free drag for map/detail split) ==========
+function initResizeHandle() {
+  const handle = document.getElementById('resize-handle');
+  const app = document.getElementById('app');
+  if (!handle || !app) return;
+
+  let isDragging = false;
+  let startPos = 0;
+  let startSize = 0;
+
+  function isMobile() { return window.innerWidth <= 700; }
+
+  function onStart(e) {
+    isDragging = true;
+    handle.classList.add('dragging');
+    document.body.style.cursor = isMobile() ? 'row-resize' : 'col-resize';
+    document.body.style.userSelect = 'none';
+    const point = e.touches ? e.touches[0] : e;
+    if (isMobile()) {
+      startPos = point.clientY;
+      startSize = parseInt(getComputedStyle(app).gridTemplateRows.split(' ')[0], 10);
+    } else {
+      startPos = point.clientX;
+      startSize = parseInt(getComputedStyle(app).gridTemplateColumns.split(' ').slice(-1)[0], 10);
+    }
+    e.preventDefault();
+  }
+
+  function onMove(e) {
+    if (!isDragging) return;
+    const point = e.touches ? e.touches[0] : e;
+    if (isMobile()) {
+      const delta = point.clientY - startPos;
+      const newH = Math.max(120, Math.min(window.innerHeight - 180, startSize + delta));
+      app.style.setProperty('--map-h', newH + 'px');
+    } else {
+      // For PC, dragging right means detail shrinks (because handle is left of detail)
+      const delta = startPos - point.clientX;
+      const newW = Math.max(280, Math.min(window.innerWidth - 400, startSize + delta));
+      app.style.setProperty('--detail-w', newW + 'px');
+    }
+    if (e.cancelable) e.preventDefault();
+  }
+
+  function onEnd() {
+    if (!isDragging) return;
+    isDragging = false;
+    handle.classList.remove('dragging');
+    document.body.style.cursor = '';
+    document.body.style.userSelect = '';
+    if (map) map.invalidateSize();
+  }
+
+  handle.addEventListener('mousedown', onStart);
+  document.addEventListener('mousemove', onMove);
+  document.addEventListener('mouseup', onEnd);
+  handle.addEventListener('touchstart', onStart, { passive: false });
+  document.addEventListener('touchmove', onMove, { passive: false });
+  document.addEventListener('touchend', onEnd);
+  handle.addEventListener('touchcancel', onEnd);
 }
 
 function toggleRegionList(force) {
@@ -551,6 +705,8 @@ function highlightMarker(id) {
     markers[id].setIcon(createIconFull(d, true));
     markers[id].openPopup();
   }
+  // Show always-visible overlay (works at any zoom level, not clustered)
+  showSelectionOverlay(d);
 }
 
 function selectDistillery(id) {
