@@ -8,7 +8,7 @@ from difflib import SequenceMatcher
 
 ROOT = Path(__file__).resolve().parent.parent
 DETAILS_FILE = ROOT / 'data' / 'details.json'
-COMPACT = ROOT / 'scripts' / 'mw_compact.txt'
+COMPACT_FILES = [ROOT / 'scripts' / 'mw_compact.txt', ROOT / 'scripts' / 'mw3_compact.txt']
 
 # Distillery → Japanese name patterns it MUST contain (filter out unrelated products)
 NAME_FILTER = {
@@ -63,6 +63,16 @@ NAME_FILTER = {
     'glenburgie': ['グレンバーギ'],
     'allt_a_bhainne': ['アルトベーン', 'アルト ア ベーン'],
     'daftmill': ['ダフトミル'],
+    'longmorn': ['ロングモーン'],
+    'ben_nevis': ['ベンネヴィス'],
+    'balblair': ['バルブレア'],
+    'glengoyne': ['グレンゴイン'],
+    'glenturret': ['グレンタレット'],
+    'glencadam': ['グレンカダム'],
+    'glenglassaugh': ['グレングラッサ'],
+    'tormore': ['トーモア'],
+    'rosebank': ['ローズバンク'],
+    'loch_lomond': ['ロッホロモンド', 'インチマーリン'],
 }
 
 # Reject patterns (other distilleries that share search terms)
@@ -133,7 +143,7 @@ def best_match(target, candidates, threshold=0.3):
 def main():
     # Load compact data
     products_by_dist = {}
-    for line in COMPACT.read_text(encoding='utf-8').splitlines():
+    for line in '\n'.join(p.read_text(encoding='utf-8') for p in COMPACT_FILES if p.exists()).splitlines():
         parts = line.split('|', 4)
         if len(parts) < 4:
             continue
