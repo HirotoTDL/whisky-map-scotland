@@ -267,7 +267,24 @@
   }
 
   @media (max-width: 1100px) {
-    #app { grid-template-columns: 1fr 6px var(--detail-w, 380px); }
+    #app {
+      --detail-w: clamp(280px, 38vw, 380px);
+      grid-template-columns: 1fr 6px var(--detail-w);
+    }
+    /* Move Leaflet zoom controls below the wrapped header on tablet to avoid
+       overlap with the hamburger button */
+    .leaflet-top.leaflet-left { top: auto !important; bottom: 30px !important; }
+    .scotland-view-btn { margin-top: 0 !important; }
+    /* Header wraps to prevent overflow */
+    header { flex-wrap: wrap; padding: 8px 14px; gap: 8px; row-gap: 6px; }
+    h1 { font-size: 17px; flex-shrink: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    h1 .year { display: none; }
+    #search-box { flex: 1 1 220px; min-width: 0; max-width: none; }
+    #region-filter { flex-basis: 100%; width: 100%; gap: 5px; }
+    #status-count { flex-basis: 100%; margin-left: 0; }
+    /* Push Scotland overview button below header by giving the button extra
+       top spacing inside its Leaflet control container */
+    .leaflet-top.leaflet-right { top: auto !important; bottom: 30px !important; }
     #region-list {
       position: fixed; top: 0; left: 0; bottom: 0; width: 280px;
       z-index: 2000;
@@ -278,12 +295,13 @@
     }
     #region-list.open { transform: translateX(0); }
     #mobile-menu-btn { display: inline-block; }
-    #region-overlay {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 1999;
-      display: none;
-    }
-    #region-overlay.show { display: block; }
   }
+  /* region-overlay must always be position:fixed so it doesn't take a grid cell on PC */
+  #region-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 1999;
+    display: none;
+  }
+  #region-overlay.show { display: block; }
   @media (max-width: 700px) {
     /* Push Leaflet zoom controls below the header on mobile so they don't
        overlap with the hamburger button */
@@ -584,6 +602,26 @@ function initResizeHandle() {
   document.addEventListener('touchmove', onMove, { passive: false });
   document.addEventListener('touchend', onEnd);
   handle.addEventListener('touchcancel', onEnd);
+
+  // Window resize: clamp current detail width to fit viewport
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const curW = parseInt(getComputedStyle(app).getPropertyValue('--detail-w'), 10);
+      const curH = parseInt(getComputedStyle(app).getPropertyValue('--map-h'), 10);
+      if (!isMobile()) {
+        // PC/tablet: ensure map gets at least 400px
+        const maxW = Math.max(280, window.innerWidth - 400);
+        if (curW > maxW) app.style.setProperty('--detail-w', maxW + 'px');
+      } else {
+        // Mobile: ensure detail gets at least 180px
+        const maxH = window.innerHeight - 180;
+        if (curH > maxH) app.style.setProperty('--map-h', maxH + 'px');
+      }
+      if (map) map.invalidateSize();
+    }, 100);
+  });
 }
 
 function toggleRegionList(force) {
