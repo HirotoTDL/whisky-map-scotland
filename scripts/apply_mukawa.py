@@ -8,7 +8,7 @@ from difflib import SequenceMatcher
 
 ROOT = Path(__file__).resolve().parent.parent
 DETAILS_FILE = ROOT / 'data' / 'details.json'
-COMPACT_FILES = [ROOT / 'scripts' / 'mw_compact.txt', ROOT / 'scripts' / 'mw3_compact.txt']
+COMPACT_FILES = [ROOT / 'scripts' / 'mw_compact.txt', ROOT / 'scripts' / 'mw3_compact.txt', ROOT / 'scripts' / 'mw4_compact.txt']
 
 # Distillery → Japanese name patterns it MUST contain (filter out unrelated products)
 NAME_FILTER = {
@@ -73,6 +73,10 @@ NAME_FILTER = {
     'tormore': ['トーモア'],
     'rosebank': ['ローズバンク'],
     'loch_lomond': ['ロッホロモンド', 'インチマーリン'],
+    'brewdog': ['ローンウルフ'],
+    'eden_mill': ['エデンミル'],
+    'mossburn': ['モスバーン'],
+    'lost_loch': ['エイトランズ', 'グレンリネス'],
 }
 
 # Reject patterns (other distilleries that share search terms)
